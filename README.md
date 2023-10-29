@@ -97,3 +97,11 @@ Despite the official guide it is laborious to creage `fstab` manually. Instead `
 ```sh
 genfstab /mnt >> /mnt/etc/fstab
 ```
+
+## Check installation status
+
+The following command can be used to get information about currently installing packages:
+
+```sh
+sudo tail -f /var/log/emerge.log
+```
