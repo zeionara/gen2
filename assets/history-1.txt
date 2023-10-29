@@ -1,0 +1,119 @@
+    1  ping 8.8.8.8
+    2  ip a
+    3  sudo iw wlp2s0 auth 7a:48:b8:64:86:31
+    4  sudo iw dev wlp2s0 auth 7a:48:b8:64:86:31
+    5  sudo iw dev wlp2s0 auth foo
+    6  iw dev
+    7  ip link show wlp2s0
+    8  sudo ip link set wlp2s0 up
+    9  ip link show wlp2s0
+   10  iw wlp2s0 link
+   11  iw list | grep WPS
+   12  sudo iw dev wlp2s0 set wps_pbc
+   13  sudo iw dev wlp2s0 set wps_pbc | less
+   14  sudo iw dev wlp2s0 set wps_pbc | grep wps
+   15  sudo iw dev wlp2s0 set wps_pbc | grep WPS
+   16  wpa_gui
+   17  sudo wpa_cli wps_pbc
+   18  sudo reboot
+   19  ls
+   20  ip a
+   21  gnome
+   22  gnome
+   23  iw
+   24  iw | less
+   25  rmmod pcspkr
+   26  sudo rmmod pcspkr
+   27  ip a
+   28  sudo ip link set wlp2s0 up
+   29  ip a
+   30  sudo iw slp2s0 connect foo
+   31  sudo iw slp2s0 connect foo
+   32  sudo iw wslp2s0 connect foo
+   33  sudo iw wslp2s0 connect foo | less
+   34  sudo iw dev wlan0 connect foo
+   35  ip a
+   36  sudo iw dev wlp2s0 connect foo
+   37  sudo iw dev wlp2s0 connect foo
+   38  sudo iw --verbose dev wlp2s0 connect foo
+   39  sudo iw dev wlp2s0 connect foo
+   40  sudo iw wlp2s0 connect foo
+   41  sudo iw wlp2s0 connect foo
+   42  sudo iw wlp2s0 scan
+   43  sudo iw wlp2s0 scan | less
+   44  sudo iw wlp2s0 scan | grep SSID
+   45  sudo iw wlp2s0 connect 1304
+   46  ip link
+   47  sudo iw wlp2s0 connect
+   48  sudo iw wlp2s0 connect foo
+   49  sudo iw wlp2s0 connect foo --verbose
+   50  sudo iw --verbose dev wlp2s0 connect foo
+   51  sudo iw --verbose dev wlp2s0 connect foo | less
+   52  sudo iw --verbose dev wlp2s0 connect -w foo
+   53  sudo iw --verbose dev wlp2s0 connect foo
+   54  sudo iw dev wlp2s0 connect -w foo
+   55  sudo iw dev wlp2s0 connect -w 1304
+   56  startx
+   57  rc-update add elogind boot
+   58  sudo rc-update add elogind boot
+   59  sudo rc-update elogind start
+   60  sudo rc-service elogind start
+   61  emerge --ask --noreplace gui-libs/display-manager-init
+   62  sudo emerge --ask --noreplace gui-libs/display-manager-init
+   63  iw
+   64  iw wlan0 info
+   65  sudo iw wlan0 info
+   66  sudo iw wlan0 info | less
+   67  ip a
+   68  sudo iw wlp2s0 scan | less
+   69  sudo iw wlp2s0 scan > nets.tx
+   70  nano nets.txt 
+   71  sudo iw wlp2s0 scan | grep SSID
+   72  sudo iw wlp2s0 scan
+   73  sudo iw wlp2s0 | less
+   74  sudo iw wlp2s0 scan | less
+   75  df -h .
+   76  ls 
+   77  cat nets
+   78  cat nets.txt 
+   79  cat nets.txt 
+   80  pwd
+   81  ip a
+   82  sudo rc-service wpa_supplicant reload
+   83  sudo rc-service wpa_supplicant restart
+   84  sudo rc-service wpa_supplicant start
+   85  sudo rc-service wpa_supplicant start
+   86  sudo rc-service wpa_supplicant start
+   87  sudo rc-service wpa_supplicant start
+   88  sudo rc-service wpa_supplicant start
+   89  ip a
+   90  ping 8.8.8.8
+   91  iw link
+   92  ip a
+   93  iw wlp2s0 link
+   94  sudo rc-service wpa_supplicant restart
+   95  sudo rc-service wpa_supplicant restart
+   96  sudo rc-service wpa_supplicant restart
+   97  sudo rc-service wpa_supplicant restart
+   98  sudo rc-service wpa_supplicant restart
+   99  sudo rc-service wpa_supplicant restart
+  100  sudo rc-service wpa_supplicant restart
+  101  sudo rc-service wpa_supplicant restart
+  102  sudo rc-service wpa_supplicant restart
+  103  sudo rc-service wpa_supplicant restart
+  104  sudo rc-service wpa_supplicant restart
+  105  sudo rc-service wpa_supplicant restart
+  106  sudo rc-service wpa_supplicant restart
+  107  sudo rc-service wpa_supplicant restart
+  108  echo -e '\x41\x20\x41'
+  109  echo -e '\xf0\x9f\xa4\x8d'
+  110  echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d'
+  111  sudo echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d' >> /etc/wpa_supplicant/wpa_supplicant.conf 
+  112  sudo echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d' > ssid.txt
+  113  cat ssid.txt 
+  114  sudo rc-service wpa_supplicant restart
+  115  iw wlp2s0 link
+  116  ip a
+  117  ls
+  118  history
+  119  history > history-1.txt
