@@ -127,3 +127,37 @@ and the second one is displayed using formatted timestamps:
 28-10-2023 21:54:20:  === (1 of 56) Compiling/Merging (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
 28-10-2023 21:54:36:  === (1 of 56) Merging (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
 ```
+
+## GNOME Extensions
+
+To install `gnome tweaks`:
+
+```sh
+sudo emerge --ask gnome-extra/gnome-tweaks
+```
+
+To install chrome extensions follow [this tutorial](https://itsfoss.com/gnome-shell-extensions/).
+
+Basically there are 4 steps in manual extension installation:
+
+1. Download extension zip from [the website](https://extensions.gnome.org/extension/545/hide-top-bar/);
+2. Unzip the downloaded archive:
+
+```sh
+cd ~/Downloads
+mkdir hide-top-bar
+unzip hidetopbarmathieu.bidon.ca.v114.shell-extension.zip -d hide-top-bar
+```
+3. Check the extension `uuid` and rename the folder accordingly:
+
+```sh
+cat hide-top-bar/metadata.json
+mv hide-top-bar hidetopbar@mathieu.bidon.ca
+```
+
+4. Move the extension folder to the system directory with other gnome extensions:
+
+```sh
+mkdir ~/.local/share/gnome-shell/extensions
+mv hidetopbar@mathieu.bidon.ca ~/.local/share/gnome-shell/extensions
+```
