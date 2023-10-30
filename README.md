@@ -4,6 +4,14 @@
 
 This repo contains some `gentoo` installation notes, which contradict something said in the official guide, or add more information for certain steps concerning particular configurations or issues. In general, the official guide is complete enough to follow it without major changes.
 
+## Software
+
+The following packages should be installed right after the base installation has completed:
+
+```sh
+sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils
+```
+
 ## Wireless network
 
 With wired network the connection should be established out-of-the-box, but wireless network configuration is more intricate, especially if you have an `ssid` with special characters like emojis which are quite challenging to type from keyboard.

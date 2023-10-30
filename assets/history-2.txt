@@ -1,0 +1,500 @@
+    3  sudo iw dev wlp2s0 auth 7a:48:b8:64:86:31
+    4  sudo iw dev wlp2s0 auth foo
+    5  iw dev
+    6  ip link show wlp2s0
+    7  sudo ip link set wlp2s0 up
+    8  ip link show wlp2s0
+    9  iw wlp2s0 link
+   10  iw list | grep WPS
+   11  sudo iw dev wlp2s0 set wps_pbc
+   12  sudo iw dev wlp2s0 set wps_pbc | less
+   13  sudo iw dev wlp2s0 set wps_pbc | grep wps
+   14  sudo iw dev wlp2s0 set wps_pbc | grep WPS
+   15  wpa_gui
+   16  sudo wpa_cli wps_pbc
+   17  sudo reboot
+   18  ls
+   19  ip a
+   20  gnome
+   21  gnome
+   22  iw
+   23  iw | less
+   24  rmmod pcspkr
+   25  sudo rmmod pcspkr
+   26  ip a
+   27  sudo ip link set wlp2s0 up
+   28  ip a
+   29  sudo iw slp2s0 connect foo
+   30  sudo iw slp2s0 connect foo
+   31  sudo iw wslp2s0 connect foo
+   32  sudo iw wslp2s0 connect foo | less
+   33  sudo iw dev wlan0 connect foo
+   34  ip a
+   35  sudo iw dev wlp2s0 connect foo
+   36  sudo iw dev wlp2s0 connect foo
+   37  sudo iw --verbose dev wlp2s0 connect foo
+   38  sudo iw dev wlp2s0 connect foo
+   39  sudo iw wlp2s0 connect foo
+   40  sudo iw wlp2s0 connect foo
+   41  sudo iw wlp2s0 scan
+   42  sudo iw wlp2s0 scan | less
+   43  sudo iw wlp2s0 scan | grep SSID
+   44  sudo iw wlp2s0 connect 1304
+   45  ip link
+   46  sudo iw wlp2s0 connect
+   47  sudo iw wlp2s0 connect foo
+   48  sudo iw wlp2s0 connect foo --verbose
+   49  sudo iw --verbose dev wlp2s0 connect foo
+   50  sudo iw --verbose dev wlp2s0 connect foo | less
+   51  sudo iw --verbose dev wlp2s0 connect -w foo
+   52  sudo iw --verbose dev wlp2s0 connect foo
+   53  sudo iw dev wlp2s0 connect -w foo
+   54  sudo iw dev wlp2s0 connect -w 1304
+   55  startx
+   56  rc-update add elogind boot
+   57  sudo rc-update add elogind boot
+   58  sudo rc-update elogind start
+   59  sudo rc-service elogind start
+   60  emerge --ask --noreplace gui-libs/display-manager-init
+   61  sudo emerge --ask --noreplace gui-libs/display-manager-init
+   62  iw
+   63  iw wlan0 info
+   64  sudo iw wlan0 info
+   65  sudo iw wlan0 info | less
+   66  ip a
+   67  sudo iw wlp2s0 scan | less
+   68  sudo iw wlp2s0 scan > nets.tx
+   69  nano nets.txt 
+   70  sudo iw wlp2s0 scan | grep SSID
+   71  sudo iw wlp2s0 scan
+   72  sudo iw wlp2s0 | less
+   73  sudo iw wlp2s0 scan | less
+   74  ls
+   75  htop
+   76  ping google.com
+   77  ip a
+   78  sudo iw wlp2s0 scan
+   79  sudo iw wlp2s0 connect -w School
+   80  wpa_supplicant -B -i wlp2s0 -c 
+   81  ls /var/run/wpa_supplicant
+   82  which wpa_supplicant
+   83  wpa_cli
+   84  sudo rc-service wpa_supplicant start
+   85  touch /etc/wpa_supplicant/wpa_supplicant.conf
+   86  sudo touch /etc/wpa_supplicant/wpa_supplicant.conf
+   87  sudo rc-service wpa_supplicant start
+   88  wpa_cli
+   89  wpa_cli
+   90  ps -aux | grep wpa
+   91  ps -aux | grep wpa_supplicant
+   92  wpa
+   93  wpa_cli
+   94  sudo rc-update add wpa_supplicant default
+   95  rc-service wpa_supplicant status
+   96  wpa_gui
+   97  wpa_cli
+   98  wpa_cli wpc_psk
+   99  wpa_cli
+  100  sudo wpa_cli
+  101  ls /var/run | grep wpa
+  102  wpa_cli -i wlp2s0
+  103  sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+  104  xset b 0 0 0
+  105  set bell-style none
+  106  sudo rmmod pcspkr
+  107  sudo rc-service wpa_supplicant restart
+  108  wpa_cli
+  109  wpa_cli wps_pbc
+  110  wpa_cli
+  111  wpa_cli help
+  112  wpa_cli help | less
+  113  wpa_cli scan
+  114  wpa_cli help | less
+  115  wpa_cli scan_results
+  116  wpa_cli help
+  117  wpa_cli scan_results
+  118  echo "\xf"
+  119  ls
+  120  wpa_passphrase
+  121  ping 8.8.8.8
+  122  ls
+  123  emerge --list-installed | grep -i gnome
+  124  emerge --help
+  125  qlist
+  126  qlist -I
+  127  qlist -I | grep gnome
+  128  qlist -I | grep -i gnome
+  129  sudo emerge gnome
+  130  nano /etc/portage/make.conf 
+  131  sudo nano /etc/portage/make.conf 
+  132  sudo emerge gnome vim neovim git
+  133  sudo emerge gnome vim neovim
+  134  sudo emerge gnome
+  135  sudo emerge gnome --autounmask-write
+  136  cat /etc/portage/package.use/00cpu_flags 
+  137  sudo emerge --ask neovim
+  138  df -h .
+  139  df -h .
+  140  nvim
+  141  htop
+  142  emerge --info
+  143  emerge --info | less
+  144  emerge --info | grep Installing
+  145  emerge --info > emerge.info.txt
+  146  nvim emerge.info.txt
+  147  tail -f /var/log/emerge.log 
+  148  sudo tail -f /var/log/emerge.log 
+  149  sudo vim /etc/wpa_supplicant/wpa_supplicant.conf 
+  150  sudo nvim /etc/wpa_supplicant/wpa_supplicant.conf 
+  151  git
+  152  ls
+  153  mkdir gen2
+  154  mkdir gen2/assets
+  155  mv history-1.txt gen2/assets/
+  156  mv ssid.txt gen2/assets/
+  157  sudo cp /etc/wpa_supplicant/wpa_supplicant.conf gen2/assets/
+  158  cd gen2/assets/
+  159  ls
+  160  mkdir config
+  161  ls
+  162  mkdir etc
+  163  mkdir etc/wpa_supplicant
+  164  mv wpa_supplicant.conf etc/wpa_supplicant
+  165  tree
+  166  ls etc/wpa_supplicant/
+  167  cat etc/wpa_supplicant/wpa_supplicant.conf 
+  168  cd ..
+  169  ls /etc/portage/make.conf 
+  170  cat /etc/portage/make.conf
+  171  mkdir assets/etc/portage
+  172  cp /etc/portage/make.conf assets/etc/portage/
+  173  history | grep 00
+  174  cat /etc/portage/package.use/00cpu_flags 
+  175  mkdir assets/etc/portage/package.use
+  176  cp /etc/portage/package.use/00cpu_flags assets/etc/portage/package.use/
+  177  ls
+  178  nvim README.md
+  179  sudo tail -f /var/log/emerge.log 
+  180  nvim README.md 
+  181  nvim README.md
+  182  nvim README.md
+  183  gtx
+  184  git diff
+  185  gts
+  186  git status
+  187  git add -u
+  188  git commit -m 'feat(emerge-log): added command for checking emerge log'
+  189  git status
+  190  GPG_TTY='$(tty)'
+  191  export GPG_TTY='$(tty)'
+  192  git commit -m 'feat(emerge-log): added command for checking emerge log'
+  193  . ~/.bashrc
+  194  git commit -m 'feat(emerge-log): added command for checking emerge log'
+  195  cat ~/bash-tools/.bashrc | grep tty
+  196  git push -u origin
+  197  cd /var/tmp/portage/net-libs/
+  198  ls
+  199  cd webkit-gtk-2.40.5-r410/
+  200  ls
+  201  sudo du -h . -d 1
+  202  sudo ls webkit-gtk-2.40.5-r410/
+  203  sudo du -h  webkit-gtk-2.40.5-r410/ -d 1
+  204  sudo tail -f /var/log/emerge.log 
+  205  sudo tail -f /var/log/emerge.log 
+  206  sudo nvim /var/log/emerge.log
+  207  sudo tail -f /var/log/emerge.log 
+  208  cat /var/log/emerge.log | less
+  209  sudo cat /var/log/emerge.log | less
+  210  sudo vim /var/log/emerge.log 
+  211  sudo nvim /var/log/emerge.log 
+  212  sudo awk -F ':  ' '{ printf "[%s] %s\n", strftime("%Y-%m-%d %H:%M:%S", $1), $2 }' /var/log/emerge.log 
+  213  sudo awk -F ':  ' '{ printf "[%s] %s\n", strftime("%Y-%m-%d %H:%M:%S", $1), $2 }' /var/log/emerge.log | less
+  214  sudo awk -F ':  ' '{ printf "[%s] %s\n", strftime("%Y-%m-%d %H:%M:%S", $1), $2 }' /var/log/emerge.log > ~/emerge-log.txt
+  215  cd ~
+  216  ls
+  217  head emerge-log.txt 
+  218  echo 'sudo awk -F ':  ' '{ printf "[%s] %s\n", strftime("%Y-%m-%d %H:%M:%S", $1), $2 }' /var/log/emerge.log' >> gen2/README.md 
+  219  echo sudo awk -F ':  ' '{ printf "[%s] %s\n", strftime("%Y-%m-%d %H:%M:%S", $1), $2 }' /var/log/emerge.log >> gen2/README.md 
+  220  cd gen2/
+  221  nvim README.md 
+  222  sudo awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }' /var/log/emerge.log > ~/emerge-log.txt
+  223  nvim README.md 
+  224  nvim README.md 
+  225  sudo nvim README.md 
+  226  sudo awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }' /var/log/emerge.log | tail -f
+  227  sudo awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }' /var/log/emerge.log | tail
+  228  sudo tail -f /var/log/emerge.log | awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }'
+  229  sudo tail -f /var/log/emerge.log | awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }'
+  230  nvim README.md 
+  231  sudo tail -f /var/log/emerge.log | awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }'
+  232  nvim README.md 
+  233  rsrc
+  234  eeg
+  235  eeg
+  236  git diff
+  237  git status
+  238  git add -u
+  239  git commit -m 'feat(emerge-logs): added a command for displaying timestamps in emerge log using human-readable format'
+  240  git push origin
+  241  eeg
+  242  eeg
+  243  eeg
+  244  eeg
+  245  sudo awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }' /var/log/emerge.log | less
+  246  sudo awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }' /var/log/emerge.log > assets/emerge-log.txt
+  247  gts
+  248  git status
+  249  git add assets/emerge-log.txt 
+  250  git status
+  251  git commit -m 'feat(emerge-log): added emerge-log'
+  252  git push
+  253  sudo rc-update add elogind boot
+  254  sudo rc-service elogind start
+  255  emerge --ask --noreplace gui-libs/display-manager-init
+  256  sudo emerge --ask --noreplace gui-libs/display-manager-init
+  257  sudo nvim /etc/conf.d/display-manager 
+  258  sudo rc-update add display-manager default
+  259  sudo rc-service display-manager start
+  260  df -h .
+  261  ls 
+  262  cat nets
+  263  cat nets.txt 
+  264  cat nets.txt 
+  265  pwd
+  266  ip a
+  267  sudo rc-service wpa_supplicant reload
+  268  sudo rc-service wpa_supplicant restart
+  269  sudo rc-service wpa_supplicant start
+  270  sudo rc-service wpa_supplicant start
+  271  sudo rc-service wpa_supplicant start
+  272  sudo rc-service wpa_supplicant start
+  273  sudo rc-service wpa_supplicant start
+  274  ip a
+  275  ping 8.8.8.8
+  276  iw link
+  277  ip a
+  278  iw wlp2s0 link
+  279  sudo rc-service wpa_supplicant restart
+  280  sudo rc-service wpa_supplicant restart
+  281  sudo rc-service wpa_supplicant restart
+  282  sudo rc-service wpa_supplicant restart
+  283  sudo rc-service wpa_supplicant restart
+  284  sudo rc-service wpa_supplicant restart
+  285  sudo rc-service wpa_supplicant restart
+  286  sudo rc-service wpa_supplicant restart
+  287  sudo rc-service wpa_supplicant restart
+  288  sudo rc-service wpa_supplicant restart
+  289  sudo rc-service wpa_supplicant restart
+  290  sudo rc-service wpa_supplicant restart
+  291  sudo rc-service wpa_supplicant restart
+  292  sudo rc-service wpa_supplicant restart
+  293  echo -e '\x41\x20\x41'
+  294  echo -e '\xf0\x9f\xa4\x8d'
+  295  echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d'
+  296  sudo echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d' >> /etc/wpa_supplicant/wpa_supplicant.conf 
+  297  sudo echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d' > ssid.txt
+  298  cat ssid.txt 
+  299  sudo rc-service wpa_supplicant restart
+  300  iw wlp2s0 link
+  301  ip a
+  302  ls
+  303  history
+  304  history > history-1.txt
+  305  ls
+  306  ping 8.8.8.8
+  307  ping 8.8.8.8
+  308  ping 8.8.8.8
+  309  ping google.com
+  310  sudo iw wlp2s0 scan
+  311  cd /etc/init.d
+  312  ls
+  313  sudo ln -s net.lo net.wlp2s0
+  314  ls
+  315  ip a
+  316  rm net.wlan0 
+  317  sudo rm net.wlan0 
+  318  sudo rc-update add net.wlp2s0 default
+  319  sudo rc-update del net.wlan0 default
+  320  ping google.com
+  321  cd -
+  322  ls
+  323  ls -alh
+  324  curl -L https://cutt.ly/setup-bash-tools
+  325  cat .bashrc
+  326  curl -Ls https://cutt.ly/setup-bash-tools | bash
+  327  . ~/.bashrc
+  328  ssh cait@localhost
+  329  scp
+  330  ssh remote@isst.ml -p 2214
+  331  ssh remote@77.234.203.218 -p 2214
+  332  sudo nvim /etc/hosts
+  333  ssh remote@77.234.203.218 -p 2214
+  334  ssh remote@isst.ml -p 2214
+  335  sshgen
+  336  ssh-copy-id remote@isst.ml -p 2214
+  337  ssh-copy-id -p 2214 remote@isst.ml
+  338  ssh -p 2214 remote@isst.ml
+  339  scp -P .ssh/id_ed25519.pub remote@isst.ml:/home/remote/gen2-ssh-key
+  340  scp -P 2214 .ssh/id_ed25519.pub remote@isst.ml:/home/remote/gen2-ssh-key
+  341  gpgeng
+  342  gpga
+  343  gpga > gen2-gpg.txt
+  344  cat gen2-gpg.txt
+  345  scp -P 2214 gen2-gpg.txt remote@isst.ml:/home/remote/
+  346  ping google.com
+  347  ip a
+  348  ping 8.8.8.8
+  349  scp -P 2214 gen2-gpg.txt remote@isst.ml:/home/remote/
+  350  ls
+  351  cd gen2
+  352  ls
+  353  git init
+  354  git remote add origin git@github.com:zeionara/gen2.git
+  355  gts
+  356  git status
+  357  ls assets/config/
+  358  rmdir assets/config/
+  359  cat assets/etc/wpa_supplicant/wpa_supplicant.conf 
+  360  cat assets/etc/wpa_supplicant/wpa_supplicant.conf 
+  361  gts
+  362  git status
+  363  git add -A
+  364  git status
+  365  git diff --staged
+  366  git status
+  367  git commit -m 'init(repo): initial commit'
+  368  git push -u origin master
+  369  ping google.com
+  370  htop
+  371  cd ~/bash-tools/
+  372  ls
+  373  chmod +x emerge.sh 
+  374  gts
+  375  git status
+  376  git diff
+  377  rsrc
+  378  ls
+  379  rsrc
+  380  eeg
+  381  eeg
+  382  git status
+  383  git add .bashrc emerge.sh
+  384  git status
+  385  git commit -m 'feat(emerge): added an alias for portage to display logs'
+  386  git remote set-url origin git@github.com:zeionara/bash-tools
+  387  git push origin
+  388  wpa_cli
+  389  sudo iw wlp2s0 connect School
+  390  sudo iw wlp2s0 connect -w School
+  391  sudo emerge --ask gnome
+  392  sudo etc-update
+  393  sudo etc-update
+  394  sudo emerge --ask gnome
+  395  sudo nano /etc/portage/make.conf 
+  396  sudo emerge --ask gnome
+  397  sudo nano /etc/portage/make.conf 
+  398  sudo emerge --ask gnome
+  399  etc-update
+  400  sudo etc-update
+  401  sudo etc-update
+  402  sudo emerge --ask gnome
+  403  df -h .
+  404  htop
+  405  htop
+  406  ping google.com
+  407  ls
+  408  ls
+  409  sudo emerge --ask gnome-extra/gnome-tweaks
+  410  gnome-shell --version
+  411  ls ~/Downloads/
+  412  cd ~/Downloads/
+  413  ls
+  414  unzip hidetopbarmathieu.bidon.ca.v114.shell-extension.zip 
+  415  ls
+  416  rm hidetopbarmathieu.bidon.ca.v114.shell-extension.zip 
+  417  ls
+  418  mkdir ~/hidetopbarmathieu.bidon.ca.v114.shell-extension
+  419  mv * ~/hidetopbarmathieu.bidon.ca.v114.shell-extension
+  420  ls
+  421  mv ~/hidetopbarmathieu.bidon.ca.v114.shell-extension ~/.local/share/gnome-shell/extensions
+  422  cd ~/.local/share/gnome-shell/extensions
+  423  ls
+  424  cd ..
+  425  ls
+  426  mv extensions hidetopbarmathieu.bidon.ca.v114.shell-extension
+  427  mkdir extensions
+  428  mv hidetopbarmathieu.bidon.ca.v114.shell-extension/ extensions/
+  429  ls
+  430  ls extensions/
+  431  cd extensions/
+  432  cat hidetopbarmathieu.bidon.ca.v114.shell-extension/metadata.json 
+  433  mv hidetopbarmathieu.bidon.ca.v114.shell-extension hidetopbar@mathieu.bidon.ca
+  434  ls
+  435  htop
+  436  echo $XDG_SESSION_TYPE 
+  437  cd gen2/
+  438  nvim README.md 
+  439  nvim README.md 
+  440  nvim ~/bash-tools/emerge.sh 
+  441  ega neofetch
+  442  neofetch
+  443  neofetch
+  444  less /var/db/repos/gentoo/licenses/google-chrome
+  445  echo "www-client/google-chrome google-chrome" >> /etc/portage/package.license
+  446  sudo echo "www-client/google-chrome google-chrome" >> /etc/portage/package.license
+  447  su
+  448  sudo ls
+  449  sudo echo "www-client/google-chrome google-chrome" >> /etc/portage/package.license
+  450  sudo nvim /etc/portage/package.license
+  451  cat /etc/portage/package.license
+  452  ega www-client/google-chrome
+  453  neofetch
+  454  ls
+  455  neofetch
+  456  neofetch -v
+  457  ls
+  458  lspci
+  459  ega sys-apps/pciutils
+  460  lspci
+  461  neofetch
+  462  neofetch
+  463  ls
+  464  rm emerge.info.txt 
+  465  rm emerge-log.txt 
+  466  rm gen2-gpg.txt 
+  467  rm nets.txt 
+  468  ls
+  469  cat gen2/assets/ssid.txt 
+  470  ega media-fonts/noto-emoji
+  471  cat gen2/assets/ssid.txt 
+  472  cat ssid.txt 
+  473  htop
+  474  htop
+  475  history | grep unzip
+  476  history
+  477  ls .conf
+  478  cd gen2/
+  479  gts
+  480  git status
+  481  git diff
+  482  git diff
+  483  nvim README.md 
+  484  git status
+  485  git diff
+  486  git add -u
+  487  git status
+  488  git commit -m 'feat(gnome-tweaks): updated readme - added instructions on setting up gnome tweaks'
+  489  git push
+  490  df -h .
+  491  htop
+  492  ega app-editors/sublime-text
+  493  nvim /etc/portage/package.license 
+  494  sudo nvim /etc/portage/package.license 
+  495  ega app-editors/sublime-text
+  496  terminal
+  497  cat gen2/assets/ssid.txt 
+  498  conda
+  499  htop
+  500  echo CATTTTTTTTTTT
+  501  cd gen2/
+  502  history > assets/history-2.txt 
