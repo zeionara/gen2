@@ -105,3 +105,25 @@ The following command can be used to get information about currently installing 
 ```sh
 sudo tail -f /var/log/emerge.log
 ```
+
+Or use the following command to display timestamps in a human-readable format:
+
+```sh
+sudo tail -f /var/log/emerge.log | awk -F ':  ' '{ printf "%s:  %s\n", strftime("%d-%m-%Y %H:%M:%S", $1), $2 }'
+```
+
+Compare the following two code fragments, the first of which is printed as-is, without timestamp formatting:
+
+```sh
+1698519259:  === (1 of 56) Cleaning (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
+1698519260:  === (1 of 56) Compiling/Merging (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
+1698519276:  === (1 of 56) Merging (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
+```
+
+and the second one is displayed using formatted timestamps:
+
+```sh
+28-10-2023 21:54:19:  === (1 of 56) Cleaning (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
+28-10-2023 21:54:20:  === (1 of 56) Compiling/Merging (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
+28-10-2023 21:54:36:  === (1 of 56) Merging (acct-group/colord-0-r1::/var/db/repos/gentoo/acct-group/colord/colord-0-r1.ebuild)
+```
