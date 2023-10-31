@@ -9,7 +9,7 @@ This repo contains some `gentoo` installation notes, which contradict something 
 The following packages should be installed right after the base installation has completed:
 
 ```sh
-sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils
+sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils alacritty tmux zsh dev-python/pip dev-vcs/git-lfs media-video/vlc net-p2p/transmission
 ```
 
 ## Wireless network
