@@ -148,7 +148,7 @@ To install chrome extensions follow [this tutorial](https://itsfoss.com/gnome-sh
 
 Basically there are 4 steps in manual extension installation:
 
-1. Download extension zip from [the website](https://extensions.gnome.org/extension/545/hide-top-bar/);
+1. Download extension zip from the website: [hidetopbar@mathieu.bidon.ca](https://extensions.gnome.org/extension/545/hide-top-bar/) [dash-to-dock@micxgx.gmail.com](https://extensions.gnome.org/extension/307/dash-to-dock/)
 2. Unzip the downloaded archive:
 
 ```sh
@@ -168,4 +168,16 @@ mv hide-top-bar hidetopbar@mathieu.bidon.ca
 ```sh
 mkdir ~/.local/share/gnome-shell/extensions
 mv hidetopbar@mathieu.bidon.ca ~/.local/share/gnome-shell/extensions
+```
+
+## Suspend
+
+1. There is a problem with suspending a device, which can be avoided using the following algorithm:
+
+```sh
+# Press Ctrl+Alt+F2 - the desktop manager will become broken, but you will switch to the linux ternimal>
+sudo loginctl suspend
+# The laptop will suspend. Press any key to awake the laptop
+# Press Ctrl+Alt+F1 - you will switch back to the 'first' linux terminal
+sudo rc-service display-manager restart
 ```
