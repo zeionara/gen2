@@ -170,6 +170,14 @@ mkdir ~/.local/share/gnome-shell/extensions
 mv hidetopbar@mathieu.bidon.ca ~/.local/share/gnome-shell/extensions
 ```
 
+## Overamplification
+
+To enable overamplification run the following command:
+
+```sh
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
+```
+
 ## Suspend
 
 1. There is a problem with suspending a device, which can be avoided using the following algorithm:
