@@ -9,7 +9,7 @@ This repo contains some `gentoo` installation notes, which contradict something 
 The following packages should be installed right after the base installation has completed:
 
 ```sh
-sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils alacritty tmux zsh dev-python/pip dev-vcs/git-lfs media-video/vlc net-p2p/transmission
+sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils alacritty tmux zsh dev-python/pip dev-vcs/git-lfs media-video/vlc net-p2p/transmission mlocate sys-power/suspend
 ```
 
 ## Wireless network
@@ -189,3 +189,5 @@ sudo loginctl suspend
 # Press Ctrl+Alt+F1 - you will switch back to the 'first' linux terminal
 sudo rc-service display-manager restart
 ```
+
+2. It is better to use `s2ram` which works well, just install it via `sudo emerge --ask sys-power/suspend` and assign a keybinging `Ctrl+Alt+Delete` to run command `sudo s2ram`, and that's it!
