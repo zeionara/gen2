@@ -191,3 +191,7 @@ sudo rc-service display-manager restart
 ```
 
 2. It is better to use `s2ram` which works well, just install it via `sudo emerge --ask sys-power/suspend` and assign a keybinging `Ctrl+Alt+Delete` to run command `sudo s2ram`, and that's it!
+
+## Themes
+
+Theme files should be copied to `/usr/share/gnome-shell/theme`.
