@@ -195,3 +195,14 @@ sudo rc-service display-manager restart
 ## Themes
 
 Theme files should be copied to `/usr/share/gnome-shell/theme`.
+
+## Wayland @ Nvidia GPU
+
+To enable wayland on nvidia gpu refer to [this guide](https://forum.getcryst.al/d/14-how-to-make-gnome-wayland-work-on-an-nvidia-gpu). What works for me:
+
+1. Setting kernel parameter `nvidia_drm.modeset=1`;
+2. Creating link to the `61-gdm.rules`:
+
+```sh
+sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
+```
