@@ -206,3 +206,32 @@ To enable wayland on nvidia gpu refer to [this guide](https://forum.getcryst.al/
 ```sh
 sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
 ```
+
+## Github cli
+
+To install `github cli` perform the following steps:
+
+1. Clone the repo:
+
+```sh
+git clone https://github.com/cli/cli.git $HOME/gh-cli
+```
+
+2.  Install the toolkit:
+
+```sh
+cd $HOME/gh-cli
+sudo make install
+```
+
+3. Set pager:
+
+```sh
+gh config set pager "less -F -X"
+```
+
+4. Authenticate with getting access to `codespace` management:
+
+```sh
+gh auth refresh -h github.com -s codespace
+```
