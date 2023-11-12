@@ -235,3 +235,29 @@ gh config set pager "less -F -X"
 ```sh
 gh auth refresh -h github.com -s codespace
 ```
+
+## Download bubble in chrome
+
+To disable download bubble feature in chrome:
+
+1. Open the `google-chrome` desktop configuration for modification:
+
+```sh
+sudo nvim /usr/share/applications/google-chrome.desktop
+```
+
+2. Change the following lines:
+
+From:
+
+```sh
+Exec=/usr/bin/google-chrome-stable %U
+Exec=/usr/bin/google-chrome-stable --incognito
+```
+
+To:
+
+```sh
+Exec=/usr/bin/google-chrome-stable %U --disable-features=DownloadBubble
+Exec=/usr/bin/google-chrome-stable --incognito --disable-features=DownloadBubble
+```
