@@ -9,7 +9,7 @@ This repo contains some `gentoo` installation notes, which contradict something 
 The following packages should be installed right after the base installation has completed:
 
 ```sh
-sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils alacritty tmux zsh dev-python/pip dev-vcs/git-lfs media-video/vlc net-p2p/transmission mlocate sys-power/suspend media-fonts/noto-emoji
+sudo emerge --ask gnome neovim gnome-extra/gnome-tweaks neofetch htop sys-apps/pciutils alacritty tmux zsh dev-python/pip dev-vcs/git-lfs media-video/vlc net-p2p/transmission mlocate sys-power/suspend media-fonts/noto-emoji net-im/telegram-desktop media-video/obs-studio app-editors/sublime-text net-vpn/openvpn app-portage/gentoolkit
 ```
 
 ## Wireless network
@@ -212,4 +212,70 @@ To customize firefox appearance:
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+```
+
+## Wayland @ Nvidia GPU
+
+To enable wayland on nvidia gpu refer to [this guide](https://forum.getcryst.al/d/14-how-to-make-gnome-wayland-work-on-an-nvidia-gpu). What works for me:
+
+1. Setting kernel parameter `nvidia_drm.modeset=1`;
+2. Creating link to the `61-gdm.rules`:
+
+```sh
+sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
+```
+
+## Github cli
+
+To install `github cli` perform the following steps:
+
+1. Clone the repo:
+
+```sh
+git clone https://github.com/cli/cli.git $HOME/gh-cli
+```
+
+2.  Install the toolkit:
+
+```sh
+cd $HOME/gh-cli
+sudo make install
+```
+
+3. Set pager:
+
+```sh
+gh config set pager "less -F -X"
+```
+
+4. Authenticate with getting access to `codespace` management:
+
+```sh
+gh auth refresh -h github.com -s codespace
+```
+
+## Download bubble in chrome
+
+To disable download bubble feature in chrome:
+
+1. Open the `google-chrome` desktop configuration for modification:
+
+```sh
+sudo nvim /usr/share/applications/google-chrome.desktop
+```
+
+2. Change the following lines:
+
+From:
+
+```sh
+Exec=/usr/bin/google-chrome-stable %U
+Exec=/usr/bin/google-chrome-stable --incognito
+```
+
+To:
+
+```sh
+Exec=/usr/bin/google-chrome-stable %U --disable-features=DownloadBubble
+Exec=/usr/bin/google-chrome-stable --incognito --disable-features=DownloadBubble
 ```

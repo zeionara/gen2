@@ -1,0 +1,3 @@
+media-video/obs-studio lua nvenc pulseaudio speex v4l
+
+>=media-video/ffmpeg-6.0-r9 nvenc

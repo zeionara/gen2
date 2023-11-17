@@ -1,0 +1,12 @@
+/* #nav-bar, .tab-text, .tabbrowser-tab, .tabbrowser-text, .tab-label {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+.tab-text {
+  /* color: red !important; */
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #ffed00, #08e8de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
