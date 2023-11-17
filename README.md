@@ -195,3 +195,21 @@ sudo rc-service display-manager restart
 ## Themes
 
 Theme files should be copied to `/usr/share/gnome-shell/theme`.
+
+## Firefox
+
+To customize firefox appearance:
+
+1. Set `layout.css.devPixelsPerPx` in `about:config` to required value (0.9 for example);
+2. Set `browser.compactmode.show` in `about:config` to `true` for enabling `compact` toolbar layout;
+3. Set `toolkit.legacyUserProfileCustomizations.stylesheets` option in `about:config` to `true` for enabling toolbar customizations through `css`;
+4. Create `userChrome.css` file at `/home/$USER/.mozilla/firefox/tztkxjzk.default-esr/chrome/userChrome.css` with the following content to paint tab titles with gorgeous gradients:
+
+```sh
+.tab-text {
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #ffed00, #08e8de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+```
