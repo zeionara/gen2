@@ -279,3 +279,17 @@ To:
 Exec=/usr/bin/google-chrome-stable %U --disable-features=DownloadBubble
 Exec=/usr/bin/google-chrome-stable --incognito --disable-features=DownloadBubble
 ```
+
+## Gpg passphrase
+
+To ask `gpg2` to accept the passphrase in terminal add the following line to file `~/.gnupg/gpg-agent.conf`:
+
+```sh
+pinentry-program /usr/bin/pinentry-tty
+```
+
+Then restart the `gpg-agent`:
+
+```sh
+echo RELOADAGENT | gpg-connect-agent
+```
