@@ -1,0 +1,6 @@
+# required by www-client/chromium-118.0.5993.117::gentoo
+# required by www-client/chromium (argument)
+>=sys-libs/zlib-1.2.13-r2 minizip
+# required by www-client/chromium-118.0.5993.117::gentoo
+# required by www-client/chromium (argument)
+>=net-libs/nodejs-20.6.1 inspector

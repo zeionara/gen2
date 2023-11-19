@@ -1,0 +1,5 @@
+# required by www-client/firefox-115.4.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.13.1 postproc
+
+www-client/firefox hwaccel

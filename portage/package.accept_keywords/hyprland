@@ -1,0 +1,11 @@
+gui-wm/hyprland ~amd64
+dev-libs/libliftoff ~amd64
+media-libs/libdisplay-info ~amd64
+dev-libs/hyprland-protocols ~amd64
+
+gui-libs/xdg-desktop-portal-hyprland ~amd64
+dev-cpp/sdbus-c++ ~amd64
+dev-qt/qtbase
+dev-qt/qtwayland
+dev-qt/qtdeclarative
+dev-qt/qtshadertools

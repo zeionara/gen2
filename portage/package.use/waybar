@@ -1,0 +1,3 @@
+>=dev-libs/libdbusmenu-16.04.0-r2 gtk3
+
+gui-apps/waybar network pulseaudio tray wifi experimental

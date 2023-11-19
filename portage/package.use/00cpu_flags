@@ -1,0 +1,26 @@
+*/* CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3
+# required by gnome-base/gnome-control-center-44.3::gentoo
+# required by gnome-base/gnome-core-apps-41.3::gentoo
+# required by gnome-base/gnome-40.0-r1::gentoo
+# required by gnome (argument)
+>=media-libs/libcanberra-0.30-r7 pulseaudio
+# required by media-sound/pulseaudio-daemon-16.1-r7::gentoo[alsa,alsa-plugin]
+# required by media-libs/libpulse-16.1-r2::gentoo
+# required by gnome-base/gnome-shell-44.3::gentoo
+# required by virtual/notification-daemon-0::gentoo[gnome]
+# required by x11-libs/libnotify-0.8.2::gentoo
+# required by gnome-extra/zenity-3.44.2::gentoo[libnotify]
+# required by x11-wm/mutter-44.3::gentoo
+# required by gnome-extra/gnome-shell-extensions-44.0::gentoo
+# required by gnome-base/gnome-40.0-r1::gentoo[classic]
+# required by gnome (argument)
+>=media-plugins/alsa-plugins-1.2.7.1-r1 pulseaudio
+# required by sys-power/suspend-1.0_p20200924::gentoo[crypt]
+# required by sys-power/suspend (argument)
+>=dev-libs/libgcrypt-1.10.2 static-libs
+# required by sys-power/suspend-1.0_p20200924::gentoo[crypt]
+# required by sys-power/suspend (argument)
+>=dev-libs/libgpg-error-1.47 static-libs
+# required by sys-power/suspend-1.0_p20200924::gentoo[lzo]
+# required by sys-power/suspend (argument)
+>=dev-libs/lzo-2.10 static-libs
