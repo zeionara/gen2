@@ -1,0 +1,2455 @@
+    1  30-10-23 22:29:56  ls
+    2  30-10-23 22:30:01  ls bashrc/
+    3  30-10-23 22:30:06  cat bashrc/setup.sh
+    4  30-10-23 22:30:19  fast-theme "$HOME/bashrc/snuffari.ini\n"
+    5  30-10-23 22:30:29  fast-theme "$HOME/bashrc/snuffari.ini"
+    6  30-10-23 22:30:34  ls bash-tools
+    7  30-10-23 22:30:36  ls
+    8  30-10-23 22:37:50  python --version
+    9  30-10-23 22:38:12  nvim gen2/README.md
+   10  30-10-23 22:38:33  htop
+   11  31-10-23 15:27:47  mount /dev/sda5 /mnt/ubu
+   12  31-10-23 15:27:54  sudo mount /dev/sda5 /mnt/ubu
+   13  31-10-23 15:28:03  cd /mnt/ubu/home/zeio/batch
+   14  31-10-23 15:28:20  ls threads/0040-0059/ | wc -l
+   15  31-10-23 15:28:39  for i in $(seq 51 59); do echo $i; done
+   16  31-10-23 15:29:02  source venv2/bin/activate
+   17  31-10-23 15:29:42  for i in $(seq 51 59); do python -m much fetch $i -p threads/0040-0059 -i index.tsv; done
+   18  31-10-23 17:56:34  ls threads/0040-0059/ | wc -l
+   19  31-10-23 17:57:13  python -m much fetch 50 -p threads/0040-0059 -i index.tsv
+   20  31-10-23 18:34:13  ls threads/0040-0059/ | wc -l
+   21  31-10-23 18:34:54  tar -C threads/0040-0059 -cJvf threads-compressed/0040-0059.tar.xz .
+   22  31-10-23 18:42:50  cat index.tsv | wc -l
+   23  31-10-23 18:42:53  gts
+   24  31-10-23 18:43:02  gta index.tsv threads/ threads-compressed/
+   25  31-10-23 18:43:14  gts
+   26  31-10-23 18:43:30  gtc 'feat(3rd batch): added the 3rd batch'
+   27  31-10-23 18:43:37  gtu
+   28  31-10-23 18:46:42  ls threads
+   29  31-10-23 18:46:52  mkdir threads/0060-0079
+   30  31-10-23 18:46:55  ls threads
+   31  31-10-23 18:47:44  for i in $(seq 60 79); do python -m much fetch $i -p threads/0060-0079 -i index.tsv; done
+   32  31-10-23 23:24:42  ls threads/0060-0079/ | wc -l
+   33  31-10-23 23:24:49  cat index.tsv | wc -l
+   34  31-10-23 23:25:11  tar -C threads/0060-0079 -cJvf threads-compressed/0060-0079.tar.xz .
+   35  01-11-23 00:29:28  ls
+   36  01-11-23 00:29:54  gta threads/0060-0079/ threads-compressed/0060-0079.tar.xz index.tsv
+   37  01-11-23 00:30:08  cat index.tsv | wc -l
+   38  01-11-23 00:30:10  gts
+   39  01-11-23 00:30:20  gtc 'feat(4th batch): added 4th batch'
+   40  01-11-23 00:30:29  git push
+   41  01-11-23 00:32:17  mkdir threads/0080-0099
+   42  01-11-23 00:33:01  for i in $(seq 80 89); do python -m much fetch $i -p threads/0080-0099 -i index.tsv; done
+   43  01-11-23 03:27:43  for i in $(seq 90 94); do python -m much fetch $i -p threads/0080-0099 -i index.tsv; done
+   44  01-11-23 21:57:22  journalctl -b -2
+   45  01-11-23 21:57:27  dmesg
+   46  01-11-23 21:58:23  sudo nvim /etc/conf.d/net
+   47  01-11-23 21:58:28  ifconfig
+   48  01-11-23 21:58:41  sudo nvim /etc/conf.d/net
+   49  01-11-23 21:59:35  ls /etc/conf.d/
+   50  01-11-23 21:59:47  ls /etc/conf.d/cronie
+   51  01-11-23 21:59:54  sudo cat /etc/conf.d/cronie
+   52  01-11-23 22:00:00  cat /etc/conf.d/net
+   53  01-11-23 22:00:56  zgrep 'CONFIG_ACPI' /usr/src/linux/.config
+   54  01-11-23 22:02:44  zgrep 'ACPI' /usr/src/linux/.config
+   55  01-11-23 22:15:50  ifconfig
+   56  01-11-23 22:20:52  gnome-extensions dissable --all
+   57  01-11-23 22:20:59  gnome-extensions disable --all
+   58  01-11-23 22:21:05  gnome-extensions disable
+   59  01-11-23 22:21:11  gnome-extensions disable -a
+   60  01-11-23 22:21:15  gnome-extensions disable -q
+   61  01-11-23 22:21:18  gnome-extensions disable
+   62  01-11-23 22:21:23  sudo gnome-extensions disable --all
+   63  01-11-23 22:21:32  sudo gnome-extensions list
+   64  01-11-23 22:21:40  gnome-extensions list
+   65  01-11-23 22:22:12  gnome-extensions disable $(gnome-extensions list)
+   66  01-11-23 22:22:36  for ext in $(gnome-extensions list); do echo $ext; done
+   67  01-11-23 22:22:46  for ext in $(gnome-extensions list); do gnome-extensions disable $ext; done
+   68  01-11-23 22:24:53  for ext in $(gnome-extensions list); do gnome-extensions enable $ext; done
+   69  01-11-23 22:25:21  gnome-extensions list
+   70  01-11-23 22:26:06  for ext in $(gnome-extensions list); do gnome-extensions disable $ext; done
+   71  01-11-23 22:26:27  gnome-extensions enable hidetopbar@mathieu.bidon.ca
+   72  01-11-23 22:29:11  rc-service elogind stop
+   73  01-11-23 22:29:15  sudo rc-service elogind stop
+   74  01-11-23 22:33:13  cd ~/.local/share/gnome-shell
+   75  01-11-23 22:33:13  ls
+   76  01-11-23 22:33:17  cat application_state
+   77  01-11-23 22:33:29  find -name gnome_session
+   78  01-11-23 22:33:32  cd ~
+   79  01-11-23 22:33:35  find -name gnome_session
+   80  01-11-23 22:33:40  cd /
+   81  01-11-23 22:33:48  sudo find -name gnome_session
+   82  01-11-23 22:34:35  cd /var/log/gdm/
+   83  01-11-23 22:34:36  ls
+   84  01-11-23 22:34:39  sudo ls
+   85  01-11-23 22:34:44  ls -alh
+   86  01-11-23 22:34:48  sudo ls -alh
+   87  01-11-23 22:35:02  sudo nvim greeter.log
+   88  01-11-23 22:35:59  sudo nvim greeter.log.1
+   89  01-11-23 22:36:15  sudo nvim greeter.log.2
+   90  01-11-23 22:36:26  sudo nvim greeter.log.3
+   91  01-11-23 22:36:37  tail -n 10 greeter.log.3
+   92  01-11-23 22:36:43  tail -n 20 greeter.log.3
+   93  01-11-23 22:36:50  tail -n 16 greeter.log.3
+   94  01-11-23 22:37:10  tail -n 16 greeter.log.3 > ~/greeter.log
+   95  01-11-23 22:37:16  cd ~
+   96  01-11-23 22:37:17  ls
+   97  01-11-23 22:37:19  cat greeter.log
+   98  01-11-23 22:37:31  pip install carma
+   99  01-11-23 22:38:47  history
+  100  01-11-23 22:39:35  cd /var/log/gdm/
+  101  01-11-23 22:39:45  sudo tail greeter.log.1
+  102  01-11-23 22:45:11  gnome-shell --replace | tee ~/gnome.log
+  103  01-11-23 22:45:25  sudo gnome-shell --replace | tee ~/gnome.log
+  104  01-11-23 22:45:28  cat ~/gnome.log
+  105  01-11-23 22:45:33  sudo gnome-shell --replace
+  106  01-11-23 23:00:50  ls ~/.local/share/gnome-shell/extensions/
+  107  01-11-23 23:01:05  gnome-shell --version
+  108  01-11-23 23:01:21  cd ~/Downloads/
+  109  01-11-23 23:01:22  ls
+  110  01-11-23 23:01:28  mkdir dock
+  111  01-11-23 23:01:34  unzip dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip -d dock
+  112  01-11-23 23:01:36  ls dock/
+  113  01-11-23 23:01:48  cat dock/metadata.json
+  114  01-11-23 23:02:03  mv dock dash-to-dock@micxgx.gmail.com
+  115  01-11-23 23:02:15  mv dash-to-dock@micxgx.gmail.com ~/.local/share/gnome-shell/extensions/
+  116  01-11-23 23:02:16  ls ~/.local/share/gnome-shell/extensions/
+  117  01-11-23 23:00:26  nvim gen2/README.md
+  118  01-11-23 23:17:41  cat ~/.local/share/gnome-shell/extensions/
+  119  01-11-23 23:17:43  ls ~/.local/share/gnome-shell/extensions/
+  120  01-11-23 23:20:14  nvim ~/bashrc/.zshrc
+  121  01-11-23 23:15:04  nvim bash-tools/
+  122  01-11-23 23:15:11  nvim bash-tools/suspend.sh
+  123  01-11-23 23:16:12  nvim bash-tools/.bashrc
+  124  01-11-23 23:16:35  nvim gen2/README.md
+  125  01-11-23 23:19:05  lsmod | grep pcspkr
+  126  01-11-23 23:19:14  if lsmod | grep pcspkr; then echo foo; fi
+  127  01-11-23 23:19:24  if $(lsmod | grep pcspkr); then echo foo; fi
+  128  01-11-23 23:19:48  if test $(lsmod | grep 'pcspkr'); then echo foo; fi
+  129  01-11-23 23:19:57  if test "$(lsmod | grep 'pcspkr')"; then echo foo; fi
+  130  01-11-23 23:20:01  if test "$(lsmod | grep 'pcspkrs')"; then echo foo; fi
+  131  01-11-23 22:30:23  sudo rc-service elogind start
+  132  01-11-23 22:50:02  sudo gnome-shell --replace --mode=debug | tee ~/gnome.log
+  133  01-11-23 22:51:36  DISPLAY=:1 gnome-shell --wayland --replace --mode=debug | tee ~/gnome.log
+  134  01-11-23 22:52:05  DISPLAY=:1 sudo gnome-shell --wayland --replace --mode=debug | tee ~/gnome.log
+  135  01-11-23 23:32:42  sudo loginctl hibernate
+  136  02-11-23 00:17:55  htop
+  137  01-11-23 23:54:16  gnome-shell --version
+  138  01-11-23 23:56:34  lspci 
+  139  01-11-23 23:58:35  cd /var/log/gdm
+  140  01-11-23 23:58:36  ls
+  141  01-11-23 23:58:37  sudo ls
+  142  01-11-23 23:58:44  sudo ls -alh
+  143  01-11-23 23:58:54  sudo cat greeter.log.1
+  144  02-11-23 00:03:00  sudo cat greeter.log
+  145  02-11-23 00:03:31  ls
+  146  02-11-23 00:03:34  ls -alh
+  147  02-11-23 00:03:38  sudo ls
+  148  02-11-23 00:03:43  ls -alh
+  149  02-11-23 00:04:03  sudo ls -alh
+  150  02-11-23 00:04:21  tail greeter.log.2
+  151  02-11-23 00:18:45  cd ~/archeron/
+  152  02-11-23 00:18:46  gts
+  153  02-11-23 00:18:48  gtx
+  154  02-11-23 00:19:10  nvim README.md
+  155  02-11-23 00:19:23  gtx
+  156  02-11-23 00:19:29  gts
+  157  02-11-23 00:19:30  gtau
+  158  02-11-23 00:19:31  gts
+  159  02-11-23 00:19:48  gtc 'feat(typos): fixed a couple of typos and minor mistakes'
+  160  02-11-23 00:19:52  gtu
+  161  02-11-23 00:20:04  cd ../gen2/
+  162  02-11-23 00:20:05  gts
+  163  02-11-23 00:20:07  gtx
+  164  02-11-23 00:20:15  nvim README.md
+  165  02-11-23 00:20:57  gts
+  166  02-11-23 00:20:58  gtx
+  167  02-11-23 00:21:02  gta README.md
+  168  02-11-23 00:21:03  gts
+  169  02-11-23 00:21:15  gtc 'feat(suspend): added suspend instructions'
+  170  02-11-23 00:21:17  gtu
+  171  02-11-23 00:21:27  cd ~/bash-tools
+  172  02-11-23 00:21:28  gts
+  173  02-11-23 00:21:31  gta suspend.sh
+  174  02-11-23 00:21:36  gta .bashrc
+  175  02-11-23 00:21:37  gtd
+  176  02-11-23 00:21:40  gts
+  177  02-11-23 00:21:42  gtxs
+  178  02-11-23 00:21:57  gtc 'feat(suspend): added aliases for suspending gentoo'
+  179  02-11-23 00:21:59  gtu
+  180  02-11-23 00:24:22  ping google.com
+  181  02-11-23 00:24:39  sudo rc-service wpa_supplicant restart
+  182  02-11-23 00:24:47  ping google.com
+  183  02-11-23 00:34:15  gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
+  184  02-11-23 00:34:46  nvim gen2/README.md
+  185  02-11-23 00:35:37  gts
+  186  02-11-23 00:35:41  cd gen2
+  187  02-11-23 00:35:42  gts
+  188  02-11-23 00:35:43  gtx
+  189  02-11-23 00:35:46  gts
+  190  02-11-23 00:35:47  gtau
+  191  02-11-23 00:35:48  gts
+  192  02-11-23 00:36:04  gtc 'feat(overamplification): added a note about overamplification'
+  193  02-11-23 00:36:07  gtu
+  194  02-11-23 00:46:37  cat /var/log/messages
+  195  02-11-23 15:34:34  ege
+  196  02-11-23 15:34:38  eeg
+  197  02-11-23 16:26:57  ege
+  198  02-11-23 18:23:30  cd gen2
+  199  02-11-23 18:23:33  nvim README.md
+  200  02-11-23 18:23:38  nvim --version
+  201  02-11-23 19:14:59  ege
+  202  02-11-23 19:15:07  df -h .
+  203  02-11-23 19:19:45  cd /mnt/ubu/home/zeio/batch
+  204  02-11-23 19:19:49  mount /dev/sda5 /mnt/ubu
+  205  02-11-23 19:19:58  sudo mount /dev/sda5 /mnt/ubu
+  206  02-11-23 19:20:02  cd /mnt/ubu/home/zeio/batch
+  207  02-11-23 19:20:24  . venv2/bin/activate
+  208  02-11-23 19:20:55  for i in $(seq 95 99); do python -m much fetch $i -p threads/0080-0099 -i index.tsv; done
+  209  02-11-23 22:14:54  cat index.tsv | wc -l
+  210  02-11-23 22:15:06  ls threads/0080-0099/ | wc -l
+  211  02-11-23 22:15:33  tar -C threads/0080-0099 -cJvf threads-compressed/0080-0099.tar.xz .
+  212  02-11-23 22:31:09  gts
+  213  02-11-23 22:31:15  gta index.tsv
+  214  02-11-23 22:31:24  gta threads/0080-0099/
+  215  02-11-23 22:31:41  gta threads-compressed/0080-0099.tar.xz
+  216  02-11-23 22:31:44  gts
+  217  02-11-23 22:31:58  gtc 'feat(batch): add next batch'
+  218  02-11-23 22:32:04  gtu
+  219  02-11-23 22:34:40  nvim README.md
+  220  02-11-23 22:36:35  gtx
+  221  02-11-23 22:36:41  gta README.md
+  222  02-11-23 22:36:42  gts
+  223  02-11-23 22:36:58  gtc 'fix(readme): added title to the dataset instance example'
+  224  02-11-23 22:37:01  gtu
+  225  02-11-23 22:13:21  nano
+  226  02-11-23 22:13:36  eselect editor nvim
+  227  02-11-23 22:13:40  eselect editor
+  228  02-11-23 22:13:45  eselect editor list
+  229  02-11-23 22:13:53  nano
+  230  02-11-23 14:01:40  cd /var/log/gdm
+  231  02-11-23 14:01:48  sudo ls
+  232  02-11-23 14:01:52  sudo ls -alh
+  233  02-11-23 14:01:59  sudo cat greeter.log.1
+  234  02-11-23 14:02:10  sudo nvim greeter.log.1
+  235  02-11-23 14:02:59  sudo ls -alh
+  236  02-11-23 14:03:10  sudo cat greeter.log
+  237  02-11-23 14:03:16  sudo ls -alh
+  238  02-11-23 14:03:25  sudo cat greeter.log.2
+  239  02-11-23 14:03:55  sudo cp greeter.log.1 ~/
+  240  02-11-23 14:04:01  sudo cp greeter.log.2 ~/
+  241  02-11-23 14:04:04  cd ~
+  242  02-11-23 14:04:04  ls
+  243  02-11-23 14:04:09  mkdir greeter-logs
+  244  02-11-23 14:04:18  mv greeter.* greeter-logs
+  245  02-11-23 14:04:19  ls
+  246  02-11-23 14:04:24  mv gnome.log greeter-logs/
+  247  02-11-23 14:04:25  ls
+  248  02-11-23 14:06:19  emerge --sync
+  249  02-11-23 14:06:26  sudo emerge --sync
+  250  02-11-23 14:09:33  eselect news read
+  251  02-11-23 14:09:43  sudo eselect news read
+  252  02-11-23 14:11:48  nvim news.txt
+  253  02-11-23 14:11:55  head news.txt
+  254  02-11-23 14:12:03  nvim news.txt
+  255  02-11-23 14:12:22  sudo emerge -av @world
+  256  02-11-23 22:12:16  sudo emerge --depclean
+  257  02-11-23 22:14:16  ega nano
+  258  02-11-23 15:33:59  cd bash-tools/
+  259  02-11-23 15:34:03  nvim emerge.sh
+  260  02-11-23 15:35:58  gts
+  261  02-11-23 15:35:59  gtx
+  262  02-11-23 15:36:02  gta emerge.sh
+  263  02-11-23 15:36:03  gts
+  264  02-11-23 15:36:13  gtc 'feat(emerge): added more emerge shortcuts'
+  265  02-11-23 15:36:17  gtu
+  266  02-11-23 19:21:10  htop
+  267  02-11-23 23:11:15  ls /var/log/
+  268  02-11-23 23:11:27  syslogd
+  269  02-11-23 23:11:33  cat /var/log/syslog
+  270  02-11-23 23:12:08  cat /var/log/syslog | grep wayland
+  271  02-11-23 23:12:24  cd /var/log
+  272  02-11-23 23:12:30  sudo grep -rn 'wayland'
+  273  02-11-23 23:13:42  weston 
+  274  02-11-23 23:13:46  weston
+  275  02-11-23 23:15:20  echo $WAYLAND_DISPLAY
+  276  02-11-23 23:15:29  ps -aux | grep wayland
+  277  02-11-23 23:22:54  cd /var/log
+  278  02-11-23 23:22:55  ls
+  279  02-11-23 23:23:05  cd ..
+  280  02-11-23 23:23:10  find -name Xor
+  281  02-11-23 23:23:16  sudo find -name Xorg
+  282  02-11-23 23:23:25  cd log
+  283  02-11-23 23:23:26  ls
+  284  02-11-23 23:24:59  cd ~
+  285  02-11-23 23:25:11  ls -alh
+  286  02-11-23 23:25:36  Xwayland -logverbose
+  287  02-11-23 23:26:08  Xwayland -verbose
+  288  02-11-23 23:31:28  cd /etc/init.d
+  289  02-11-23 23:31:29  ls
+  290  02-11-23 23:31:36  cd ..
+  291  02-11-23 23:31:41  locate xwayland
+  292  02-11-23 23:31:55  ega mlocate
+  293  02-11-23 23:36:57  locate xwayland
+  294  02-11-23 23:37:55  sudo updatedb
+  295  02-11-23 23:39:41  locate xwayland
+  296  02-11-23 23:40:20  sudo nvim /var/db/repos/gentoo/x11-base/xwayland/metadata.xml
+  297  02-11-23 23:41:34  emerge --ask dev-libs/weston
+  298  02-11-23 23:41:41  sudo emerge --ask dev-libs/weston
+  299  02-11-23 23:50:41  weston
+  300  02-11-23 23:51:07  locate wayland-backend.so
+  301  02-11-23 23:51:09  cd /
+  302  02-11-23 23:51:11  locate wayland-backend.so
+  303  02-11-23 23:53:48  sudo emerge --unmerge dev-libs/weston
+  304  02-11-23 23:54:04  weston
+  305  02-11-23 23:34:17  loginctl show-session 0 -p Type
+  306  02-11-23 23:34:22  loginctl show-session 1 -p Type
+  307  02-11-23 23:35:37  xwinfo
+  308  02-11-23 23:36:26  WAYLAND_DEBUG=1 google-chrome-stable
+  309  02-11-23 22:54:17  cd /var/log/gdm
+  310  02-11-23 22:54:28  sudo cat greeter.log.1
+  311  02-11-23 23:32:20  nvim ~/gen2/README.md
+  312  03-11-23 00:06:10  nvim log.txt
+  313  03-11-23 00:10:22  rm log.txt
+  314  03-11-23 00:13:20  dbus-run-session -- gnome-shell --nested --wayland 2>&1 | tee log.txt
+  315  03-11-23 00:14:03  export G_MESSAGE_DEBUG=all
+  316  03-11-23 00:14:05  dbus-run-session -- gnome-shell --nested --wayland 2>&1 | tee log.txt
+  317  03-11-23 00:14:16  export G_MESSAGES_DEBUG=all
+  318  03-11-23 00:14:18  dbus-run-session -- gnome-shell --nested --wayland 2>&1 | tee log.txt
+  319  03-11-23 00:16:41  nvim log.txt
+  320  03-11-23 00:17:01  ls -alh | grep log
+  321  03-11-23 00:17:06  nvim log.txt
+  322  03-11-23 00:21:44  sudo tail /var/log/gdm/greeter.log
+  323  03-11-23 00:21:53  sudo tail /var/log/gdm/greeter.1.log
+  324  03-11-23 00:21:59  sudo tail /var/log/gdm/greeter.log.1
+  325  03-11-23 00:22:39  sudo nvim /var/log/gdm/greeter.log
+  326  03-11-23 00:39:05  echo $XDG_SESSION_TYPE
+  327  03-11-23 00:39:35  htop
+  328  03-11-23 00:39:44  nvim gen2/README.md
+  329  03-11-23 00:40:03  sudo nvim /var/log/gdm/greeter.log.1
+  330  03-11-23 00:40:32  sudo ls -alh /var/log/gdm
+  331  03-11-23 00:40:41  sudo nvim /var/log/gdm/greeter.log
+  332  03-11-23 00:43:43  sudo ls /var/log/gdm
+  333  03-11-23 00:43:49  sudo ls -alh /var/log/gdm
+  334  03-11-23 00:43:57  sudo nvim /var/log/gdm/greeter.log
+  335  03-11-23 00:45:43  cat /var/log/gdm/greeter.log | grep stopUnit
+  336  03-11-23 00:45:48  sudo cat /var/log/gdm/greeter.log | grep stopUnit
+  337  03-11-23 00:45:53  sudo cat /var/log/gdm/greeter.log | grep pUnit
+  338  03-11-23 00:48:33  echo $XDG_SESSION_TYPE
+  339  03-11-23 00:56:25  sudo nvim /var/log/gdm/greeter.log
+  340  03-11-23 00:58:22  suspend
+  341  03-11-23 00:59:57  sudo ls /var/log
+  342  03-11-23 01:00:06  sudo ls /var/log/gdm
+  343  03-11-23 01:00:14  sudo ls -alh /var/log/gdm
+  344  03-11-23 01:00:25  sudo nvim /var/log/greeter.log
+  345  03-11-23 01:00:32  sudo nvim /var/log/gdm/greeter.log
+  346  03-11-23 01:01:04  sudo nvim /var/log/gdm/greeter.log.1
+  347  03-11-23 01:01:25  sudo nvim /var/log/greeter.log
+  348  03-11-23 01:01:31  sudo nvim /var/log/gdm/greeter.log
+  349  03-11-23 01:02:01  export G_MESSAGE_DEBUG=all
+  350  03-11-23 01:02:24  history | grep tee
+  351  03-11-23 01:02:41  export G_MESSAGES_DEBUG=all
+  352  03-11-23 01:02:46  dbus-run-session -- gnome-shell --nested --wayland 2>&1 | tee log.txt
+  353  03-11-23 01:06:33  ls -alh | grep log
+  354  03-11-23 01:09:26  nvim log.txt
+  355  03-11-23 01:09:40  mv log.txt xorg-log.txt
+  356  03-11-23 01:09:41  ls
+  357  03-11-23 01:32:27  gdbus --version
+  358  03-11-23 01:33:28  egl
+  359  03-11-23 01:33:33  egl | grep gdbus
+  360  03-11-23 01:42:34  sudo nvim /etc/rsyncd.conf
+  361  03-11-23 01:42:50  syslogd
+  362  03-11-23 01:42:55  syslogd --help
+  363  03-11-23 01:43:56  sudo ls /etc/syslog.d/
+  364  03-11-23 01:44:08  sudo nvim /etc/syslog.conf
+  365  03-11-23 01:45:33  sudo nvim /var/log/messages
+  366  03-11-23 01:46:36  sudo nvim /etc/syslog.conf
+  367  03-11-23 01:49:23  sudo rc-service syslogd restart
+  368  03-11-23 01:49:32  sudo rc-service sysklogd restart
+  369  03-11-23 01:49:48  cat /var/log/debug.log
+  370  03-11-23 01:49:54  ls /var/log | grep debug
+  371  03-11-23 01:50:01  ls -alh /var/log
+  372  03-11-23 01:20:24  sudo nvim wayland-log.txt
+  373  03-11-23 01:20:29  nvim wayland-log.txt
+  374  03-11-23 01:25:23  sudo nvim /var/log/syslog
+  375  03-11-23 01:39:28  ls
+  376  03-11-23 01:39:36  mkdir logs
+  377  03-11-23 01:39:39  mv gdbus-deadlock-message.txt logs
+  378  03-11-23 01:39:44  mv xorg-log.txt logs
+  379  03-11-23 01:39:46  mv wayland-log.txt logs
+  380  03-11-23 01:39:51  mv wayland-syslog.txt logs
+  381  03-11-23 01:39:55  cd logs
+  382  03-11-23 01:39:56  ls
+  383  03-11-23 01:39:59  nvim wayland-syslog.txt
+  384  03-11-23 02:31:06  gnome-shell --version
+  385  03-11-23 01:59:02  sudo nvim /var/log/debug.log
+  386  03-11-23 01:59:47  sudo nvim /var/log/syslog
+  387  03-11-23 02:02:09  dmesg
+  388  03-11-23 02:02:51  dmesg -T
+  389  03-11-23 02:03:46  dmesg -T | grep suspen
+  390  03-11-23 02:17:30  cd logs
+  391  03-11-23 02:17:30  ls
+  392  03-11-23 02:17:36  cat gdbus-deadlock-message.txt
+  393  03-11-23 02:17:53  gdbus
+  394  03-11-23 02:17:58  history | grep grep
+  395  03-11-23 02:18:08  egl | grep gdbus
+  396  03-11-23 02:19:25  history
+  397  03-11-23 02:21:00  nvim wayland-log.txt
+  398  03-11-23 02:21:17  cat wayland-log.txt | grep #
+  399  03-11-23 02:21:23  cat wayland-log.txt | grep '#'
+  400  03-11-23 02:22:41  cat wayland-syslog.txt
+  401  03-11-23 02:23:29  nvim wayland-log.txt
+  402  03-11-23 02:25:10  s
+  403  03-11-23 02:25:11  ls
+  404  03-11-23 03:14:38  sudo nvim /usr/share/gnome-shell/theme/gnome-classic.css
+  405  03-11-23 03:20:17  history
+  406  03-11-23 03:20:39  sudo cp /usr/share/gnome-shell/theme/gnome-classic.css /usr/share/gnome-shell/theme/gnome-classic.css.backup
+  407  03-11-23 03:21:40  sudo nvim /usr/share/gnome-shell/theme/gnome-classic.css
+  408  03-11-23 03:22:08  sudo mv /usr/share/gnome-shell/theme/gnome-classic.css.backup /usr/share/gnome-shell/theme/gnome-classic.css
+  409  03-11-23 03:22:14  sudo nvim /usr/share/gnome-shell/theme/gnome-classic-high-contrast.css
+  410  03-11-23 03:22:30  sudo nivm /usr/share/gnome-shell/theme/gnome-classic.css
+  411  03-11-23 03:22:36  sudo nvim /usr/share/gnome-shell/theme/gnome-classic.css
+  412  03-11-23 03:23:57  locate css
+  413  03-11-23 03:24:12  locate gnome*css
+  414  03-11-23 03:24:18  find -name gnome*css
+  415  03-11-23 03:24:28  find -name 'gnome*'
+  416  03-11-23 03:24:36  find -name 'gnome*sh'
+  417  03-11-23 03:24:43  find -name 'gnome.*sh'
+  418  03-11-23 03:24:52  find -name 'gnome*sh'
+  419  03-11-23 03:25:40  find -type f -regex 'gnome.*sh'
+  420  03-11-23 03:25:46  find -type f -regex 'gnome.*sh.*'
+  421  03-11-23 03:25:53  find -type f -regex 'gnome.*g'
+  422  03-11-23 03:25:56  find -type f -regex 'gnome*g'
+  423  03-11-23 03:26:06  find -type f -regex 'gnome.logg'
+  424  03-11-23 03:26:09  find -type f -regex 'gnome.log'
+  425  03-11-23 03:26:17  find -type f -name 'gnome.log'
+  426  03-11-23 03:26:21  find -type f -name 'gnome*log'
+  427  03-11-23 03:26:24  find -type f -name 'gnome*l*'
+  428  03-11-23 03:26:30  find -type f -name 'gnome*css*'
+  429  03-11-23 03:26:37  find -type f -path 'gnome*css*'
+  430  03-11-23 03:27:01  find -type f -path '*gnome*css*'
+  431  03-11-23 03:27:11  cd /
+  432  03-11-23 03:27:15  sudo find -type f -path '*gnome*css*'
+  433  03-11-23 03:28:04  gnome-mines --help
+  434  03-11-23 03:28:07  gnome-mines
+  435  03-11-23 03:28:46  sudo nvim ./usr/share/gnome-tweaks/shell.css
+  436  03-11-23 03:29:16  htop
+  437  03-11-23 04:36:19  egl
+  438  03-11-23 04:24:59  sudo nvim /var/log/syslog
+  439  03-11-23 04:28:08  ega sys-power/suspend
+  440  03-11-23 04:30:19  sudo nvim /etc/portage/make.conf
+  441  03-11-23 04:30:43  sudo nvim /etc/portage/package.use/00cpu_flags
+  442  03-11-23 04:31:24  sudo ega sys-power/suspend
+  443  03-11-23 04:31:37  sudo emerge sys-power/suspend
+  444  03-11-23 04:32:18  sudo emerge --autounmask-write
+  445  03-11-23 04:32:28  sudo emerge --autounmask-write sys-power/suspend
+  446  03-11-23 04:33:25  sudo nvim /etc/portage/package.use/00cpu_flags
+  447  03-11-23 04:33:32  sudo emerge sys-power/suspend
+  448  03-11-23 04:43:32  s2ram
+  449  03-11-23 04:43:52  ls /sys/power/state
+  450  03-11-23 04:43:59  sudo cat /sys/power/state
+  451  03-11-23 04:44:13  cat /sys/power/state
+  452  03-11-23 04:44:17  sudo s2ram
+  453  03-11-23 04:45:00  s2ram
+  454  03-11-23 04:45:10  history
+  455  03-11-23 04:45:20  nvim gen2/README.md
+  456  03-11-23 04:45:40  sudo nvim ~/bash-tools/suspend.sh
+  457  03-11-23 04:48:45  s2r
+  458  03-11-23 04:51:16  echo $XDG_SESSION_TYPE
+  459  03-11-23 04:57:27  locate acpi
+  460  03-11-23 05:01:50  cd gen2
+  461  03-11-23 05:01:53  nvim README.md
+  462  03-11-23 05:03:34  gtx
+  463  03-11-23 05:03:38  gts
+  464  03-11-23 05:03:39  gtau
+  465  03-11-23 05:03:39  gts
+  466  03-11-23 05:03:52  gtc 'feat(s2ram): added recommendation about device suspension'
+  467  03-11-23 05:03:57  gtu
+  468  03-11-23 05:21:16  neofetch
+  469  03-11-23 05:21:21  htop
+  470  03-11-23 05:21:44  locate gnome-shell.css
+  471  03-11-23 05:22:29  sudo ls /usr/share/gnome-shell/theme/
+  472  03-11-23 05:27:45  sudo cp /usr/share/gnome-shell/theme/gnome-classic.css /usr/share/gnome-shell/theme/snuffari.css
+  473  03-11-23 05:27:55  nvim /usr/share/gnome-shell/theme/snuffari.css
+  474  03-11-23 05:28:14  sudo ls -alh /usr/share/gnome-shell/theme/snuffari.css
+  475  03-11-23 05:28:32  sudo chown cait:cait /usr/share/gnome-shell/theme/snuffari.css
+  476  03-11-23 05:28:52  nvim /usr/share/gnome-shell/theme/snuffari.css
+  477  03-11-23 05:39:17  cp /usr/share/gnome-shell/theme/snuffari.css ./
+  478  03-11-23 05:39:20  nvim /usr/share/gnome-shell/theme/snuffari.css
+  479  04-11-23 02:41:02  ls
+  480  04-11-23 02:41:03  gts
+  481  07-11-23 18:28:05  ssrx
+  482  07-11-23 18:28:46  ssh-copy-id zeionara@rtx
+  483  07-11-23 18:30:00  ssrx
+  484  07-11-23 18:30:19  ssh-copy-id zeionara@rtx
+  485  07-11-23 18:31:20  ssrx
+  486  07-11-23 13:39:53  cd /mnt/ubu/home/zeio/batch
+  487  07-11-23 13:58:15  ls threads/0260-0279/ | wc -l
+  488  07-11-23 18:32:29  ping -i 1 rt
+  489  07-11-23 18:32:31  ping -i 1 rtx
+  490  07-11-23 18:32:35  ping rtx
+  491  07-11-23 18:39:00  ega net-vpn/openconnect
+  492  07-11-23 18:54:39  uga net-vpn/openconnect
+  493  07-11-23 18:17:43  cd bashrc
+  494  07-11-23 18:17:44  ls
+  495  07-11-23 18:17:46  gtd
+  496  07-11-23 18:17:52  cat setup.sh
+  497  07-11-23 18:18:04  cat /etc/hosts
+  498  07-11-23 18:18:09  cat setup.sh
+  499  07-11-23 18:18:39  ls /etc/openvpn
+  500  07-11-23 18:18:44  cd ..
+  501  07-11-23 18:18:48  ./bashrc/setup.sh
+  502  07-11-23 18:18:55  ls /etc/openvpn/
+  503  07-11-23 18:19:04  sudo ls /etc/openvpn/
+  504  07-11-23 18:19:10  cat /etc/hosts
+  505  07-11-23 18:19:15  ssrx
+  506  07-11-23 18:19:19  ping rtx
+  507  07-11-23 18:20:03  ega net-vpn/openvpn
+  508  07-11-23 18:26:46  vprx
+  509  07-11-23 18:27:20  ping rtx
+  510  07-11-23 18:27:23  vprx
+  511  07-11-23 18:27:53  ping 77.234.214.82
+  512  07-11-23 18:44:55  vprx
+  513  07-11-23 18:46:14  curl -p 4816 77.234.214.82
+  514  07-11-23 18:46:23  curl -v -p 4816 77.234.214.82
+  515  07-11-23 18:46:38  curl -v -P 4816 77.234.214.82
+  516  07-11-23 18:48:20  curl -v 77.234.214.82:4816
+  517  07-11-23 18:50:08  vprx
+  518  07-11-23 18:51:38  sudo openconnect --protocol=anyconnect /etc/openvpn/client.conf
+  519  07-11-23 18:51:57  cat /etc/openvpn/client.conf
+  520  07-11-23 18:52:03  sudo cat /etc/openvpn/client.conf
+  521  07-11-23 18:53:06  sudo openconnect --protocol=anyconnect /etc/openvpn/client.conf
+  522  07-11-23 18:53:10  sudo openconnect --help
+  523  07-11-23 18:53:28  sudo openconnect --protocol=anyconnect --config=/etc/openvpn/client.conf
+  524  07-11-23 18:53:34  sudo openconnect --config=/etc/openvpn/client.conf
+  525  07-11-23 18:53:51  sudo openconnect --config=/etc/openvpn/client.conf | grep openvpn
+  526  07-11-23 19:27:00  vprx
+  527  07-11-23 18:36:56  cd shell
+  528  07-11-23 18:36:57  gtd
+  529  07-11-23 18:37:01  rsrc
+  530  07-11-23 18:37:04  ls
+  531  07-11-23 18:37:08  ee $WAYLAND_DISPLAY
+  532  07-11-23 18:37:14  ee $XDG_SESSION_TYPE
+  533  07-11-23 18:37:17  ee $WAYLAND_DISPLAY
+  534  07-11-23 18:38:02  ssrx
+  535  07-11-23 18:38:10  ping -i 1 rtx
+  536  07-11-23 18:42:24  sudo nvim /etc/openvpn/client.conf
+  537  07-11-23 19:36:08  cd /mnt/ubu/home/zeio/batch
+  538  07-11-23 19:36:13  cat index.tsv | wc -l
+  539  07-11-23 19:42:39  ssrx
+  540  07-11-23 19:47:16  ping rtx
+  541  07-11-23 19:48:47  date
+  542  07-11-23 19:48:49  ssrx
+  543  07-11-23 19:52:20  sudo nvim /etc/openvpn/client.conf
+  544  07-11-23 19:53:23  ssrx
+  545  07-11-23 19:53:31  sudo nvim /etc/openvpn/client.conf
+  546  07-11-23 19:53:55  ssrx
+  547  07-11-23 19:49:49  vprx
+  548  07-11-23 19:50:15  sudo nvim /etc/openvpn/client.conf
+  549  07-11-23 19:57:01  vprx
+  550  07-11-23 20:00:07  sudo openvpn --config /etc/openvpn/client.conf --mssfix 1300
+  551  07-11-23 20:00:38  sudo openvpn --config /etc/openvpn/client.conf
+  552  07-11-23 20:00:47  sudo openvpn --config /etc/openvpn/client.conf --mssfix 1300
+  553  07-11-23 20:00:59  sudo openvpn --config /etc/openvpn/client.conf --mssfix 1400
+  554  07-11-23 20:06:51  ssrx
+  555  07-11-23 20:48:12  ls
+  556  07-11-23 20:48:16  ssrx
+  557  07-11-23 21:59:39  ls
+  558  07-11-23 21:59:17  nvim alacritty-config/alacritty.yml
+  559  07-11-23 22:00:13  ls bash-tools/
+  560  07-11-23 22:00:15  ee $WAYLAND_DISPLAY
+  561  07-11-23 22:00:17  ee $XDG_SESSION_TYPE
+  562  07-11-23 22:00:21  ee $WAYLAND_DISPLAY
+  563  07-11-23 22:00:25  ls colorful-prompt/
+  564  07-11-23 22:00:27  ls bashrc/
+  565  07-11-23 22:00:38  ls curl-tools/
+  566  07-11-23 22:00:44  ls bashrc/recovery-codes/github.txt alacritty-config/
+  567  07-11-23 22:00:46  ls
+  568  07-11-23 22:00:47  ee $XDG_SESSION_TYPE
+  569  07-11-23 21:07:12  chmod +x rrtx.zsh
+  570  07-11-23 21:07:13  ls
+  571  07-11-23 21:07:15  ./rrtx.zsh
+  572  07-11-23 21:07:30  ping -s rtx
+  573  07-11-23 21:07:46  ping -q rtx
+  574  07-11-23 21:11:13  ./rrtx.zsh
+  575  07-11-23 22:03:04  ps -aux | grep openvpn
+  576  07-11-23 22:03:11  pkill -f openvpn
+  577  07-11-23 22:03:15  sudo pkill -f openvpn
+  578  07-11-23 22:03:18  ./rrtx.zsh
+  579  07-11-23 21:55:32  htop
+  580  07-11-23 21:55:54  ls
+  581  07-11-23 21:56:00  ssrx
+  582  07-11-23 22:05:17  ssrx
+  583  07-11-23 22:07:09  vprx
+  584  07-11-23 22:07:15  ssrx
+  585  07-11-23 20:51:38  sudo openvpn --config /etc/openvpn/client.conf
+  586  07-11-23 20:53:39  sudo nvim /etc/openvpn/client.conf
+  587  07-11-23 20:54:15  sudo openvpn --config /etc/openvpn/client.conf
+  588  07-11-23 20:54:24  sudo nvim /etc/openvpn/client.conf
+  589  07-11-23 21:03:57  sudo openvpn --config /etc/openvpn/client.conf
+  590  07-11-23 21:04:18  which zsh
+  591  07-11-23 21:05:20  nvim rrtx.zsh
+  592  07-11-23 22:20:23  ssrx
+  593  07-11-23 22:20:32  ping rtx
+  594  07-11-23 22:19:58  ssrx
+  595  07-11-23 22:20:02  vprx
+  596  08-11-23 01:05:22  ssrx
+  597  07-11-23 13:38:02  mount /dev/sda5 /mnt/ubu
+  598  07-11-23 13:38:05  sudo mount /dev/sda5 /mnt/ubu
+  599  07-11-23 13:38:09  cd /mnt/ubu/home/zeio/batch
+  600  07-11-23 13:38:30  source venv2/bin/activate
+  601  07-11-23 13:38:52  ls threads/0260-0279/ | wc -l
+  602  07-11-23 13:39:39  ./next.sh 260 14 6
+  603  07-11-23 15:57:40  ./push.sh 260
+  604  07-11-23 16:08:47  git commit -m 'feat(batch): added next batch'
+  605  07-11-23 16:08:54  gtu
+  606  07-11-23 16:09:59  ./next.sh 280
+  607  07-11-23 19:27:16  ./push.sh 280
+  608  07-11-23 19:31:59  emerge --ask --verbose --update --deep --newuse @world
+  609  07-11-23 19:32:06  sudo emerge --ask --verbose --update --deep --newuse @world
+  610  07-11-23 19:35:11  df -h .
+  611  07-11-23 19:35:18  cd ~
+  612  07-11-23 19:35:20  df -h .
+  613  07-11-23 19:35:24  cd -
+  614  07-11-23 19:35:25  ls
+  615  07-11-23 19:35:32  ./next.sh 300
+  616  08-11-23 00:20:11  ./push.sh 300
+  617  08-11-23 00:56:19  git commit -m 'feat(batch): added next batch'
+  618  08-11-23 00:56:30  gtu
+  619  08-11-23 01:05:09  vprx
+  620  08-11-23 15:32:19  ssrx
+  621  08-11-23 15:32:56  vprx
+  622  08-11-23 15:33:10  ping rtx
+  623  08-11-23 15:33:13  ssrx
+  624  08-11-23 15:33:01  ssrx
+  625  08-11-23 15:33:17  ping rt
+  626  08-11-23 15:33:21  ping rtx
+  627  08-11-23 18:00:31  ssrx
+  628  09-11-23 02:52:49  ps -aux | grep openvpn
+  629  09-11-23 02:53:35  ssrx
+  630  08-11-23 15:52:02  ps -aux | grep openvpn
+  631  08-11-23 23:24:50  htop
+  632  09-11-23 02:50:23  ./rrtx.zsh
+  633  09-11-23 02:52:05  ps -aux | grep openvpn
+  634  09-11-23 02:53:31  ./rrtx.zsh
+  635  09-11-23 02:58:57  ps -aux | grep openvpn
+  636  10-11-23 15:29:42  ssrx
+  637  10-11-23 15:23:22  ./rrtx.zsh
+  638  10-11-23 14:44:53  cd /mnt/ubu/home/zeio/batch
+  639  10-11-23 14:44:56  source venv2/bin/activate
+  640  10-11-23 14:47:37  python -m much pull https://2ch.hk/b/res/295658933.html ./test2.txt
+  641  10-11-23 14:47:47  cd much
+  642  10-11-23 14:47:48  ls
+  643  10-11-23 14:47:50  cd ..
+  644  10-11-23 14:47:52  cd ../much
+  645  10-11-23 14:47:54  gtx
+  646  10-11-23 14:48:06  gts
+  647  10-11-23 14:48:08  nvim setup.py
+  648  10-11-23 14:48:16  sdsd
+  649  10-11-23 14:48:18  sdst
+  650  10-11-23 14:48:24  gtx
+  651  10-11-23 14:48:36  gtau
+  652  10-11-23 14:48:38  gts
+  653  10-11-23 14:48:39  gtxs
+  654  10-11-23 14:48:49  gtc 'feat(ssl-error): added ssl error handler'
+  655  10-11-23 14:48:53  gtu
+  656  10-11-23 14:48:56  twnu
+  657  10-11-23 14:49:38  gts
+  658  10-11-23 14:49:46  ege
+  659  10-11-23 19:29:26  ssrx
+  660  10-11-23 19:30:16  ls
+  661  11-11-23 05:45:08  ssrx
+  662  11-11-23 19:27:54  cd /tmp
+  663  11-11-23 19:27:58  nvim error.py
+  664  11-11-23 19:28:35  cd /tmp
+  665  11-11-23 19:32:19  python error.py
+  666  10-11-23 13:40:01  emerge --ask --verbose --update --deep --newuse @world
+  667  10-11-23 13:40:09  sudo emerge --ask --verbose --update --deep --newuse @world
+  668  11-11-23 05:50:14  egd
+  669  11-11-23 05:51:41  df -h .
+  670  11-11-23 05:51:59  nvim deleted-packages.txt
+  671  11-11-23 18:44:31  sudo emerge --ask --verbose --update --deep --newuse @world
+  672  11-11-23 18:45:59  egs
+  673  11-11-23 19:03:57  sudo emerge --ask --verbose --update --deep --newuse @world
+  674  11-11-23 22:02:46  etc-update
+  675  11-11-23 22:02:50  sudo etc-update
+  676  11-11-23 20:07:26  ssrx
+  677  11-11-23 20:07:42  cd shell
+  678  11-11-23 20:07:43  ls
+  679  11-11-23 20:07:45  gtx
+  680  11-11-23 20:08:10  gta emerge.sh
+  681  11-11-23 20:08:12  cat emerge.sh
+  682  11-11-23 20:08:18  gts
+  683  11-11-23 20:08:20  nvim emerge.sh
+  684  11-11-23 20:09:00  gtx
+  685  11-11-23 20:09:04  gtau
+  686  11-11-23 20:09:05  gts
+  687  11-11-23 20:09:17  gtc 'feat(emerge): added ego alias for emerge'
+  688  11-11-23 20:09:21  gtu
+  689  12-11-23 02:28:18  ssrx
+  690  10-11-23 14:38:25  sudo mount /dev/sda5 /mnt/ubu
+  691  10-11-23 14:38:29  cd /mnt/ubu/home/zeio/batch
+  692  10-11-23 14:38:33  ls
+  693  10-11-23 14:38:43  cd match
+  694  10-11-23 14:38:48  cd ../much/
+  695  10-11-23 14:38:57  source ../batch/venv2/bin/activate
+  696  10-11-23 14:39:07  nvim much/Fetcher.py
+  697  13-11-23 13:54:12  cat shell/emerge.sh
+  698  11-11-23 22:04:19  etc-update
+  699  11-11-23 22:04:24  sudo etc-update
+  700  11-11-23 22:05:19  sudo nvim /etc/hosts
+  701  11-11-23 22:05:31  sudo visudo
+  702  11-11-23 22:05:47  sudo etc
+  703  11-11-23 22:06:26  sudo etc-update
+  704  11-11-23 22:06:34  sudo nvim /etc/conf.d/display-manager
+  705  11-11-23 22:06:53  egs
+  706  11-11-23 22:08:51  egu
+  707  11-11-23 22:10:19  egd
+  708  11-11-23 22:10:54  cd ~/shell
+  709  11-11-23 22:10:55  gtd
+  710  11-11-23 22:11:03  rsrc
+  711  11-11-23 22:11:16  gtd
+  712  11-11-23 22:11:19  egd
+  713  11-11-23 22:12:49  emerge @preserved-rebuild
+  714  11-11-23 22:12:54  sudo emerge @preserved-rebuild
+  715  11-11-23 22:52:15  df -h .
+  716  12-11-23 03:41:19  ssrx
+  717  12-11-23 03:42:49  htop
+  718  13-11-23 02:18:13  ssrx
+  719  13-11-23 02:44:20  cd ~/bashrc
+  720  13-11-23 02:44:21  ls
+  721  13-11-23 02:44:34  ln $HOME/rrtx.zsh
+  722  13-11-23 02:44:38  cat rrtx.zsh
+  723  13-11-23 02:44:41  gts
+  724  13-11-23 02:44:44  gta rrtx.zsh
+  725  13-11-23 02:44:45  gts
+  726  13-11-23 02:44:56  gtc 'feat(rrtx): added script for restarting rtx'
+  727  13-11-23 02:45:00  gtu
+  728  13-11-23 03:51:59  ssrx
+  729  13-11-23 03:53:09  tmux a
+  730  13-11-23 13:37:38  ssrx
+  731  13-11-23 13:38:52  ping isst.ml
+  732  13-11-23 17:20:20  ssrx
+  733  13-11-23 17:23:27  htop
+  734  14-11-23 00:16:31  ssrx
+  735  14-11-23 02:36:28  tmux a
+  736  14-11-23 19:11:42  ssrx
+  737  14-11-23 19:15:58  OA
+  738  14-11-23 19:42:09  ssrx
+  739  14-11-23 19:44:11  cd batch
+  740  14-11-23 23:52:42  ssrx
+  741  15-11-23 00:19:51  s
+  742  15-11-23 00:38:58  ssrx
+  743  15-11-23 00:41:27  tmux a
+  744  15-11-23 02:36:29  ssrx
+  745  14-11-23 02:37:31  cd /mnt/ubu/home/zeio/batch
+  746  14-11-23 02:37:49  ls -alh threads/0000-0019/ | grep 120084999
+  747  14-11-23 02:38:03  nvim threads/0000-0019/120084999.txt
+  748  14-11-23 19:26:59  ping hf.co
+  749  14-11-23 19:27:18  cd ~
+  750  14-11-23 19:27:20  git clone git@hf.co:datasets/zeio/branch.git
+  751  14-11-23 19:28:56  curl hf.co
+  752  14-11-23 19:29:00  ping hf.co
+  753  14-11-23 20:14:11  htop
+  754  15-11-23 02:45:42  ssrx
+  755  16-11-23 14:09:03  htop
+  756  16-11-23 15:17:36  ege
+  757  16-11-23 18:59:43  ssrx
+  758  13-11-23 13:51:45  sudo nvim /etc/portage/make.conf 
+  759  13-11-23 13:53:04  egu
+  760  13-11-23 13:56:17  equery
+  761  13-11-23 13:56:44  ega app-portage/gentoolkit
+  762  13-11-23 13:57:33  df -h .
+  763  13-11-23 13:57:59  equery u www-client/chromium | grep -i l10n
+  764  13-11-23 13:58:07  equery u www-client/chromium
+  765  13-11-23 13:58:58  ega www-client/chromium
+  766  13-11-23 14:00:35  sudo nvim /etc/portage/package.use/chromium
+  767  13-11-23 14:00:42  ega www-client/chromium
+  768  16-11-23 18:59:37  sudo openvpn --config /etc/openvpn/client.conf
+  769  16-11-23 18:59:57  sudo openvpn --config /etc/openvpn/nano_full.ovpn
+  770  16-11-23 19:00:06  sudo openvpn --config /etc/openvpn/nanobranches.ovpn
+  771  17-11-23 02:42:23  ls /home/cait/.mozilla/firefox/tztkxjzk.default-esr
+  772  17-11-23 02:42:35  mkdir /home/cait/.mozilla/firefox/tztkxjzk.default-esr/chrome
+  773  17-11-23 02:42:44  nvim /home/cait/.mozilla/firefox/tztkxjzk.default-esr/chrome/userChrome.css
+  774  17-11-23 03:25:40  ls
+  775  17-11-23 03:25:43  cd gen2/
+  776  17-11-23 03:25:43  ls
+  777  17-11-23 03:25:45  nvim README.md
+  778  17-11-23 03:31:51  gtx
+  779  17-11-23 03:31:56  gts
+  780  17-11-23 03:31:58  gtau
+  781  17-11-23 03:31:58  gts
+  782  17-11-23 03:32:12  gtc 'feat(firefox): added firefox customization steps description'
+  783  17-11-23 03:32:17  gtu
+  784  17-11-23 03:32:21  gtd
+  785  17-11-23 03:32:29  git config pull.rebase false
+  786  17-11-23 03:32:31  gtu
+  787  17-11-23 03:32:37  gtd
+  788  17-11-23 03:32:42  nvim README.md
+  789  17-11-23 03:33:07  gts
+  790  17-11-23 03:33:12  gta README.md
+  791  17-11-23 03:33:38  cp ~/.mozilla/firefox/tztkxjzk.default-esr/chrome/userChrome.css ./
+  792  17-11-23 03:33:39  ls
+  793  17-11-23 03:33:42  gta userChrome.css
+  794  17-11-23 03:33:43  gts
+  795  17-11-23 03:33:47  gtc 'feat(firefox): added firefox customization steps description'
+  796  17-11-23 03:33:49  gtu
+  797  17-11-23 03:36:06  htop
+  798  16-11-23 14:09:57  df -h .
+  799  16-11-23 14:35:33  htop
+  800  16-11-23 14:41:02  sudo nvim /etc/portage/package.use/firefox
+  801  16-11-23 19:10:29  sudo cat /etc/client.conf
+  802  16-11-23 19:10:39  sudo cat /etc/openvpn/client.conf
+  803  16-11-23 21:56:56  cd /tmp
+  804  16-11-23 21:57:01  du -h . -d 1
+  805  16-11-23 21:57:14  cd -
+  806  16-11-23 14:41:14  ega www-client/firefox
+  807  17-11-23 04:19:16  ega gui-wm/hyprland
+  808  17-11-23 04:20:36  cd /etc/portage/package.accept_keywords/
+  809  17-11-23 04:20:36  ls
+  810  17-11-23 04:20:39  ls -alh
+  811  17-11-23 04:20:41  cd ..
+  812  17-11-23 04:20:41  ls
+  813  17-11-23 04:20:46  cd package.mask/
+  814  17-11-23 04:20:47  ls
+  815  17-11-23 04:20:51  cd ../package.use/
+  816  17-11-23 04:20:52  ls
+  817  17-11-23 04:21:00  grep -rn '~amd'
+  818  17-11-23 04:21:04  cd -
+  819  17-11-23 04:21:58  sudo nvim /etc/portage/package.accept_keywords/hyprland
+  820  17-11-23 04:22:12  cd ~
+  821  17-11-23 04:22:17  ega gui-wm/hyprland
+  822  17-11-23 04:23:01  sudo nvim /etc/portage/package.accept_keywords/hyprland
+  823  17-11-23 04:23:14  ega gui-wm/hyprland
+  824  17-11-23 04:23:42  sudo nvim /etc/portage/package.accept_keywords/hyprland
+  825  17-11-23 04:23:50  ega gui-wm/hyprland
+  826  17-11-23 04:24:16  sudo nvim /etc/portage/package.accept_keywords/hyprland
+  827  17-11-23 04:24:23  ega gui-wm/hyprland
+  828  17-11-23 05:17:42  echo x11-libs/cairo X glib opengl svg >> /etc/portage/package.use/qtile
+  829  17-11-23 05:17:46  sudo echo x11-libs/cairo X glib opengl svg >> /etc/portage/package.use/qtile
+  830  17-11-23 05:17:55  sudo touch /etc/portage/package.use/qtile
+  831  17-11-23 05:17:57  sudo echo x11-libs/cairo X glib opengl svg >> /etc/portage/package.use/qtile
+  832  17-11-23 05:18:09  sudo bash -c 'echo x11-libs/cairo X glib opengl svg >> /etc/portage/package.use/qtile'
+  833  17-11-23 05:18:13  cat /etc/portage/package.use/qtile
+  834  17-11-23 05:24:51  ega gui-apps/waybar
+  835  10-11-23 13:40:44  cd shell/
+  836  10-11-23 13:40:45  gtd
+  837  10-11-23 13:40:54  nvim emerge.sh
+  838  10-11-23 19:28:59  cd ..
+  839  15-11-23 02:45:39  ./rrtx.zsh
+  840  15-11-23 04:42:46  df -h .
+  841  15-11-23 04:43:13  cd /
+  842  15-11-23 04:43:16  du -h . -d 1
+  843  15-11-23 04:43:21  sudo du -h . -d 1
+  844  15-11-23 04:43:26  sudo sc
+  845  15-11-23 04:43:29  sudo du -h . -d 1
+  846  15-11-23 04:44:44  cd var
+  847  15-11-23 04:44:47  du -h . -d 1
+  848  15-11-23 04:44:51  sudo du -h . -d 1
+  849  15-11-23 04:45:07  cd tmp
+  850  15-11-23 04:45:08  ls
+  851  15-11-23 04:45:15  du -h . -d 1
+  852  15-11-23 04:45:21  sudo du -h . -d 1
+  853  15-11-23 04:45:37  ls portage
+  854  15-11-23 04:45:45  ls portage/www-client/
+  855  15-11-23 04:45:49  ls portage/www-client/chromium-118.0.5993.117/
+  856  15-11-23 04:45:53  sudo ls portage/www-client/chromium-118.0.5993.117/
+  857  15-11-23 12:24:27  cd ~
+  858  15-11-23 12:24:30  ssrx
+  859  15-11-23 12:24:36  ./rrtx.zsh
+  860  16-11-23 19:49:23  ege
+  861  16-11-23 21:57:30  cd /var/tmp/portage
+  862  16-11-23 21:57:36  du -h . -d 1
+  863  17-11-23 04:18:47  df -h .
+  864  18-11-23 00:58:46  firefox
+  865  18-11-23 00:54:13  ega gui-apps/waybar
+  866  18-11-23 01:06:31  sudo rc-service gdm status
+  867  18-11-23 01:06:39  sudo rc-service list
+  868  18-11-23 01:06:47  sudo rc-service gnome-desktop status
+  869  18-11-23 01:06:53  sudo rc-service gnome-shell status
+  870  18-11-23 01:07:04  cd shell/
+  871  18-11-23 01:07:11  grep -rn 'hyber'
+  872  18-11-23 01:07:16  grep -rn 'suspend'
+  873  18-11-23 01:07:21  nvim suspend.sh
+  874  18-11-23 01:51:47  ls
+  875  18-11-23 01:51:35  ls
+  876  18-11-23 01:54:19  firefox
+  877  18-11-23 02:00:12  nvim alacritty.yml
+  878  18-11-23 02:00:41  ls
+  879  18-11-23 02:03:28  cd alacritty
+  880  18-11-23 02:03:29  ls
+  881  18-11-23 02:03:31  gtx
+  882  18-11-23 02:03:49  gtc 'feat(hyprland): tweaked configuration for hyprland'
+  883  18-11-23 02:06:28  export DISPLAY=''
+  884  18-11-23 02:06:29  gtc 'feat(hyprland): tweaked configuration for hyprland'
+  885  18-11-23 02:07:01  pinentry-program
+  886  18-11-23 02:07:05  pinentry
+  887  18-11-23 02:07:14  pinentry-tty
+  888  18-11-23 02:07:45  cd ..
+  889  18-11-23 02:08:12  sudo update-alternatives
+  890  18-11-23 02:08:35  nvim ~/.gnupg/gpg-agent.conf
+  891  18-11-23 02:08:55  gtc 'feat(hyprland): tweaked configuration for hyprland'
+  892  18-11-23 02:08:59  cd alacritty-config/
+  893  18-11-23 02:09:01  gtc 'feat(hyprland): tweaked configuration for hyprland'
+  894  18-11-23 02:16:42  pwd
+  895  18-11-23 02:16:44  ls
+  896  18-11-23 02:16:31  htop
+  897  18-11-23 02:09:38  git commit -v 'feat(hyprland): tweaked configuration for hyprland'
+  898  18-11-23 02:09:45  git commit -c 'feat(hyprland): tweaked configuration for hyprland' -v
+  899  18-11-23 02:09:49  git commit -c 'feat(hyprland): tweaked configuration for hyprland'
+  900  18-11-23 02:09:59  git commit -m 'feat(hyprland): tweaked configuration for hyprland' -v
+  901  18-11-23 02:10:06  git commit -m 'feat(hyprland): tweaked configuration for hyprland' --verbose
+  902  18-11-23 02:10:10  git commit -m 'feat(hyprland): tweaked configuration for hyprland'
+  903  18-11-23 02:11:38  cd ..
+  904  18-11-23 02:11:43  cat .gnupg/gpg-agent.conf
+  905  18-11-23 02:11:49  which pinentry-tty
+  906  18-11-23 02:12:03  nvim .gnupg/gpg-agent.conf
+  907  18-11-23 02:12:22  echo RELOADAGENT | gpg-connect-agent
+  908  18-11-23 02:12:28  gpg2
+  909  18-11-23 02:12:37  cd alacritty-config/
+  910  18-11-23 02:12:41  git commit -m 'feat(hyprland): tweaked configuration for hyprland'
+  911  18-11-23 02:13:41  gtu
+  912  18-11-23 02:13:51  gtuoi hyprland
+  913  18-11-23 02:34:57  htop
+  914  18-11-23 02:21:03  ls
+  915  18-11-23 02:22:24  git init
+  916  18-11-23 02:22:46  gtrao git@github.com:zeionara/hypr.git
+  917  18-11-23 02:22:49  gts
+  918  18-11-23 02:22:52  gta hyprland.conf 
+  919  18-11-23 02:22:53  gts
+  920  18-11-23 02:22:58  nvim README.md
+  921  18-11-23 02:27:55  gtx
+  922  18-11-23 02:27:58  gta README.md
+  923  18-11-23 02:27:59  gts
+  924  18-11-23 02:28:01  gta setup.sh
+  925  18-11-23 02:28:02  gts
+  926  18-11-23 02:28:05  ls
+  927  18-11-23 02:28:10  htop
+  928  18-11-23 02:28:21  ls
+  929  18-11-23 02:28:25  gts
+  930  18-11-23 02:28:37  gtc 'init(repo): initial commit'
+  931  18-11-23 02:28:53  gtuoi
+  932  18-11-23 02:29:21  nvim README.md
+  933  18-11-23 02:30:22  gts
+  934  18-11-23 02:30:23  gtx
+  935  18-11-23 02:30:27  gta README.md
+  936  18-11-23 02:30:28  gts
+  937  18-11-23 02:30:41  gtc 'fix(readme): added repo clone destination'
+  938  18-11-23 02:30:42  gtu
+  939  18-11-23 02:30:49  cd ~
+  940  18-11-23 02:30:49  ls
+  941  18-11-23 02:30:54  cat .gnupg/gpg-agent.conf
+  942  18-11-23 02:31:10  mkdir gen2/.gnupg
+  943  18-11-23 02:31:15  cp .gnupg/gpg-agent.conf gen2/.gnupg/
+  944  18-11-23 02:31:19  nvim gen2/README.md
+  945  18-11-23 02:32:56  cd gen2
+  946  18-11-23 02:33:05  gts
+  947  18-11-23 02:33:07  ls
+  948  18-11-23 02:33:08  gt
+  949  18-11-23 02:33:10  gtx
+  950  18-11-23 02:33:14  gts
+  951  18-11-23 02:33:20  gta README.md .gnupg/
+  952  18-11-23 02:33:21  gts
+  953  18-11-23 02:33:41  gtc 'feat(gpg2): added instructions on enabling terminal-based passphrase reader for gpg2'
+  954  18-11-23 02:33:43  gtu
+  955  18-11-23 02:33:48  htop
+  956  18-11-23 02:33:56  ls
+  957  18-11-23 02:34:09  neofetch
+  958  18-11-23 02:37:00  sudo nvim /etc/environment
+  959  18-11-23 02:32:38  history
+  960  18-11-23 02:39:08  nvim gen2/README.md
+  961  18-11-23 02:39:11  ls
+  962  18-11-23 02:39:13  nvim hyprland.conf
+  963  18-11-23 02:41:07  ls
+  964  18-11-23 02:41:43  nvim hyprland.conf
+  965  18-11-23 01:09:11  ls
+  966  18-11-23 01:10:10  Hyprland
+  967  18-11-23 01:11:37  cd .config/hypr/
+  968  18-11-23 01:11:37  ls
+  969  18-11-23 01:14:20  nvim hyprland.conf
+  970  18-11-23 01:14:35  Hyprland
+  971  18-11-23 01:15:13  nvim hyprland.conf
+  972  18-11-23 01:15:42  nvim ~/shell/suspend.sh
+  973  18-11-23 01:15:53  hr
+  974  18-11-23 01:15:55  rsrc
+  975  18-11-23 01:15:59  hr
+  976  18-11-23 01:16:48  nvim hyprland.conf
+  977  18-11-23 01:17:27  hr | tee log.txt
+  978  18-11-23 01:17:46  nvim log.txt
+  979  18-11-23 01:18:20  ls
+  980  18-11-23 01:18:22  hr
+  981  18-11-23 01:19:06  rm log.txt
+  982  18-11-23 01:19:09  nvim hyprland.conf
+  983  18-11-23 01:20:44  hr
+  984  18-11-23 01:20:51  nvim hyprland.conf
+  985  18-11-23 01:21:03  hr
+  986  18-11-23 01:21:23  nvim hyprland.conf
+  987  18-11-23 01:22:15  hr
+  988  18-11-23 01:22:29  nvim hyprland.conf
+  989  18-11-23 01:23:26  hr
+  990  18-11-23 01:26:24  nvim hyprland.conf
+  991  18-11-23 01:26:32  hr
+  992  18-11-23 01:30:28  alacritty --version
+  993  18-11-23 01:30:32  hr
+  994  18-11-23 01:31:21  alacritty
+  995  18-11-23 01:31:51  nvim hyprland.conf
+  996  18-11-23 01:32:31  hr
+  997  18-11-23 01:33:04  nvim hyprland.conf
+  998  18-11-23 01:33:26  nvim ~/.config/alacritty/alacritty.yml
+  999  18-11-23 01:34:54  hr
+ 1000  18-11-23 01:36:49  nvim ~/.config/alacritty/alacritty.yml
+ 1001  18-11-23 01:37:14  cd /etc/portage/package.accept_keywords/
+ 1002  18-11-23 01:37:14  ls
+ 1003  18-11-23 01:37:19  cp hyprland alacritty
+ 1004  18-11-23 01:37:23  sudo cp hyprland alacritty
+ 1005  18-11-23 01:37:26  sudo nvim alacritty
+ 1006  18-11-23 01:38:05  cd ~
+ 1007  18-11-23 01:38:16  egs
+ 1008  18-11-23 01:41:01  ega alacritty
+ 1009  18-11-23 01:51:26  hr
+ 1010  18-11-23 01:52:04  nvim .config/hypr/hyprland.conf
+ 1011  18-11-23 01:54:00  hr
+ 1012  18-11-23 01:57:32  nvim .config/hypr/hyprland.conf
+ 1013  18-11-23 01:57:39  nvim ~/.config/alacritty/alacritty.yml
+ 1014  18-11-23 01:57:58  cd alacritty-config/
+ 1015  18-11-23 01:57:59  gtx
+ 1016  18-11-23 01:58:05  cd ..
+ 1017  18-11-23 01:58:06  ls
+ 1018  18-11-23 01:58:15  nvim .config/hypr/hyprland.conf
+ 1019  18-11-23 01:59:00  hr
+ 1020  18-11-23 01:59:26  nvim .config/alacritty/alacritty.yml
+ 1021  18-11-23 01:59:37  cd alacritty-config/
+ 1022  18-11-23 01:59:38  gtx
+ 1023  18-11-23 01:59:39  hr
+ 1024  18-11-23 02:01:28  gtx
+ 1025  18-11-23 02:01:36  gtbi hyprland
+ 1026  18-11-23 02:01:38  gts
+ 1027  18-11-23 02:01:41  gta alacritty.yml
+ 1028  18-11-23 02:01:41  gts
+ 1029  18-11-23 02:01:54  gtc 'feat(hyprland): initialized config for hyprland'
+ 1030  18-11-23 02:02:25  echo $GPG_TTY
+ 1031  18-11-23 02:02:33  echo $tty
+ 1032  18-11-23 02:02:38  echo $TTY
+ 1033  18-11-23 02:02:45  gpg2
+ 1034  18-11-23 02:02:57  gtc 'feat(hyprland): initialized config for hyprland'
+ 1035  18-11-23 02:03:18  hr
+ 1036  18-11-23 02:17:14  nvim hyprland.conf
+ 1037  18-11-23 02:17:23  cd ~/.config/hypr/
+ 1038  18-11-23 02:17:23  ls
+ 1039  18-11-23 02:17:25  nvim hyprland.conf
+ 1040  18-11-23 02:17:45  hr
+ 1041  18-11-23 02:18:21  nvim hyprland.conf
+ 1042  18-11-23 02:20:28  hr
+ 1043  18-11-23 02:37:20  nvim hyprland.conf
+ 1044  18-11-23 02:37:49  htop
+ 1045  18-11-23 02:38:03  hr
+ 1046  18-11-23 02:40:26  ls
+ 1047  18-11-23 02:40:28  nvim hyprland.conf
+ 1048  18-11-23 02:40:58  hr
+ 1049  18-11-23 02:42:16  gtx
+ 1050  18-11-23 02:42:20  gts
+ 1051  18-11-23 02:42:21  gtau
+ 1052  18-11-23 02:42:22  gts
+ 1053  18-11-23 02:42:57  gtc 'feat(hyprland): disabled animations and blur'
+ 1054  18-11-23 02:42:59  gtu
+ 1055  18-11-23 02:44:16  hr
+ 1056  18-11-23 02:48:13  reboot
+ 1057  18-11-23 02:48:16  sudo reboot
+ 1058  18-11-23 01:45:29  htop
+ 1059  18-11-23 02:49:38  ls
+ 1060  18-11-23 02:49:40  pwd
+ 1061  18-11-23 02:49:41  ls
+ 1062  18-11-23 02:49:45  echo foo bar
+ 1063  18-11-23 02:49:47  ls
+ 1064  18-11-23 02:49:51  htop
+ 1065  18-11-23 02:50:12  ls
+ 1066  18-11-23 02:50:16  pwd
+ 1067  18-11-23 02:50:18  ls
+ 1068  18-11-23 02:50:25  echo $XDG_SESSION_TYPE
+ 1069  18-11-23 02:50:27  ls
+ 1070  18-11-23 03:27:36  htop
+ 1071  18-11-23 02:57:13  gnome-terminal
+ 1072  18-11-23 02:57:30  ls
+ 1073  18-11-23 03:02:48  nvim ~/.config/hypr/hyprland.conf
+ 1074  18-11-23 03:10:46  ls
+ 1075  18-11-23 03:10:49  print foo
+ 1076  18-11-23 03:10:52  echo foo
+ 1077  18-11-23 03:11:00  htop
+ 1078  18-11-23 03:14:22  ls
+ 1079  18-11-23 03:19:17  nvim hyprland.conf
+ 1080  18-11-23 03:21:43  ls
+ 1081  18-11-23 03:21:44  gtx
+ 1082  18-11-23 03:21:49  gts
+ 1083  18-11-23 03:21:51  gtx
+ 1084  18-11-23 03:21:54  gts
+ 1085  18-11-23 03:21:55  gtau
+ 1086  18-11-23 03:21:56  gts
+ 1087  18-11-23 03:22:16  gtc 'feat(repeat-delay): re-enabled animations and blur, added repeat delay for keyboard'
+ 1088  18-11-23 03:22:20  gtu
+ 1089  18-11-23 03:22:25  htop
+ 1090  18-11-23 03:23:44  nvim hyprland.conf
+ 1091  18-11-23 03:27:00  gts
+ 1092  18-11-23 03:27:01  gtx
+ 1093  18-11-23 03:27:03  gtau
+ 1094  18-11-23 03:27:10  gts
+ 1095  18-11-23 03:27:25  gtc 'fix(repeat-rate): decreased repeat-rate a bit'
+ 1096  18-11-23 03:27:26  gtu
+ 1097  18-11-23 03:27:49  ls
+ 1098  18-11-23 03:27:57  htop
+ 1099  18-11-23 03:29:13  ls
+ 1100  18-11-23 03:29:14  gts
+ 1101  18-11-23 03:29:20  cd ~/gen2/
+ 1102  18-11-23 03:29:20  gts
+ 1103  18-11-23 03:29:22  gtx
+ 1104  18-11-23 03:29:27  cp ~/.mozilla/firefox/tztkxjzk.default-esr/chrome/userChrome.css ./
+ 1105  18-11-23 03:29:28  gtx
+ 1106  18-11-23 03:29:30  gts
+ 1107  18-11-23 03:29:32  gtau
+ 1108  18-11-23 03:29:32  gts
+ 1109  18-11-23 03:30:01  gtc 'sync(gradient): synchronised gradient colors with hyprland default color scheme'
+ 1110  18-11-23 03:30:03  gtu
+ 1111  18-11-23 03:30:14  htop
+ 1112  18-11-23 03:30:57  sudo rc-service gdm stop
+ 1113  18-11-23 03:31:07  sudo rc-service desktop-manager stop
+ 1114  18-11-23 03:31:14  sudo rc-service gdm stop
+ 1115  18-11-23 03:31:44  rc-update show
+ 1116  18-11-23 03:32:43  ls
+ 1117  18-11-23 03:33:59  brightnessct
+ 1118  18-11-23 03:34:34  pulseaudio
+ 1119  18-11-23 03:35:48  amixer
+ 1120  18-11-23 03:36:37  pactl set-sink-volume 0 -15%
+ 1121  18-11-23 03:36:43  pactl set-sink-volume 0 +15%
+ 1122  18-11-23 03:36:47  pactl set-sink-volume 0 -15%
+ 1123  18-11-23 03:36:49  pactl set-sink-volume 0 +15%
+ 1124  18-11-23 03:37:09  nvim ~/.config/hypr/hyprland.conf
+ 1125  18-11-23 03:41:29  cat /sys/class/backlight/radeon_bl0/actual_brightness
+ 1126  18-11-23 03:41:47  cat /sys/class/backlight/radeon_bl0/brightness
+ 1127  18-11-23 03:41:56  echo 122 > /sys/class/backlight/radeon_bl0/brightness
+ 1128  18-11-23 03:42:00  sudo echo 122 > /sys/class/backlight/radeon_bl0/brightness
+ 1129  18-11-23 03:42:11  sudo bash -c 'echo 122 > /sys/class/backlight/radeon_bl0/brightness'
+ 1130  18-11-23 03:42:17  sudo bash -c 'echo 110 > /sys/class/backlight/radeon_bl0/brightness'
+ 1131  18-11-23 03:42:22  sudo bash -c 'echo 123 > /sys/class/backlight/radeon_bl0/brightness'
+ 1132  18-11-23 03:43:07  sudo bash -c 'echo $((cat /sys/class/backlight/radeon_bl0/brightness))'
+ 1133  18-11-23 03:43:15  sudo bash -c 'echo $(cat /sys/class/backlight/radeon_bl0/brightness)'
+ 1134  18-11-23 03:43:39  sudo bash -c 'brighness=$(cat /sys/class/backlight/radeon_bl0/brightness); echo $brightness'
+ 1135  18-11-23 03:43:53  sudo bash -c 'brightness=$(cat /sys/class/backlight/radeon_bl0/brightness); echo $brightness'
+ 1136  18-11-23 03:44:05  sudo bash -c 'brightness=$(cat /sys/class/backlight/radeon_bl0/brightness); echo $((brightness + 5))'
+ 1137  18-11-23 03:44:38  sudo bash -c 'brightness=$(cat /sys/class/backlight/radeon_bl0/brightness); echo $((brightness + 5)) > /sys/class/backlight/radeon_bl0/brightness'
+ 1138  18-11-23 03:45:25  nvim ~/.config/hypr/hyprland.conf
+ 1139  18-11-23 03:46:53  gts
+ 1140  18-11-23 03:47:39  ls
+ 1141  18-11-23 03:47:40  htop
+ 1142  18-11-23 03:47:58  cd ~/.config/hypr/
+ 1143  18-11-23 03:47:58  ls
+ 1144  18-11-23 03:47:59  gtx
+ 1145  18-11-23 03:48:14  gtbi g5045
+ 1146  18-11-23 03:48:16  gts
+ 1147  18-11-23 03:48:17  gtx
+ 1148  18-11-23 03:48:37  gtc 'feat(brightness): added bindings for brightness and volume adjustment keys'
+ 1149  18-11-23 03:48:39  gtau
+ 1150  18-11-23 03:48:40  gtc 'feat(brightness): added bindings for brightness and volume adjustment keys'
+ 1151  18-11-23 03:48:43  gtu
+ 1152  18-11-23 03:48:46  gtuoi
+ 1153  18-11-23 03:48:56  gtuoi g5045
+ 1154  18-11-23 03:51:59  nvim ~/.config/hypr/hyprland.conf
+ 1155  18-11-23 03:52:28  gtx
+ 1156  18-11-23 03:52:30  gts
+ 1157  18-11-23 03:52:31  gtau
+ 1158  18-11-23 03:52:32  gts
+ 1159  18-11-23 03:52:42  gtc 'feat(volume): tweaked volume update step'
+ 1160  18-11-23 03:52:44  gtu
+ 1161  18-11-23 20:18:19  htop
+ 1162  18-11-23 20:24:05  nvim ~/.config/hypr/hyprland.conf
+ 1163  18-11-23 20:41:14  gtx
+ 1164  18-11-23 20:41:16  gts
+ 1165  18-11-23 20:41:17  gtau
+ 1166  18-11-23 20:41:18  gts
+ 1167  18-11-23 20:41:33  gtc 'feat(movewindow): added key bindings for moving windows'
+ 1168  18-11-23 20:41:36  gtu
+ 1169  18-11-23 03:50:20  neofetch
+ 1170  18-11-23 04:38:48  nvim ~/.config/hypr/hyprland.conf
+ 1171  18-11-23 17:36:08  ls
+ 1172  18-11-23 17:36:09  gtx
+ 1173  18-11-23 17:36:11  gtau
+ 1174  18-11-23 17:36:11  gts
+ 1175  18-11-23 17:36:19  gtc 'feat(suspend): added aliases for suspending gentoo'
+ 1176  18-11-23 17:36:29  gtu
+ 1177  18-11-23 18:00:27  date
+ 1178  18-11-23 19:14:55  htop
+ 1179  18-11-23 20:09:05  ls /dev/us
+ 1180  18-11-23 20:09:08  ls /dev/usb
+ 1181  18-11-23 20:09:11  ls /dev
+ 1182  18-11-23 20:09:33  fdisk -l
+ 1183  18-11-23 20:12:18  sudo fdisk -l
+ 1184  18-11-23 20:12:21  ls /dev
+ 1185  18-11-23 20:13:54  equery u gnome-base/gvfs
+ 1186  18-11-23 20:16:29  ega sys-fs/mtpfs
+ 1187  18-11-23 20:27:39  gpasswd --help
+ 1188  18-11-23 20:27:57  gpasswd -a cait plugdev
+ 1189  18-11-23 20:28:01  sudo gpasswd -a cait plugdev
+ 1190  18-11-23 20:28:13  sudo nvim /etc/fuse.conf 
+ 1191  18-11-23 20:28:54  mkdir ~/android
+ 1192  18-11-23 20:28:55  cd ~
+ 1193  18-11-23 20:28:56  ls
+ 1194  18-11-23 20:28:58  ls android/
+ 1195  18-11-23 20:29:38  mtpfs android
+ 1196  18-11-23 20:51:35  mtpfs --help
+ 1197  18-11-23 20:51:44  mtpfs android/
+ 1198  19-11-23 02:02:22  waybar
+ 1199  19-11-23 03:58:16  ls
+ 1200  18-11-23 20:44:07  curl http://arhivach.top/
+ 1201  18-11-23 20:44:22  htop
+ 1202  19-11-23 01:42:20  nvim hyprland.conf
+ 1203  19-11-23 01:44:27  gtx
+ 1204  19-11-23 01:44:30  gts
+ 1205  19-11-23 01:44:32  gtau
+ 1206  19-11-23 01:44:32  gts
+ 1207  19-11-23 01:44:46  gtc 'feat(kb-layout): enabled multiple keyboard layouts'
+ 1208  19-11-23 01:44:49  gtu
+ 1209  19-11-23 01:49:26  cd ..
+ 1210  19-11-23 01:49:26  ls
+ 1211  19-11-23 01:49:29  mkdir waybar
+ 1212  19-11-23 01:49:30  cd waybar
+ 1213  19-11-23 01:50:10  cp /etc/xdg/waybar/config ./
+ 1214  19-11-23 01:50:10  ls
+ 1215  19-11-23 01:52:33  waybar
+ 1216  19-11-23 01:56:14  cp /etc/xdg/waybar/style.css ./
+ 1217  19-11-23 01:56:18  waybar
+ 1218  19-11-23 01:56:26  nvim style.css
+ 1219  19-11-23 01:56:46  waybar
+ 1220  19-11-23 01:56:52  nvim style.css
+ 1221  19-11-23 02:07:49  equery u gui-apps/waybar
+ 1222  19-11-23 02:14:01  nvim ../alacritty/alacritty.yml
+ 1223  19-11-23 02:15:00  htop
+ 1224  19-11-23 02:19:24  nvim style.css
+ 1225  19-11-23 02:19:39  nvim config
+ 1226  19-11-23 02:19:46  nvim style.css
+ 1227  19-11-23 02:48:28  htop
+ 1228  19-11-23 02:53:29  ls
+ 1229  19-11-23 02:53:34  nvim colors.css
+ 1230  19-11-23 02:55:15  nvim style.css
+ 1231  19-11-23 02:55:46  ls
+ 1232  19-11-23 02:55:49  cat colors.css
+ 1233  19-11-23 02:58:16  nvim style.css
+ 1234  19-11-23 02:59:29  equery u gui-apps/waybar
+ 1235  19-11-23 03:01:43  nvim config
+ 1236  19-11-23 03:55:06  nvim style.css
+ 1237  19-11-23 03:58:10  tmux
+ 1238  19-11-23 03:58:29  nvim
+ 1239  19-11-23 03:58:38  sudo nvim
+ 1240  19-11-23 03:58:46  nvim
+ 1241  19-11-23 03:59:05  sudo nvim ~/.config/nvim/init.lua
+ 1242  19-11-23 04:06:59  nvim ~/.config/nvim/init.lua
+ 1243  19-11-23 04:07:58  gtx
+ 1244  19-11-23 04:08:03  cd ~/.config/nvim/
+ 1245  19-11-23 04:08:03  gts
+ 1246  19-11-23 04:08:05  gtx
+ 1247  19-11-23 04:08:14  gts
+ 1248  19-11-23 04:08:16  gtd
+ 1249  19-11-23 04:08:37  git stash install.sh
+ 1250  19-11-23 04:08:38  ls
+ 1251  19-11-23 04:08:45  git stash push install.sh
+ 1252  19-11-23 04:08:47  gtd
+ 1253  19-11-23 04:08:52  gts
+ 1254  19-11-23 04:08:53  gtx
+ 1255  19-11-23 04:08:57  gta init.lua
+ 1256  19-11-23 04:08:59  gts
+ 1257  19-11-23 04:09:25  gtc 'feat(transparency): enabled nightfox transparency to disable non-opaque backgrounds in alacritty'
+ 1258  19-11-23 04:09:29  gtu
+ 1259  19-11-23 04:20:39  htop
+ 1260  19-11-23 04:38:28  nvim 
+ 1261  19-11-23 04:38:37  nvim ../hypr/hyprland.conf
+ 1262  18-11-23 20:48:33  cd ~
+ 1263  18-11-23 20:48:35  ls android/
+ 1264  18-11-23 21:04:23  ls
+ 1265  18-11-23 21:04:24  pwd
+ 1266  18-11-23 23:06:19  htop
+ 1267  18-11-23 23:31:41  ls
+ 1268  18-11-23 23:35:05  date
+ 1269  19-11-23 02:05:21  nvim /etc/portage/package.use/firefox
+ 1270  19-11-23 02:06:35  sudo nvim /etc/portage/package.use/firefox
+ 1271  19-11-23 02:06:54  ega gui-apps/waybar
+ 1272  19-11-23 02:07:22  ega --newuse gui-apps/waybar
+ 1273  19-11-23 02:08:45  locate waybar
+ 1274  19-11-23 02:08:56  sudo nvim /etc/portage/package.use/firefox
+ 1275  19-11-23 02:09:11  cat /etc/portage/package.use/waybar
+ 1276  19-11-23 02:09:21  ega gui-apps/waybar
+ 1277  19-11-23 02:10:19  sudo nvim /etc/portage/package.use/waybar
+ 1278  19-11-23 02:10:34  ega gui-apps/waybar
+ 1279  19-11-23 02:45:46  \twaybar
+ 1280  19-11-23 02:46:08  sudo nvim /etc/portage/package.use/waybar
+ 1281  19-11-23 02:46:21  ega gui-apps/waybar
+ 1282  19-11-23 02:58:46  waybar
+ 1283  19-11-23 02:59:36  ega gui-apps/waybar
+ 1284  19-11-23 03:41:46  waybar
+ 1285  19-11-23 03:42:04  cat /home/cait/.config/waybar/colors.css
+ 1286  19-11-23 04:09:47  waybar
+ 1287  19-11-23 04:09:40  cd ../waybar
+ 1288  19-11-23 04:09:40  ls
+ 1289  19-11-23 04:09:44  gts
+ 1290  19-11-23 04:16:42  git init
+ 1291  19-11-23 04:16:48  gtrao xdg-desktop-portal-hyprland
+ 1292  19-11-23 04:16:49  ls
+ 1293  19-11-23 04:17:03  cp ../hypr/README.md ./
+ 1294  19-11-23 04:17:04  nvim README.md
+ 1295  19-11-23 04:17:42  cp ../hypr/setup.sh ./
+ 1296  19-11-23 04:17:43  ls
+ 1297  19-11-23 04:17:46  nvim setup.sh
+ 1298  19-11-23 04:19:06  gts
+ 1299  19-11-23 04:19:09  nvim README.md
+ 1300  19-11-23 04:19:11  gts
+ 1301  19-11-23 04:19:13  gtau
+ 1302  19-11-23 04:19:13  gts
+ 1303  19-11-23 04:19:16  gtaa
+ 1304  19-11-23 04:19:17  gts
+ 1305  19-11-23 04:19:25  gtc 'init(repo): initial commit'
+ 1306  19-11-23 04:19:26  gtu
+ 1307  19-11-23 04:19:28  gtuoi
+ 1308  19-11-23 04:19:46  gtrsuo git@github.com:zeionara/waybar.git
+ 1309  19-11-23 04:19:47  gtuoi
+ 1310  19-11-23 04:40:15  nvim ~/.config/hypr/hyprland.conf
+ 1311  19-11-23 05:58:58  ssrx
+ 1312  19-11-23 06:07:50  ping rtx
+ 1313  19-11-23 05:58:35  cd ~
+ 1314  19-11-23 05:58:37  ./rrtx.zsh
+ 1315  19-11-23 06:08:57  nautilus
+ 1316  19-11-23 06:10:09  cd /
+ 1317  19-11-23 06:10:16  cd ~
+ 1318  19-11-23 06:10:50  echo zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79[2-4]
+ 1319  19-11-23 06:10:58  echo "zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79[2-4]"
+ 1320  19-11-23 06:11:43  echo "zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79{2,3,4}"
+ 1321  19-11-23 06:11:49  echo zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79{2,3,4}
+ 1322  19-11-23 06:12:15  scp zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79{2,3,4} Downloads
+ 1323  19-11-23 06:12:40  scp zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79{2,3,4}.txt Downloads
+ 1324  19-11-23 06:12:53  scp zeionara@rtx:/home/zeionara/raconteur/assets/faiss-79{2,3,4}.mp3 Downloads
+ 1325  19-11-23 06:13:55  scp zeionara@rtx:/home/zeionara/raconteur/assets/faiss-792.mp3 Downloads
+ 1326  19-11-23 06:18:11  df -h .
+ 1327  19-11-23 05:11:16  htop
+ 1328  19-11-23 07:41:51  cd ~
+ 1329  19-11-23 07:41:52  ls
+ 1330  19-11-23 07:42:04  nvim xdgh-error.txt
+ 1331  19-11-23 07:42:26  emerge --info '=gui-libs/xdg-desktop-portal-hyprland-1.2.2::guru\n'
+ 1332  19-11-23 07:46:52  sudo mkdir /etc/portage/profile/package.unmask
+ 1333  19-11-23 07:47:22  sudo nvim /etc/portage/profile/package.unmask/hyprland
+ 1334  19-11-23 07:47:44  sudo nvim /etc/portage/package.use/hyprland
+ 1335  19-11-23 07:48:19  sudo nvim /etc/portage/package.accept_keywords/hyprland
+ 1336  19-11-23 07:48:46  emaint --help
+ 1337  19-11-23 07:48:56  emaint sync -r guru
+ 1338  19-11-23 07:49:05  sudo emaint sync -r guru
+ 1339  19-11-23 07:49:35  ega gui-libs/xdg-desktop-portal-hyprland
+ 1340  19-11-23 07:50:32  cat /var/tmp/portage/gui-libs/xdg-desktop-portal-hyprland-1.2.2/temp/build.log
+ 1341  19-11-23 07:50:36  sudo cat /var/tmp/portage/gui-libs/xdg-desktop-portal-hyprland-1.2.2/temp/build.log
+ 1342  19-11-23 07:51:58  ega dev-cpp/sdbus-c++
+ 1343  19-11-23 07:53:15  ega gui-libs/xdg-desktop-portal-hyprland
+ 1344  19-11-23 07:54:37  sudo cat /var/tmp/portage/gui-libs/xdg-desktop-portal-hyprland-1.2.2/temp/build.log
+ 1345  19-11-23 07:55:05  ega dev-cpp/sdbus-c++
+ 1346  19-11-23 07:57:41  git clone --recursive https://github.com/hyprwm/xdg-desktop-portal-hyprland
+ 1347  19-11-23 07:57:48  cd xdg-desktop-portal-hyprland/
+ 1348  19-11-23 07:57:52  make all
+ 1349  19-11-23 08:00:02  sudo make install
+ 1350  19-11-23 08:03:51  cd ~/.config/hypr/
+ 1351  19-11-23 08:03:53  nvim hyprland.conf
+ 1352  19-11-23 08:06:21  nvim xdg-portal-hyprland
+ 1353  19-11-23 08:06:31  mv xdg-portal-hyprland xdg-portal-hyprland.sh
+ 1354  19-11-23 08:06:33  nvim xdg-portal-hyprland.sh
+ 1355  19-11-23 08:07:19  ln /usr/lib/xdg-desktop-portal-hyprland /usr/libexec
+ 1356  19-11-23 08:07:24  sudo ln /usr/lib/xdg-desktop-portal-hyprland /usr/libexec
+ 1357  19-11-23 08:07:40  nvim hyprland.conf
+ 1358  19-11-23 08:09:14  head /home/cait/.config/hypr/xdg-portal-hyprland.sh
+ 1359  19-11-23 08:09:18  chmod +x /home/cait/.config/hypr/xdg-portal-hyprland.sh
+ 1360  19-11-23 08:09:22  nvim hyprland.conf
+ 1361  19-11-23 04:41:25  ls
+ 1362  19-11-23 04:41:26  nvim
+ 1363  19-11-23 04:41:45  ls
+ 1364  19-11-23 04:42:48  pwd
+ 1365  19-11-23 04:42:53  ls
+ 1366  19-11-23 04:42:57  gtx
+ 1367  19-11-23 04:42:59  gts
+ 1368  19-11-23 04:43:00  gtau
+ 1369  19-11-23 04:43:01  gts
+ 1370  19-11-23 04:43:16  gtc 'feat(waybar): updated hyprland config to launch waybar at startup'
+ 1371  19-11-23 04:43:46  gtu
+ 1372  19-11-23 04:44:22  nvim hyprland.conf
+ 1373  19-11-23 04:44:43  sudo nvim foo
+ 1374  19-11-23 04:49:21  sudo emerge --ask gui-libs/xdg-desktop-portal-hyprland
+ 1375  19-11-23 04:50:52  sudo emerge --ask xdg-desktop-portal-hyprland
+ 1376  19-11-23 04:52:22  eselect repository add guru
+ 1377  19-11-23 04:52:27  sudo eselect repository add guru
+ 1378  19-11-23 04:52:44  eselect repository
+ 1379  19-11-23 04:52:47  sudo eselect repository
+ 1380  19-11-23 04:53:13  sudo emerge --ask app-eselect/eselect-repository
+ 1381  19-11-23 04:54:00  sudo eselect repository add guru
+ 1382  19-11-23 04:54:04  sudo eselect repository
+ 1383  19-11-23 04:54:16  sudo eselect repository add guru
+ 1384  19-11-23 04:54:22  eselect repository add guru
+ 1385  19-11-23 04:54:25  eselect repository add
+ 1386  19-11-23 04:54:29  eselect repository
+ 1387  19-11-23 04:54:35  eselect repository list
+ 1388  19-11-23 04:54:42  sudo eselect repository list
+ 1389  19-11-23 04:55:01  eselect repository add
+ 1390  19-11-23 04:55:03  eselect repository
+ 1391  19-11-23 04:55:22  sudo eselect repository list | grep guru
+ 1392  19-11-23 04:55:38  eselect repository add guru git
+ 1393  19-11-23 04:56:45  sudo eselect repository enable guru
+ 1394  19-11-23 04:56:59  sudo emerge --ask gui-libs/xdg-desktop-portal-hyprland
+ 1395  19-11-23 04:57:16  egs
+ 1396  19-11-23 05:00:00  chrome
+ 1397  19-11-23 05:05:45  sudo emerge --ask gui-libs/xdg-desktop-portal-hyprland
+ 1398  19-11-23 05:06:25  sudo nvim /etc/portage/package.use/hyprland
+ 1399  19-11-23 05:06:56  sudo nvim /etc/portage/package.accept_keywords/hyprland
+ 1400  19-11-23 05:07:24  sudo rm /etc/portage/package.use/hyprland
+ 1401  19-11-23 05:07:29  sudo cat /etc/portage/package.accept_keywords/hyprland
+ 1402  19-11-23 05:07:37  gts
+ 1403  19-11-23 05:07:50  sudo emerge --ask gui-libs/xdg-desktop-portal-hyprland
+ 1404  19-11-23 05:08:45  sudo nvim /etc/portage/package.accept_keywords/hyprland
+ 1405  19-11-23 05:08:57  sudo emerge --ask gui-libs/xdg-desktop-portal-hyprland
+ 1406  19-11-23 08:10:26  ls
+ 1407  19-11-23 08:12:07  htop
+ 1408  19-11-23 08:12:39  ./xdg-portal-hyprland.sh
+ 1409  19-11-23 08:14:37  ega sys-apps/dbus
+ 1410  19-11-23 08:15:08  htop
+ 1411  19-11-23 08:15:34  ps -aux | grep portal
+ 1412  19-11-23 08:15:44  pkill -f xdg-desktop-portal
+ 1413  19-11-23 08:15:46  ps -aux | grep portal
+ 1414  19-11-23 08:15:53  ./xdg-portal-hyprland.sh
+ 1415  19-11-23 08:16:08  cat ./xdg-portal-hyprland.sh
+ 1416  19-11-23 08:16:17  /usr/lib/xdg-desktop-portal-hyprland
+ 1417  19-11-23 08:16:21  sudo /usr/lib/xdg-desktop-portal-hyprland
+ 1418  19-11-23 08:16:30  /usr/lib/xdg-desktop-portal-hyprland
+ 1419  19-11-23 08:17:21  htop
+ 1420  19-11-23 08:17:31  /usr/lib/xdg-desktop-portal-hyprland
+ 1421  19-11-23 08:18:22  cat hyprland.conf | less
+ 1422  19-11-23 08:18:29  dbus-update-activation-environment
+ 1423  19-11-23 08:18:34  /usr/lib/xdg-desktop-portal-hyprland
+ 1424  19-11-23 08:18:42  sudo /usr/lib/xdg-desktop-portal-hyprland
+ 1425  19-11-23 08:21:16  /usr/libexec/xdg-desktop-portal-gnome
+ 1426  19-11-23 08:21:23  /usr/libexec/xdg-desktop-portal
+ 1427  19-11-23 08:22:18  /usr/lib/xdg-desktop-portal-hyprland
+ 1428  19-11-23 08:22:33  /usr/lib/xdg-desktop-portal-hyprland --help
+ 1429  19-11-23 08:22:41  /usr/lib/xdg-desktop-portal-hyprland -v
+ 1430  19-11-23 08:23:06  sudo rc-service dbus status
+ 1431  19-11-23 08:23:23  ls /var/run/dbus/system_bus_socket
+ 1432  19-11-23 08:23:26  cat /var/run/dbus/system_bus_socket
+ 1433  19-11-23 08:23:34  ls /var/run/dbus/
+ 1434  19-11-23 08:23:39  ls -alh /var/run/dbus/
+ 1435  19-11-23 08:24:01  echo $DBUS_SESSION_BUS_ADDRESS\n
+ 1436  19-11-23 08:25:30  sudo rc-service dbus-user-session restart
+ 1437  19-11-23 08:26:39  dbus-daemon --session --print-address
+ 1438  19-11-23 08:27:55  nvim ~/.zshrc
+ 1439  19-11-23 08:28:03  rsrc
+ 1440  19-11-23 08:28:07  echo $DBUS_SESSION_BUS_ADDRESS\n
+ 1441  19-11-23 08:28:12  echo $foo
+ 1442  19-11-23 08:28:18  nvim ~/.zshrc
+ 1443  19-11-23 08:28:36  echo $XDG_RUNTIME_DIR
+ 1444  19-11-23 08:29:09  /usr/lib/xdg-desktop-portal-hyprland
+ 1445  19-11-23 08:29:37  export DBUS_SESSION_BUS_ADDRESS='unix:path=/tmp/dbus-vFsFfy7MuC,guid=2c9dbd31a8d27c2f97e66ab565599c8f'
+ 1446  19-11-23 08:29:46  echo $DBUS_SESSION_BUS_ADDRESS\n
+ 1447  19-11-23 08:29:49  echo $DBUS_SESSION_BUS_ADDRESS
+ 1448  19-11-23 08:29:55  /usr/lib/xdg-desktop-portal-hyprland
+ 1449  19-11-23 08:30:34  sudo rc-service dbus restart
+ 1450  19-11-23 08:30:55  echo $DBUS_SESSION_BUS_ADDRESS
+ 1451  19-11-23 08:31:00  /usr/lib/xdg-desktop-portal-hyprland
+ 1452  19-11-23 08:31:44  dmesg | grep -i dbus
+ 1453  19-11-23 08:34:34  ega gui-libs/xdg-desktop-portal-hyprland
+ 1454  19-11-23 08:36:29  sudo emerge --ask sdbus-c++
+ 1455  19-11-23 08:37:10  locate libsdbus-c++.so
+ 1456  19-11-23 08:37:14  locate libsdbus
+ 1457  19-11-23 08:37:18  locate dbus
+ 1458  19-11-23 08:37:34  sudo emerge --ask sdbus
+ 1459  19-11-23 08:37:40  locate sdbus
+ 1460  19-11-23 08:38:22  cat /var/db/repos/gentoo/dev-cpp/sdbus-c++/sdbus-c++-1.4.0.ebuild
+ 1461  19-11-23 08:38:49  locate sdbus
+ 1462  19-11-23 08:39:19  pkg-config --exists --print-errors sdbus-c++
+ 1463  19-11-23 08:39:29  sudo pkg-config --exists --print-errors sdbus-c++
+ 1464  19-11-23 08:39:47  elogind
+ 1465  19-11-23 08:41:05  find /usr/lib/pkgconfig -name "elogind*.pc"
+ 1466  19-11-23 08:42:42  qlist -I sdbus-c++
+ 1467  19-11-23 08:42:57  find /usr -name "libsdbus-c++.so*"
+ 1468  19-11-23 08:43:10  locate sdbus
+ 1469  19-11-23 08:44:27  echo $LD_LIBRARY_PATH
+ 1470  19-11-23 08:45:03  export LD_LIBRARY_PATH="/usr/lib64:$LD_LIBRARY_PATH"
+ 1471  19-11-23 08:45:13  echo $LD_LIBRARY_PATH
+ 1472  19-11-23 08:45:31  sudo emerge --ask sdbus-c++
+ 1473  19-11-23 08:45:39  ega gui-libs/xdg-desktop-portal-hyprland
+ 1474  19-11-23 08:47:07  pkg-config --exists --print-errors sdbus-c++
+ 1475  19-11-23 08:48:09  find /usr/lib64/pkgconfig -name "sdbus-c++.pc"
+ 1476  19-11-23 08:48:17  cat /usr/lib64/pkgconfig/sdbus-c++.pc
+ 1477  19-11-23 08:49:41  ega elogind
+ 1478  19-11-23 08:50:21  find /usr/lib64/pkgconfig -name "elogind.pc"
+ 1479  19-11-23 08:51:17  equery files elogind
+ 1480  19-11-23 08:51:24  equery files elogind | grep pc
+ 1481  19-11-23 08:52:34  pkg-config --cflags --libs sdbus-c++
+ 1482  19-11-23 08:53:37  cd /usr/lib64/pkgconfig
+ 1483  19-11-23 08:53:46  ln -s libelogind.pc elogind.pc\n
+ 1484  19-11-23 08:53:51  sudo ln -s libelogind.pc elogind.pc
+ 1485  19-11-23 08:53:55  head elogind.pc
+ 1486  19-11-23 08:54:00  cd ~
+ 1487  19-11-23 08:54:34  pkg-config --exists --print-errors sdbus-c++
+ 1488  19-11-23 08:55:37  ega gui-libs/xdg-desktop-portal-hyprland
+ 1489  19-11-23 08:59:23  cd .config/hypr/
+ 1490  19-11-23 08:59:23  ls
+ 1491  19-11-23 08:59:26  ./xdg-portal-hyprland.sh
+ 1492  19-11-23 08:59:56  nvim xdg-portal-hyprland.sh
+ 1493  19-11-23 09:00:46  ./xdg-portal-hyprland.sh
+ 1494  19-11-23 09:01:09  cat ./xdg-portal-hyprland.sh
+ 1495  19-11-23 09:01:16  /usr/libexec/xdg-desktop-portal-hyprland
+ 1496  19-11-23 09:01:22  /usr/libexec/xdg-desktop-portal
+ 1497  19-11-23 09:01:26  sudo /usr/libexec/xdg-desktop-portal
+ 1498  19-11-23 09:01:41  nvim /.zshrc
+ 1499  19-11-23 09:01:48  nvim ~/.zshrc
+ 1500  19-11-23 09:01:53  rsrc
+ 1501  19-11-23 09:01:58  /usr/libexec/xdg-desktop-portal
+ 1502  19-11-23 09:02:08  /usr/libexec/xdg-desktop-portal-hyprland
+ 1503  19-11-23 09:02:15  ls -alh /usr/libexec/
+ 1504  19-11-23 09:02:32  /usr/libexec/xdg-desktop-portal-hyprland
+ 1505  19-11-23 09:03:04  ls -alh /usr/lib | grep hypr
+ 1506  19-11-23 09:03:11  /usr/libexec/xdg-desktop-portal-hyprland
+ 1507  19-11-23 09:03:16  sudo /usr/libexec/xdg-desktop-portal-hyprland
+ 1508  19-11-23 18:17:24  htop
+ 1509  19-11-23 18:30:41  ping google.com
+ 1510  19-11-23 18:32:24  chrome
+ 1511  19-11-23 19:07:42  neofetch
+ 1512  19-11-23 09:22:09  gtx
+ 1513  19-11-23 09:22:13  gtau
+ 1514  19-11-23 09:22:13  gts
+ 1515  19-11-23 09:22:17  gta xdg-portal-hyprland.sh
+ 1516  19-11-23 09:22:18  gts
+ 1517  19-11-23 09:22:38  gtc 'feat(screenshot): enabled screenshots support'
+ 1518  19-11-23 09:22:41  gtu
+ 1519  19-11-23 18:18:35  history > history.txt
+ 1520  19-11-23 18:18:38  nvim history.txt
+ 1521  19-11-23 18:43:07  gts
+ 1522  19-11-23 18:43:08  gtx
+ 1523  19-11-23 18:43:12  gta README.md
+ 1524  19-11-23 18:43:13  gts
+ 1525  19-11-23 18:43:24  gtc 'feat(gentoo): added gentoo-specific installation instructions'
+ 1526  19-11-23 18:43:28  gtu
+ 1527  19-11-23 18:43:36  cd ~/gen2/
+ 1528  19-11-23 18:43:36  ls
+ 1529  19-11-23 18:43:43  tree portage/
+ 1530  19-11-23 18:43:48  ls portage
+ 1531  19-11-23 18:44:17  nvim README.md
+ 1532  19-11-23 18:44:59  ls portage/
+ 1533  19-11-23 18:45:06  mv portage portage.old
+ 1534  19-11-23 18:45:13  cp -r /etc/portage ./
+ 1535  19-11-23 18:45:14  ls
+ 1536  19-11-23 18:45:16  ls portage/
+ 1537  19-11-23 18:45:24  cat portage/make.profile
+ 1538  19-11-23 18:45:37  rm -rf portage/
+ 1539  19-11-23 18:46:02  cp -rL /etc/portage ./
+ 1540  19-11-23 18:46:05  ls portage/
+ 1541  19-11-23 18:46:08  cat portage/make.profile/
+ 1542  19-11-23 18:46:14  gts
+ 1543  19-11-23 18:46:32  gta portage/
+ 1544  19-11-23 18:46:34  gts
+ 1545  19-11-23 18:47:18  git checkout HEAD -- portage/package.accept_keywords/obs-studio portage/package.accept_keywords/sublime-text
+ 1546  19-11-23 18:47:21  gts
+ 1547  19-11-23 18:48:03  gta portage.old/package.use/obs-studio
+ 1548  19-11-23 18:48:04  gt
+ 1549  19-11-23 18:48:05  gts
+ 1550  19-11-23 18:48:16  gta portage.old/package.use/suspend
+ 1551  19-11-23 18:48:17  cat portage.old/package.use/suspend
+ 1552  19-11-23 18:49:14  rm -rf portage/
+ 1553  19-11-23 18:49:18  cp -rL /etc/portage ./
+ 1554  19-11-23 18:49:22  gta portage/
+ 1555  19-11-23 18:49:22  gts
+ 1556  19-11-23 18:49:32  gta README.md packages.txt
+ 1557  19-11-23 18:49:32  gts
+ 1558  19-11-23 18:49:36  gtbi g5045
+ 1559  19-11-23 18:49:38  gts
+ 1560  19-11-23 18:49:55  gtc 'feat(gentoo): updated portage directory'
+ 1561  19-11-23 18:50:02  gtuoi g5045
+ 1562  19-11-23 18:50:22  cat portage.old/package.use/obs-studio
+ 1563  19-11-23 18:51:47  ega media-video/obs-studio
+ 1564  19-11-23 18:52:16  cat portage.old/package.accept_keywords/obs-studio
+ 1565  19-11-23 18:52:40  sudo cp portage.old/package.accept_keywords/obs-studio /etc/portage/package.accept_keywords/
+ 1566  19-11-23 18:52:54  gts
+ 1567  19-11-23 18:53:01  cat /etc/portage/package.accept_keywords/
+ 1568  19-11-23 18:53:06  cat /etc/portage/package.accept_keywords/obs-studio
+ 1569  19-11-23 18:53:12  ega media-video/obs-studio
+ 1570  19-11-23 18:54:52  sudo nvim /etc/portage/package.use/obs-studio
+ 1571  19-11-23 18:54:59  ega media-video/obs-studio
+ 1572  19-11-23 21:29:59  equery u gui-wm/hyprland
+ 1573  19-11-23 20:42:24  obs
+ 1574  19-11-23 20:51:01  export QT_QPA_PLATFORM=wayland
+ 1575  19-11-23 20:51:03  obs
+ 1576  19-11-23 20:51:24  sudo nvim /etc/environment
+ 1577  19-11-23 20:51:30  obs
+ 1578  19-11-23 20:51:44  sudo nvim /etc/environment
+ 1579  19-11-23 20:51:52  obs
+ 1580  19-11-23 20:52:12  export QT_QPA_PLATFORM=xcb
+ 1581  19-11-23 20:52:16  obs
+ 1582  19-11-23 20:55:06  export QT_QPA_PLATFORM=hyprland
+ 1583  19-11-23 20:55:08  obs
+ 1584  19-11-23 20:55:26  export QT_QPA_PLATFORM=wayland
+ 1585  19-11-23 20:56:26  obs
+ 1586  19-11-23 21:02:29  export QT_QPA_PLATFORM=wayland
+ 1587  19-11-23 21:02:32  obs
+ 1588  19-11-23 21:05:05  obs-studio --wayland
+ 1589  19-11-23 21:05:09  obs --wayland
+ 1590  19-11-23 21:08:38  pw-cli --version
+ 1591  19-11-23 21:09:37  rc-service pipewire status
+ 1592  19-11-23 21:09:41  sudo rc-service pipewire status
+ 1593  19-11-23 21:09:51  sudo rc-service list
+ 1594  19-11-23 21:11:16  rc-update show
+ 1595  19-11-23 21:11:31  rc-update show | grep pipewire
+ 1596  19-11-23 21:11:33  rc-update show | grep pipe
+ 1597  19-11-23 21:11:38  rc-update show | grep pw
+ 1598  19-11-23 21:12:55  sudo emerge --ask media-sound/pipewire
+ 1599  19-11-23 21:13:12  sudo emerge --ask pipewire
+ 1600  19-11-23 21:13:49  sudo rc-service pipewire start
+ 1601  19-11-23 21:17:19  sudo emerge --ask media-video/wireplumber
+ 1602  19-11-23 21:19:49  cp /usr/share/pipewire/pipewire.conf /etc/pipewire/pipewire.conf
+ 1603  19-11-23 21:20:04  locate pipewire
+ 1604  19-11-23 21:20:50  gentoo-pipewire-launcher
+ 1605  19-11-23 21:21:29  gentoo-pipewire-launcher &
+ 1606  19-11-23 21:22:47  obs
+ 1607  19-11-23 21:24:28  sudo nvim /etc/environment
+ 1608  19-11-23 21:25:19  obs
+ 1609  19-11-23 21:25:39  echo $XDG_CURRENT_DESKTOP
+ 1610  19-11-23 21:32:30  obs --verbose | tee log.txt
+ 1611  19-11-23 21:32:40  nvim log.txt
+ 1612  19-11-23 21:33:14  wpctl
+ 1613  19-11-23 21:33:22  wpctl get-volume 0
+ 1614  19-11-23 21:33:31  wpctl get-volume status
+ 1615  19-11-23 21:33:36  wpctl status
+ 1616  19-11-23 21:34:43  nvim ~/shell/suspend.sh
+ 1617  19-11-23 21:34:54  cd ~/shell/
+ 1618  19-11-23 21:34:54  gts
+ 1619  19-11-23 21:34:55  gtx
+ 1620  19-11-23 21:34:57  gts
+ 1621  19-11-23 21:34:58  gtau
+ 1622  19-11-23 21:34:59  gts
+ 1623  19-11-23 21:35:11  gtc 'feat(hyprland): added an option for starting hyprland'
+ 1624  19-11-23 21:35:14  gtu
+ 1625  19-11-23 21:35:20  gtd
+ 1626  19-11-23 21:35:33  git config pull.rebase false
+ 1627  19-11-23 21:35:34  gtd
+ 1628  19-11-23 21:35:41  gtu
+ 1629  19-11-23 18:33:29  ping google.com
+ 1630  19-11-23 18:34:26  ping github.com
+ 1631  19-11-23 18:34:35  ping google.com
+ 1632  19-11-23 18:35:28  ping github.com
+ 1633  19-11-23 18:36:24  history | grep wpa_supp
+ 1634  19-11-23 18:36:31  sudo rc-service wpa_supplicant restart
+ 1635  19-11-23 18:57:11  htop
+ 1636  19-11-23 09:05:29  htop
+ 1637  19-11-23 09:07:36  [200~gui-apps/
+ 1638  19-11-23 09:07:47  ega gui-apps/grim
+ 1639  19-11-23 09:09:17  ega gui-apps/slurp
+ 1640  19-11-23 09:10:37  grim -g "$(slurp)"
+ 1641  19-11-23 09:11:33  grim
+ 1642  19-11-23 09:12:32  grim | wl-copy
+ 1643  19-11-23 09:12:36  wl-copy
+ 1644  19-11-23 09:13:07  ega gui-apps/wl-clipboard
+ 1645  19-11-23 09:16:11  grim | wl-copy
+ 1646  19-11-23 09:18:30  grim - | wl-copy
+ 1647  19-11-23 09:20:20  neofetch
+ 1648  19-11-23 09:13:28  cd ~/.config/hypr/
+ 1649  19-11-23 09:13:30  nvim hyprland.conf
+ 1650  19-11-23 19:55:02  sscm
+ 1651  19-11-23 20:00:08  ls
+ 1652  19-11-23 20:00:09  sscm
+ 1653  19-11-23 20:16:57  sudo rc-service wpa_supplicant restart
+ 1654  19-11-23 20:17:05  sscm
+ 1655  18-11-23 02:51:23  cd .config/hypr/
+ 1656  18-11-23 02:51:43  htop
+ 1657  18-11-23 02:51:54  ls
+ 1658  18-11-23 02:51:56  nvim hyprland.conf
+ 1659  18-11-23 02:53:29  ls
+ 1660  19-11-23 09:00:23  hr
+ 1661  19-11-23 09:04:59  dbus-launch Hyprland
+ 1662  19-11-23 21:35:56  sudo reboot
+ 1663  19-11-23 22:01:02  nvim .config/gentoo-pipewire-launcher.conf
+ 1664  19-11-23 21:37:46  htop
+ 1665  19-11-23 21:38:06  wpctl status
+ 1666  19-11-23 21:40:09  gentoo-pipewire-launcher &
+ 1667  19-11-23 21:40:13  wpctl status
+ 1668  19-11-23 21:49:27  pactl list 
+ 1669  19-11-23 21:49:35  pactl list sources
+ 1670  19-11-23 21:49:56  pactl list sinks
+ 1671  19-11-23 21:50:19  pawtop
+ 1672  19-11-23 21:50:51  htop
+ 1673  19-11-23 21:51:32  pactl list sinks
+ 1674  19-11-23 21:51:38  wpctl status
+ 1675  19-11-23 21:51:44  sudo gentoo-pipewire-launcher &
+ 1676  19-11-23 21:51:49  sudo gentoo-pipewire-launcher
+ 1677  19-11-23 21:51:56  gentoo-pipewire-launcher
+ 1678  19-11-23 21:52:33  gentoo-pipewire-launcher --help
+ 1679  19-11-23 21:52:38  gentoo-pipewire-launcher
+ 1680  19-11-23 21:53:48  sudo usermod -aG audio cait
+ 1681  19-11-23 21:53:52  gentoo-pipewire-launcher
+ 1682  19-11-23 21:54:36  ls -l /dev/video*
+ 1683  19-11-23 21:54:45  ls -l /dev/sound*
+ 1684  19-11-23 21:54:48  ls -l /dev/audio*
+ 1685  19-11-23 21:55:11  ls -l /dev/snd/
+ 1686  19-11-23 21:55:52  cat /var/log/wireplumber/wireplumber.log
+ 1687  19-11-23 21:56:18  pw-top
+ 1688  19-11-23 21:56:24  gentoo-pipewire-launcher
+ 1689  19-11-23 21:59:18  which gentoo-pipewire-launcher
+ 1690  19-11-23 21:59:24  cat /usr/bin/gentoo-pipewire-launcher
+ 1691  19-11-23 22:03:58  gentoo-pipewire-launcher
+ 1692  19-11-23 22:07:55  sudo nvim /etc/portage/package.use/00cpu_flags
+ 1693  19-11-23 22:08:39  egs
+ 1694  19-11-23 22:11:02  sudo nvim /etc/portage/package.use/00cpu_flags
+ 1695  19-11-23 22:57:24  scp Downloads/faiss.tar.xz zeionara@rtx:/home/zeionara/
+ 1696  19-11-23 22:57:38  ssrx
+ 1697  19-11-23 23:05:14  tmux a
+ 1698  19-11-23 23:07:00  ssrx
+ 1699  19-11-23 23:08:29  ls
+ 1700  19-11-23 23:08:31  sscm
+ 1701  19-11-23 23:34:37  ssrx
+ 1702  20-11-23 00:04:54  sscm
+ 1703  20-11-23 00:35:55  ssrx
+ 1704  20-11-23 00:38:53  scp -P 2214 remote@isst.ml:/mnt/outer-world/less.tar.xz Downloads
+ 1705  20-11-23 00:39:02  scp -P 2214 remote@isst.ml:/mnt/outer-world/such/less.tar.xz Downloads
+ 1706  20-11-23 00:39:10  scp -P 2214 remote@isst.ml:/mnt/outer-world/such/read.tar.xz Downloads
+ 1707  20-11-23 00:39:36  scp Downloads/less.tar.xz zeionara@rtx:/home/zeionara/such
+ 1708  20-11-23 00:40:02  scp Downloads/read.tar.xz zeionara@rtx:/home/zeionara/such
+ 1709  20-11-23 02:27:51  ssrx
+ 1710  20-11-23 02:29:16  date
+ 1711  20-11-23 02:45:33  ssrx
+ 1712  20-11-23 02:46:03  echo $((258 / 762))
+ 1713  20-11-23 02:46:07  echo $((258.0 / 762))
+ 1714  20-11-23 04:04:37  ssrx
+ 1715  20-11-23 04:05:23  htop
+ 1716  20-11-23 06:09:32  ssrx
+ 1717  20-11-23 06:15:52  nvim ~/.config/waybar/config
+ 1718  20-11-23 06:16:18  ssrx
+ 1719  20-11-23 06:23:53  tmux a
+ 1720  20-11-23 06:35:08  ssrx
+ 1721  20-11-23 06:43:07  pipewire
+ 1722  20-11-23 06:43:15  pw-top
+ 1723  20-11-23 07:16:38  ssrx
+ 1724  20-11-23 07:23:19  tmux a
+ 1725  20-11-23 07:23:23  ssrx
+ 1726  20-11-23 07:25:17  cat ~/.config/hypr/hyprland.conf
+ 1727  20-11-23 07:25:24  64;123;29M64;123;29M64;123;29M
+ 1728  20-11-23 04:28:47  gentoo-pipewire-launcher
+ 1729  20-11-23 04:33:53  nvim ~/.config/hypr/hyprland.conf
+ 1730  20-11-23 06:23:16  gentoo-pipewire-launcher
+ 1731  20-11-23 06:43:22  pipewire
+ 1732  20-11-23 06:43:30  pipewire --verbose
+ 1733  20-11-23 06:44:11  gentoo-pipewire-launcher
+ 1734  20-11-23 04:06:11  wpctl status
+ 1735  20-11-23 04:06:19  sudo wpctl status
+ 1736  20-11-23 04:06:24  wpctl status
+ 1737  20-11-23 04:06:32  obs
+ 1738  20-11-23 04:07:38  sudo cat /etc/environment
+ 1739  20-11-23 04:08:00  obs
+ 1740  20-11-23 04:08:08  sudo obs
+ 1741  20-11-23 04:08:18  obs
+ 1742  20-11-23 04:09:06  export QT_QPA_PLATFORM=wayland
+ 1743  20-11-23 04:09:09  obs
+ 1744  20-11-23 04:17:35  wpctl list-client
+ 1745  20-11-23 04:17:54  pw-cli 
+ 1746  20-11-23 04:17:59  pw-cli  --help
+ 1747  20-11-23 04:18:45  wpctl status
+ 1748  20-11-23 04:20:42  pipewire --version
+ 1749  20-11-23 04:21:35  equery u media-video/pipewire
+ 1750  20-11-23 04:23:37  cd /
+ 1751  20-11-23 04:23:41  find -name pipewire
+ 1752  20-11-23 04:23:47  sudo find -name pipewire
+ 1753  20-11-23 04:24:26  ls ./usr/share/pipewire
+ 1754  20-11-23 04:24:43  nvim /usr/share/pipewire/pipewire.conf
+ 1755  20-11-23 04:24:51  nvim
+ 1756  20-11-23 04:25:08  cd ~
+ 1757  20-11-23 04:25:12  nvim
+ 1758  20-11-23 04:25:22  nvim /usr/share/pipewire/pipewire.conf
+ 1759  20-11-23 04:25:47  pw-cli list-modules
+ 1760  20-11-23 04:25:52  pw-cli load
+ 1761  20-11-23 04:25:56  pw-cli help
+ 1762  20-11-23 04:28:23  pw-cli lm
+ 1763  20-11-23 04:28:32  sudo usermod -aG pipewire zeio
+ 1764  20-11-23 04:28:36  sudo usermod -aG pipewire cait
+ 1765  20-11-23 04:28:45  sudo usermod -rG audio cait
+ 1766  20-11-23 04:28:52  wpctl status
+ 1767  20-11-23 04:29:34  sudo mkdir /etc/pipewire
+ 1768  20-11-23 04:29:40  sudo cp /usr/share/pipewire/pipewire.conf /etc/pipewire/pipewire.conf
+ 1769  20-11-23 04:29:57  mkdir ~/.config/pipewire
+ 1770  20-11-23 04:30:01  cp /usr/share/pipewire/pipewire.conf ~/.config/pipewire/pipewire.conf
+ 1771  20-11-23 04:34:41  wpctl status
+ 1772  20-11-23 04:44:10  cat /etc/portage/make.conf
+ 1773  20-11-23 04:44:53  pipewire --version
+ 1774  20-11-23 04:45:13  wireplumber --version
+ 1775  20-11-23 04:47:35  wpctl status
+ 1776  20-11-23 04:47:57  pw-cli list
+ 1777  20-11-23 04:48:00  pw-cli list sinks
+ 1778  20-11-23 04:48:05  pactl list sinks
+ 1779  20-11-23 04:49:32  pactl list sources
+ 1780  20-11-23 04:51:44  equery u media-video/pipewire
+ 1781  20-11-23 04:52:30  equery u media-video/wireplumber
+ 1782  20-11-23 04:55:50  groups cait
+ 1783  20-11-23 04:56:13  pw-cli h
+ 1784  20-11-23 04:56:20  pw-mon
+ 1785  20-11-23 04:57:42  pw-top
+ 1786  20-11-23 04:59:51  pw-cli ls Node
+ 1787  20-11-23 05:22:01  pw-config
+ 1788  20-11-23 05:22:11  pw-v4l2
+ 1789  20-11-23 05:22:18  pw-profiler
+ 1790  20-11-23 05:22:29  pw-dot
+ 1791  20-11-23 06:14:15  pw-mon
+ 1792  20-11-23 06:21:22  echo $XDG_RUNTIME_DIR
+ 1793  20-11-23 06:21:36  echo $DBUS_SESSION_BUS_ADDRESS
+ 1794  20-11-23 06:21:40  cat .zshrc
+ 1795  20-11-23 06:23:24  LANG=C pactl info | grep "Server Name"
+ 1796  20-11-23 06:23:44  pw-cli ls Node
+ 1797  20-11-23 06:29:24  equery u media-video/wireplumber
+ 1798  20-11-23 06:44:17  pw-cli h
+ 1799  20-11-23 06:44:25  pw-cli ls
+ 1800  20-11-23 07:11:26  sudo nvim /etc/environment
+ 1801  20-11-23 07:11:57  export QT_QPA_PLATFORM=xcb
+ 1802  20-11-23 07:12:00  obs
+ 1803  20-11-23 07:12:52  export QT_QPA_PLATFORM=ss
+ 1804  20-11-23 07:12:53  obs
+ 1805  20-11-23 07:13:11  export QT_QPA_PLATFORM=wayland
+ 1806  20-11-23 07:13:13  obs
+ 1807  20-11-23 07:18:08  simplescreenrecorder
+ 1808  20-11-23 07:25:37  cat ~/.config/hypr/hyprland.conf
+ 1809  20-11-23 07:26:09  ssrx
+ 1810  19-11-23 21:41:32  sscm
+ 1811  19-11-23 22:56:10  scp -P 2214 remote@isst.ml:/mnt/outer-world/such/faiss.tar.xz ~/Downloads
+ 1812  19-11-23 22:56:29  ./rrtx.zsh
+ 1813  20-11-23 00:46:08  htop
+ 1814  20-11-23 02:42:28  nvim ~/.config/hypr/hyprland.conf
+ 1815  20-11-23 02:44:35  gts
+ 1816  20-11-23 02:44:41  cd ~/.config/hypr/
+ 1817  20-11-23 02:44:42  gts
+ 1818  20-11-23 02:44:44  gtx
+ 1819  20-11-23 02:44:48  gta hyprland.conf
+ 1820  20-11-23 02:44:49  gts
+ 1821  20-11-23 02:45:08  gtc 'feat(workspace): implemented workspce switching using left and right arrow keys'
+ 1822  20-11-23 02:45:12  gtu
+ 1823  20-11-23 02:59:51  htop
+ 1824  19-11-23 21:53:55  wpctl status
+ 1825  19-11-23 21:56:37  pw-top
+ 1826  19-11-23 21:56:48  wpctl 
+ 1827  19-11-23 21:56:56  wpctl -h
+ 1828  19-11-23 21:57:05  pwctl
+ 1829  19-11-23 21:57:08  pw-cli
+ 1830  19-11-23 21:57:21  pw-cli --help
+ 1831  19-11-23 21:57:34  pw-cli i
+ 1832  19-11-23 21:57:55  pw-cli --version
+ 1833  19-11-23 22:11:44  uga www-client/chromium
+ 1834  19-11-23 22:12:09  sudo emerge --ask --update --deep --newuse @world
+ 1835  19-11-23 22:16:01  sudo nvim /etc/portage/package.accept_keywords/wayland
+ 1836  19-11-23 22:16:12  sudo emerge --ask --update --deep --newuse @world
+ 1837  19-11-23 22:16:43  sudo nvim /etc/portage/package.accept_keywords/wayland
+ 1838  19-11-23 22:16:56  sudo nvim /etc/portage/package.use/00cpu_flags
+ 1839  19-11-23 22:19:16  sudo emerge --ask --update --deep --newuse @world
+ 1840  19-11-23 22:21:43  sudo nvim /etc/portage/package.accept_keywords/wayland
+ 1841  19-11-23 22:22:25  sudo nvim /etc/portage/package.mask/chrome
+ 1842  19-11-23 22:22:40  sudo emerge --ask --update --deep --newuse @world
+ 1843  19-11-23 22:26:29  eix 
+ 1844  19-11-23 22:27:14  sudo equery u
+ 1845  19-11-23 22:27:31  equery list -e www-client/google-chrome
+ 1846  19-11-23 22:30:47  sudo nvim /etc/portage/package.mask/chrome
+ 1847  19-11-23 22:30:56  equery list -e www-client/google-chrome
+ 1848  19-11-23 22:31:11  sudo emerge --ask --update --deep --newuse @world
+ 1849  20-11-23 07:08:26  ega simplescreenrecorder
+ 1850  20-11-23 07:19:25  uga simplescreenrecorder
+ 1851  20-11-23 07:29:43  wpctl status
+ 1852  20-11-23 07:27:54  ls
+ 1853  20-11-23 07:27:56  htop
+ 1854  20-11-23 07:28:38  wpctl -h
+ 1855  20-11-23 07:28:42  wpctl status
+ 1856  20-11-23 07:28:59  pw-top
+ 1857  20-11-23 07:29:05  wpctl 
+ 1858  20-11-23 07:29:28  gentoo-pipewire-launcher restart
+ 1859  20-11-23 07:29:57  gentoo-pipewire-launcher &
+ 1860  20-11-23 07:29:59  wpctl status
+ 1861  20-11-23 07:30:35  ssrx
+ 1862  20-11-23 07:30:23  ./rrtx.zsh
+ 1863  20-11-23 07:33:55  ls
+ 1864  20-11-23 07:34:23  wpctl status
+ 1865  20-11-23 07:34:26  obs
+ 1866  20-11-23 07:54:47  waybar &
+ 1867  20-11-23 07:55:05  nohup waybar &
+ 1868  20-11-23 07:38:41  wpctl status
+ 1869  20-11-23 07:40:26  obs
+ 1870  20-11-23 07:41:13  щиы
+ 1871  20-11-23 07:42:02  obs
+ 1872  20-11-23 07:49:43  cat ~/.config/hypr/hyprland.conf
+ 1873  20-11-23 08:04:36  nvim ~/.config/hypr/hyprland.conf
+ 1874  20-11-23 07:55:55  ssrx
+ 1875  20-11-23 08:05:24  tmux a
+ 1876  20-11-23 08:10:31  ssrx
+ 1877  20-11-23 07:55:34  ./rrtx.zsh
+ 1878  20-11-23 07:57:32  obs
+ 1879  20-11-23 07:57:59  export QT_QPA_PLATFORM=wayland
+ 1880  20-11-23 07:58:01  obs
+ 1881  20-11-23 08:11:24  htop
+ 1882  20-11-23 08:11:42  obs
+ 1883  20-11-23 08:14:47  nvim ~/.config/hypr/hyprland.conf
+ 1884  20-11-23 08:16:51  ./rrtx.zsh
+ 1885  20-11-23 08:17:07  ssrx
+ 1886  20-11-23 08:15:22  wpctl status
+ 1887  20-11-23 08:15:30  obs
+ 1888  20-11-23 08:21:51  nvim ~/.config/hypr/hyprland.conf
+ 1889  20-11-23 08:26:56  wpctl status
+ 1890  20-11-23 08:27:02  obs
+ 1891  20-11-23 08:28:08  nvim ~/.config/hypr/hyprland.conf
+ 1892  20-11-23 08:28:35  cd ~/.config/hypr/
+ 1893  20-11-23 08:28:35  gts
+ 1894  20-11-23 08:28:37  gtx
+ 1895  20-11-23 08:28:40  gta hyprland.conf
+ 1896  20-11-23 08:28:41  gts
+ 1897  20-11-23 08:28:51  gtc 'feat(pipewire): enabled pipewire launcher'
+ 1898  20-11-23 08:28:54  gtu
+ 1899  20-11-23 08:34:57  nvim ~/.config/hypr/hyprland.conf
+ 1900  20-11-23 08:36:27  nvim .config/hypr/hyprland.conf
+ 1901  20-11-23 08:37:52  /usr/lib/xdg-desktop-portal-hyprland -v
+ 1902  20-11-23 08:37:58  /usr/lib/xdg-desktop-portal-hyprland --version
+ 1903  20-11-23 08:38:03  obs
+ 1904  20-11-23 08:38:28  sudo nvim /etc/environment
+ 1905  20-11-23 08:38:39  export QT_QPA_PLATFORM=xcb
+ 1906  20-11-23 08:38:42  obs
+ 1907  20-11-23 08:39:25  nvim .config/hypr/hyprland.conf
+ 1908  20-11-23 08:41:29  obs
+ 1909  20-11-23 08:41:59  nvim .config/hypr/hyprland.conf
+ 1910  20-11-23 08:42:22  obs
+ 1911  20-11-23 08:48:03  htop
+ 1912  20-11-23 08:48:56  ls
+ 1913  20-11-23 08:49:04  cat ~/.config/hypr/xdg-portal-hyprland.sh
+ 1914  20-11-23 08:49:13  killall xdg-desktop-portal-gnome
+ 1915  20-11-23 08:49:16  htop
+ 1916  20-11-23 08:49:32  obs
+ 1917  20-11-23 08:53:56  neofetch
+ 1918  20-11-23 14:06:00  ega gui-libs/xdg-desktop-portal-hyprland
+ 1919  20-11-23 14:07:23  cd xdg-desktop-portal-hyprland/
+ 1920  20-11-23 14:07:24  ls
+ 1921  20-11-23 14:07:29  nvim Makefile
+ 1922  20-11-23 14:09:17  diff /usr/lib/xdg-desktop-portal-hyprland /usr/libexec/xdg-desktop-portal-hyprland
+ 1923  20-11-23 14:09:29  gtl
+ 1924  20-11-23 14:10:14  cd ..
+ 1925  20-11-23 14:10:19  nvim .config/hypr/xdg-portal-hyprland.sh
+ 1926  20-11-23 14:10:57  cp .config/hypr/xdg-portal-hyprland.sh .config/hypr/start-xdgh.sh
+ 1927  20-11-23 14:10:59  nvim .config/hypr/start-xdgh.sh
+ 1928  20-11-23 14:11:15  nvim .config/hypr/hyprland.conf
+ 1929  20-11-23 14:11:49  cat /home/cait/.config/hypr/start-xdgh.sh
+ 1930  20-11-23 14:03:38  ./rrtx.zsh
+ 1931  20-11-23 14:03:56  ssrx
+ 1932  20-11-23 14:13:15  obs
+ 1933  20-11-23 14:13:29  nvim .config/hypr/hyprland.conf
+ 1934  20-11-23 14:13:49  htop
+ 1935  20-11-23 14:17:24  ls /usr/libexec | grep xdg
+ 1936  20-11-23 14:18:52  htop
+ 1937  20-11-23 14:14:42  ega gui-libs/xdg-desktop-portal-wlr
+ 1938  20-11-23 14:17:40  nvim .zshrc
+ 1939  20-11-23 14:17:56  nvim .config/hypr/hyprland.conf
+ 1940  20-11-23 14:18:23  sudo nvim /etc/environment
+ 1941  20-11-23 14:18:37  nvim .config/hypr/hyprland.conf
+ 1942  20-11-23 14:19:44  htop
+ 1943  20-11-23 14:20:08  obs
+ 1944  20-11-23 14:21:02  ls /usr/libexec | grep xdg
+ 1945  20-11-23 14:21:10  cd .config/hypr/
+ 1946  20-11-23 14:21:11  ls
+ 1947  20-11-23 14:21:21  cp xdg-portal-hyprland.sh xdg-portal-wlr.sh
+ 1948  20-11-23 14:21:26  nvim xdg-portal-wlr.sh
+ 1949  20-11-23 14:21:46  ./xdg-portal-wlr.sh
+ 1950  20-11-23 14:21:58  htop
+ 1951  20-11-23 14:22:18  killall xdg-desktop-portal-hyprland
+ 1952  20-11-23 14:22:20  htop
+ 1953  20-11-23 14:22:42  wpctl status
+ 1954  20-11-23 14:22:46  obs
+ 1955  20-11-23 14:23:25  ./xdg-portal-hyprland.sh
+ 1956  20-11-23 14:23:54  wpctl status
+ 1957  20-11-23 14:24:26  obs
+ 1958  20-11-23 14:24:58  ./xdg-portal-wlr.sh
+ 1959  20-11-23 14:25:34  htop
+ 1960  20-11-23 14:25:45  ls
+ 1961  20-11-23 14:25:55  nvim hyprland.conf
+ 1962  20-11-23 14:28:06  obs
+ 1963  20-11-23 14:29:44  htop
+ 1964  20-11-23 14:30:40  obs --verbose
+ 1965  20-11-23 14:31:36  obs --verbose | tee obs-log.txt
+ 1966  20-11-23 14:33:10  nvim obs-log.txt
+ 1967  20-11-23 14:33:47  ega gui-libs/xdg-desktop-portal-hyprland
+ 1968  20-11-23 14:37:59  nautilus
+ 1969  20-11-23 14:40:24  wpctl status
+ 1970  20-11-23 14:42:18  obs --verbose | tee obs-log-gnome.txt
+ 1971  20-11-23 14:42:37  rm obs-log-gnome.txt
+ 1972  20-11-23 14:42:39  obs --verbose | tee obs-log-gnome.txt
+ 1973  20-11-23 14:42:59  gedit obs-log-gnome.txt
+ 1974  20-11-23 14:46:11  obs
+ 1975  20-11-23 15:04:00  pipewire --version
+ 1976  20-11-23 15:04:09  wpctl --version
+ 1977  20-11-23 15:04:16  wireplumber --version
+ 1978  20-11-23 15:48:46  /usr/lib/xdg-desktop-portal-hyprland --version
+ 1979  20-11-23 15:48:56  ls -alh /usr/lib | grep hypr
+ 1980  20-11-23 15:49:01  ls -alh /usr/libexec | grep hypr
+ 1981  20-11-23 15:49:15  cd xdg-desktop-portal-hyprland/
+ 1982  20-11-23 15:49:17  gtd
+ 1983  20-11-23 15:49:31  pipewire --version
+ 1984  20-11-23 15:50:17  gt
+ 1985  20-11-23 15:50:18  gtd
+ 1986  20-11-23 15:50:20  ls
+ 1987  20-11-23 15:50:39  make all
+ 1988  20-11-23 15:52:15  sudo make install
+ 1989  20-11-23 16:03:33  ls -alh /usr/lib | grep hypr
+ 1990  20-11-23 16:03:38  ls -alh /usr/libexec | grep hypr
+ 1991  20-11-23 16:03:54  cd ~
+ 1992  20-11-23 16:04:10  nvim .config/hypr/hyprland.conf
+ 1993  20-11-23 16:04:29  cat /home/cait/.config/hypr/start-xdgh.sh
+ 1994  20-11-23 08:15:11  dbus-launch Hyprland
+ 1995  20-11-23 16:05:09  sudo reboot
+ 1996  20-11-23 16:06:15  htop
+ 1997  20-11-23 16:06:29  ps -aux | grep hyprland
+ 1998  20-11-23 16:06:38  wpctl --version
+ 1999  20-11-23 16:06:41  wpctl status
+ 2000  20-11-23 16:06:44  obs
+ 2001  20-11-23 16:07:03  cd xdg-desktop-portal-hyprland/
+ 2002  20-11-23 16:07:04  gts
+ 2003  20-11-23 16:07:40  htop
+ 2004  20-11-23 16:09:00  cd xdg-desktop-portal-hyprland/
+ 2005  20-11-23 16:09:01  gts
+ 2006  20-11-23 16:09:04  git log
+ 2007  20-11-23 16:09:52  obs
+ 2008  20-11-23 16:19:10  obs --no-log
+ 2009  20-11-23 16:20:45  obs --help
+ 2010  20-11-23 16:21:07  obs --verbose
+ 2011  20-11-23 16:21:42  obs --quiet
+ 2012  20-11-23 16:10:05  wpctl --version
+ 2013  20-11-23 16:13:20  wpctl status
+ 2014  20-11-23 16:13:34  htop
+ 2015  20-11-23 16:25:34  wpctl status
+ 2016  20-11-23 16:26:13  ls
+ 2017  20-11-23 16:26:45  cat pipewire.log
+ 2018  20-11-23 16:26:52  cat wireplumber.log
+ 2019  20-11-23 16:27:28  ls
+ 2020  20-11-23 16:27:39  mv pipewire.log pipewire.log.old
+ 2021  20-11-23 16:27:53  mv wireplumber.log wireplumber.log.old
+ 2022  20-11-23 16:16:25  wpctl status
+ 2023  20-11-23 16:21:56  htop
+ 2024  20-11-23 16:22:46  pw-top
+ 2025  20-11-23 16:23:02  ps -aux | grep pipewire
+ 2026  20-11-23 16:23:10  htop
+ 2027  20-11-23 16:29:24  cat pipewire.log
+ 2028  20-11-23 16:29:30  cat wireplumber.log
+ 2029  20-11-23 16:30:12  cat pipewire.log
+ 2030  20-11-23 16:30:14  cat wireplumber.log
+ 2031  20-11-23 16:31:41  cat pipewire.log
+ 2032  20-11-23 16:32:03  cat wireplumber.log
+ 2033  20-11-23 16:32:30  htop
+ 2034  20-11-23 16:35:40  cat wireplumber.log
+ 2035  20-11-23 16:35:35  ega gui-apps/mako
+ 2036  20-11-23 16:37:12  htop
+ 2037  20-11-23 16:38:09  obs
+ 2038  20-11-23 16:38:40  mako
+ 2039  20-11-23 16:39:06  cat alacritty-config/
+ 2040  20-11-23 16:39:10  cat wireplumber.log
+ 2041  20-11-23 16:46:16  sudo usermod -aG video cait
+ 2042  20-11-23 16:46:29  obs
+ 2043  20-11-23 16:46:36  sudo obs
+ 2044  20-11-23 16:46:58  obs
+ 2045  20-11-23 16:48:29  emerge -a obs-studio
+ 2046  20-11-23 16:48:55  equery u media-video/obs-studio
+ 2047  20-11-23 16:49:29  nvim /etc/portage/package.use/obs-studio
+ 2048  20-11-23 16:49:44  sudo nvim /etc/portage/package.use/obs-studio
+ 2049  20-11-23 16:50:11  sudo emerge --ask media-video/v4l2loopback
+ 2050  20-11-23 16:50:46  nvim /etc/portage/package.use/obs-studio
+ 2051  20-11-23 16:50:52  sudo nvim /etc/portage/package.use/obs-studio
+ 2052  20-11-23 16:51:30  sudo emerge --ask media-video/v4l2loopback
+ 2053  20-11-23 16:52:07  sudo emerge --ask media-video/obs-studio
+ 2054  20-11-23 16:53:00  sudo nvim /etc/portage/package.use/obs-studio
+ 2055  20-11-23 16:53:07  sudo emerge --ask media-video/obs-studio
+ 2056  20-11-23 16:53:24  obs
+ 2057  20-11-23 16:58:13  sudo nvim /etc/portage/package.accept_keywords/wf-recorder
+ 2058  20-11-23 16:58:26  cat /etc/portage/package.accept_keywords/wf-recorder
+ 2059  20-11-23 16:58:37  ega wf-recorder
+ 2060  20-11-23 17:00:10  cat wireplumber.log
+ 2061  20-11-23 17:01:17  wf-recorder
+ 2062  20-11-23 17:03:48  wf-recorder --audio
+ 2063  20-11-23 17:05:48  obs
+ 2064  20-11-23 17:06:48  nvim ~/.config/pipewire/pipewire.conf
+ 2065  20-11-23 17:08:08  obs
+ 2066  20-11-23 17:10:34  nvim ~/.config/pipewire/pipewire.conf
+ 2067  20-11-23 17:13:29  wpctl status
+ 2068  20-11-23 17:13:37  cat wireplumber.log
+ 2069  20-11-23 17:12:58  obs
+ 2070  20-11-23 17:16:12  ega media-video/pipewire-libcamera-plugin
+ 2071  20-11-23 17:17:01  mkdir .config/wireplumber
+ 2072  20-11-23 17:17:17  cp /usr/share/wireplumber/wireplumber.conf .config/wireplumber//
+ 2073  20-11-23 17:17:23  nvim .config/wireplumber/wireplumber.conf
+ 2074  20-11-23 17:18:20  cat .config/wireplumber/wireplumber.conf
+ 2075  20-11-23 17:19:06  cat wireplumber.log
+ 2076  20-11-23 17:21:03  obs
+ 2077  20-11-23 17:19:50  nvim wireplumber.log
+ 2078  20-11-23 17:20:32  tail -n 10 wireplumber.log
+ 2079  20-11-23 17:20:40  nvim .config/wireplumber/wireplumber.conf
+ 2080  20-11-23 17:21:16  cat wireplumber.log
+ 2081  20-11-23 17:21:32  nvim .config/wireplumber/wireplumber.conf
+ 2082  20-11-23 17:22:43  nvim wireplumber.log
+ 2083  20-11-23 17:25:57  obs
+ 2084  20-11-23 17:26:05  cat wireplumber.log
+ 2085  20-11-23 17:26:22  nvim wireplumber.log
+ 2086  20-11-23 17:29:52  gedit wireplumber.log
+ 2087  20-11-23 18:01:16  obs
+ 2088  20-11-23 18:03:26  cat pipewire.log
+ 2089  20-11-23 19:02:03  pipewire --version
+ 2090  20-11-23 19:02:19  nvim pipewire.log
+ 2091  20-11-23 19:02:24  obs
+ 2092  20-11-23 19:02:33  cat pipewire.log
+ 2093  20-11-23 19:02:40  cat wireplumber.log
+ 2094  20-11-23 19:02:43  nvim wireplumber.log
+ 2095  20-11-23 19:02:50  obs
+ 2096  20-11-23 19:03:08  cat wireplumber.log
+ 2097  20-11-23 19:03:11  cat pipewire.log
+ 2098  20-11-23 19:03:17  pipewire --version
+ 2099  20-11-23 19:03:38  cat /etc/os-release
+ 2100  20-11-23 19:04:01  uname -r
+ 2101  20-11-23 19:23:48  ls
+ 2102  20-11-23 19:23:55  nvim .config/pipewire/pipewire.conf
+ 2103  20-11-23 19:24:08  obs
+ 2104  20-11-23 19:24:20  ls
+ 2105  20-11-23 19:24:22  rm pipewire.log
+ 2106  20-11-23 19:24:26  rm wireplumber.log
+ 2107  20-11-23 17:42:53  ./rrtx.zsh
+ 2108  20-11-23 17:49:25  ssrx
+ 2109  20-11-23 17:49:45  wf-recorder --help
+ 2110  20-11-23 17:51:07  ssrx
+ 2111  20-11-23 19:26:10  cat pipewire.log
+ 2112  20-11-23 19:27:12  cat wireplumber.log
+ 2113  20-11-23 19:27:23  ls
+ 2114  20-11-23 19:27:41  mkdir pw-logs
+ 2115  20-11-23 19:27:57  mkdir pw-logs/gnome
+ 2116  20-11-23 19:28:00  mv pipewire.log pw-logs/gnome
+ 2117  20-11-23 19:28:10  mv wireplumber.log pw-logs/gnome
+ 2118  20-11-23 19:28:18  ls pw-logs/gnome
+ 2119  20-11-23 19:28:21  ls
+ 2120  20-11-23 19:30:29  obs
+ 2121  20-11-23 19:31:08  ls
+ 2122  20-11-23 19:31:12  nvim pipewire.log
+ 2123  20-11-23 19:35:32  mkdir pw-logs/hypr
+ 2124  20-11-23 19:35:35  mv pipewire.log pw-logs/hypr
+ 2125  20-11-23 19:35:43  mv wireplumber.log pw-logs/hypr
+ 2126  20-11-23 19:35:47  nvim .config/pipewire/pipewire.conf
+ 2127  20-11-23 19:35:59  nvim .config/wireplumber/wireplumber.conf
+ 2128  20-11-23 19:36:08  ls
+ 2129  20-11-23 19:36:28  nvim .config/hypr/start-xdgh.sh
+ 2130  20-11-23 19:38:01  cat xdgh-error.txt
+ 2131  20-11-23 19:38:29  cat .config/hypr/start-xdgh.sh
+ 2132  20-11-23 19:48:54  ls -alh | grep xdgh
+ 2133  20-11-23 19:49:01  nvim xdgh-log.txt
+ 2134  20-11-23 19:49:18  nvim ~/.config/hypr/start-xdgh.sh
+ 2135  20-11-23 19:39:17  head xdgh-log.txt
+ 2136  20-11-23 19:39:25  cat xdgh-log.txt
+ 2137  20-11-23 19:39:34  ls -alh | grep xdgh
+ 2138  20-11-23 19:39:45  obs
+ 2139  20-11-23 19:40:50  nvim xdgh-log.txt
+ 2140  20-11-23 19:47:59  nvim xdgh-repeat.txt
+ 2141  20-11-23 19:48:12  nvim foo.txt
+ 2142  20-11-23 19:48:21  nvim xdgh-repeat.txt
+ 2143  20-11-23 19:48:41  gedit xdgh-repeat.txt
+ 2144  20-11-23 19:50:04  obs
+ 2145  20-11-23 20:03:51  ./rrtx.zsh
+ 2146  20-11-23 20:04:08  ls
+ 2147  20-11-23 20:04:11  ssrx
+ 2148  20-11-23 20:42:22  tmux a
+ 2149  20-11-23 22:35:45  ssrx
+ 2150  20-11-23 22:44:15  chrome
+ 2151  20-11-23 19:50:29  ls -alh | grep xdgh
+ 2152  20-11-23 19:52:19  gedit xdgh-repeat.txt
+ 2153  20-11-23 19:56:25  mv xdgh-log.txt xdph-log.txt
+ 2154  20-11-23 19:58:19  cp pw-logs/gnome/pipewire.log pipewire-gnome.txt
+ 2155  20-11-23 19:58:30  cp pw-logs/gnome/wireplumber.log wireplumber-gnome.txt
+ 2156  20-11-23 19:58:43  cp pw-logs/hypr/pipewire.log pipewire-hypr.txt
+ 2157  20-11-23 19:58:59  cp pw-logs/hypr/wireplumber.log wireplumber-hypr.txt
+ 2158  20-11-23 19:59:04  nvim wireplumber-hypr.txt
+ 2159  20-11-23 20:17:00  nvim xdph-log.txt
+ 2160  20-11-23 20:17:15  cat xdph-log.txt | grep -v 'get poll event'
+ 2161  20-11-23 20:17:23  cat xdph-log.txt | grep -v 'got poll event'
+ 2162  20-11-23 20:17:34  cat xdph-log.txt | grep -v 'got poll event' > xdph-log-filtered.txt
+ 2163  20-11-23 20:17:36  nvim xdph-log-filtered.txt
+ 2164  20-11-23 20:21:18  cd xdg-desktop-portal-hyprland/
+ 2165  20-11-23 20:21:26  grep -rn 'fixated'
+ 2166  20-11-23 20:21:33  nvim src/portals/Screencopy.cpp
+ 2167  21-11-23 08:39:48  nvim .config/hypr/start-xdgh.sh
+ 2168  21-11-23 08:40:27  htop
+ 2169  21-11-23 08:40:56  cat .config/hypr/hyprland.conf
+ 2170  21-11-23 08:41:10  cat .config/hypr/start-xdgh.sh
+ 2171  21-11-23 08:41:30  ls /usr/libexec/xdg-desktop-portal-wlr
+ 2172  21-11-23 08:41:36  /usr/libexec/xdg-desktop-portal-wlr -v
+ 2173  21-11-23 08:41:51  nvim .config/hypr/start-xdgh.sh
+ 2174  21-11-23 08:42:07  /usr/libexec/xdg-desktop-portal-wlr -l TRACE
+ 2175  21-11-23 08:42:13  ls
+ 2176  21-11-23 08:42:17  cat .config/hypr/start-xdgh.sh
+ 2177  21-11-23 08:42:40  wpctl status
+ 2178  21-11-23 08:42:52  killall xdg-desktop-portal-hyprland
+ 2179  21-11-23 08:42:55  wpctl status
+ 2180  21-11-23 08:43:03  nvim xdpw-log.txt
+ 2181  21-11-23 08:43:14  obs
+ 2182  21-11-23 08:43:49  nvim xdpw-log.txt
+ 2183  21-11-23 08:47:16  obs
+ 2184  21-11-23 08:59:03  rm obs-log.txt
+ 2185  21-11-23 08:59:11  obs -v | tee obs-log.txt
+ 2186  21-11-23 08:59:23  cat obs-log.txt
+ 2187  21-11-23 08:59:34  cat ~/.config/hypr/start-xdgh.sh
+ 2188  21-11-23 09:02:44  cat obs-log.txt
+ 2189  21-11-23 09:02:50  obs -v | tee obs-log.txt
+ 2190  21-11-23 09:03:51  cat xdpw-log.txt
+ 2191  21-11-23 09:04:10  obs
+ 2192  21-11-23 09:04:15  cat xdpw-log.txt
+ 2193  21-11-23 09:06:19  nvim .config/hypr/start-xdgh.sh
+ 2194  21-11-23 08:44:33  wpctl status
+ 2195  21-11-23 08:44:49  killall xdg-desktop-portal-hyprland
+ 2196  21-11-23 08:45:20  wpctl status
+ 2197  21-11-23 08:45:52  ps -aux | grep hyprland
+ 2198  21-11-23 08:46:46  sudo mv /usr/libexec/xdg-desktop-portal-hyprland /usr/libexec/__xdg-desktop-portal-hyprland
+ 2199  21-11-23 08:46:51  sudo ls /usr/libexec
+ 2200  21-11-23 08:46:55  sudo ls /usr/libexec | grep xdg
+ 2201  21-11-23 08:47:06  wpctl status
+ 2202  21-11-23 08:47:11  killall xdg-desktop-portal-hyprland
+ 2203  21-11-23 09:00:21  wpctl status
+ 2204  21-11-23 09:01:57  cat obs-log.txt
+ 2205  21-11-23 09:06:57  obs
+ 2206  21-11-23 09:07:23  htop
+ 2207  21-11-23 09:07:46  /usr/libexec/xdg-desktop-portal
+ 2208  21-11-23 09:07:49  htop
+ 2209  21-11-23 09:07:57  obs
+ 2210  21-11-23 09:08:07  wpctl status
+ 2211  21-11-23 09:08:12  obs
+ 2212  21-11-23 09:08:54  sudo mv /usr/libexec/__xdg-desktop-portal-hyprland /usr/libexec/xdg-desktop-portal-hyprland
+ 2213  21-11-23 09:09:12  obs
+ 2214  21-11-23 09:09:35  sudo mv /usr/libexec/xdg-desktop-portal-hyprland /usr/libexec/__xdg-desktop-portal-hyprland
+ 2215  21-11-23 09:10:03  sudo ln /usr/libexec/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland
+ 2216  21-11-23 09:10:17  sudo ln /usr/lib/xdg-desktop-portal-hyprland /usr/libexec
+ 2217  21-11-23 09:10:20  ls /usr/libexec/
+ 2218  21-11-23 09:10:25  ls /usr/libexec/ | grep xdg
+ 2219  21-11-23 09:10:42  diff /usr/libexec/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland
+ 2220  21-11-23 09:11:03  obs
+ 2221  21-11-23 09:11:19  wpctl status
+ 2222  21-11-23 09:11:30  nvim .config/hypr/start-xdgh.sh
+ 2223  21-11-23 09:12:35  wpctl status
+ 2224  21-11-23 09:12:07  obs
+ 2225  21-11-23 09:21:50  nvim .config/hypr/hyprland.conf
+ 2226  21-11-23 09:22:56  htop
+ 2227  21-11-23 09:23:15  ps -aux | grep hyprland
+ 2228  21-11-23 09:23:19  obs
+ 2229  21-11-23 09:24:13  sudo reboot
+ 2230  21-11-23 09:25:03  obs
+ 2231  21-11-23 09:25:17  wf-recorder -a
+ 2232  21-11-23 09:26:07  wf-recorder --audio
+ 2233  21-11-23 09:27:46  pactl list sources
+ 2234  21-11-23 09:28:26  pacmd set-source-volume 1 50
+ 2235  21-11-23 09:28:35  pacmd set-source-volume 1 0.5
+ 2236  21-11-23 09:28:38  pacmd set-source-volume 1 50
+ 2237  21-11-23 09:28:51  pacmd set-source-volume 0 50
+ 2238  21-11-23 09:28:56  pactl set-source-volume 0 50
+ 2239  21-11-23 09:29:03  cat .config/hypr/hyprland.conf
+ 2240  21-11-23 09:29:20  pactl set-source-volume 0 50%
+ 2241  21-11-23 09:29:28  pactl set-source-volume 0 +10%
+ 2242  21-11-23 09:30:22  pactl set-sink-volume 0 +15%
+ 2243  21-11-23 09:30:27  pactl set-source-volume 0 +15%
+ 2244  21-11-23 09:30:33  pactl set-source-volume 0 15%
+ 2245  21-11-23 09:30:37  sudo reboot
+ 2246  21-11-23 10:31:45  pw-mon
+ 2247  27-11-23 18:48:07  obs
+ 2248  27-11-23 18:48:23  htop
+ 2249  27-11-23 18:48:35  nvim .config/hypr/hyprland.conf
+ 2250  27-11-23 18:50:04  cat .config/hypr/start-xdgh.sh
+ 2251  27-11-23 18:50:11  cat .config/hypr/xdg-portal-hyprland.sh
+ 2252  27-11-23 18:50:20  cat .config/hypr/xdg-portal-wlr.sh
+ 2253  27-11-23 18:50:27  nvim .config/hypr/hyprland.conf
+ 2254  27-11-23 18:50:46  diff .config/hypr/xdg-portal-hyprland.sh .config/hypr/start-xdgh.sh
+ 2255  27-11-23 18:51:48  sudo nvim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+ 2256  27-11-23 18:52:11  htop
+ 2257  27-11-23 18:53:37  wpctl status
+ 2258  27-11-23 18:53:11  obs
+ 2259  27-11-23 18:54:07  cd /usr/libexec/
+ 2260  27-11-23 18:54:07  ls
+ 2261  27-11-23 18:54:45  ps -aux | grep hyprland
+ 2262  27-11-23 18:55:15  sudo mv xdg-desktop-portal-hyprland _xdg-desktop-portal-hyprland
+ 2263  27-11-23 19:09:52  waybar &
+ 2264  27-11-23 20:09:37  obs
+ 2265  27-11-23 19:10:22  htop
+ 2266  27-11-23 19:10:56  obs
+ 2267  27-11-23 19:12:27  sudo modprobe v4l2loopback exclusive_caps=1 card_label=WfRecorder
+ 2268  27-11-23 19:12:46  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -x yuv420p
+ 2269  27-11-23 19:12:52  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2270  27-11-23 19:13:07  wf-recorder --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2271  27-11-23 19:13:18  wf-recorder --help
+ 2272  27-11-23 19:13:30  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2273  27-11-23 19:13:38  obs
+ 2274  27-11-23 19:15:03  ffplay /dev/video2\n
+ 2275  27-11-23 19:15:14  ffplay /dev/video0
+ 2276  27-11-23 19:15:18  ffplay /dev/video1
+ 2277  27-11-23 19:15:20  ffplay /dev/video2
+ 2278  27-11-23 19:15:27  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2279  27-11-23 19:16:16  equery u ffmpeg
+ 2280  27-11-23 19:16:43  sudo nvim /etc/portage/package.use/ffmpeg
+ 2281  27-11-23 19:17:39  sudo emerge --ask media-video/ffmpeg
+ 2282  27-11-23 19:18:09  sudo nvim /etc/portage/package.use/ffmpeg
+ 2283  27-11-23 19:18:47  sudo emerge --ask --newuse media-video/ffmpeg
+ 2284  27-11-23 19:19:17  sudo emerge --ask media-video/ffmpeg
+ 2285  27-11-23 19:19:34  history | grep USE
+ 2286  27-11-23 19:19:46  USE=v4l2 sudo emerge --ask media-video/ffmpeg
+ 2287  27-11-23 19:20:45  equery u ffmpeg
+ 2288  27-11-23 19:21:04  equery u ffmpeg | grep v4l
+ 2289  27-11-23 19:21:24  sudo nvim /etc/portage/package.use/ffmpeg
+ 2290  27-11-23 19:21:33  emerge -a ffmpeg
+ 2291  27-11-23 19:21:39  ega ffmpeg
+ 2292  27-11-23 19:38:53  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2293  27-11-23 19:39:03  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -x yuv420p
+ 2294  27-11-23 19:39:10  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2295  27-11-23 19:39:13  sudo wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2296  27-11-23 19:39:21  touch /dev/video3
+ 2297  27-11-23 19:39:24  sudo touch /dev/video3
+ 2298  27-11-23 19:39:26  sudo wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2299  27-11-23 19:39:33  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -x yuv420p
+ 2300  27-11-23 19:39:54  ls -alh /dev | grep video
+ 2301  27-11-23 19:40:15  sudo rm /dev/video3
+ 2302  27-11-23 19:40:22  sudo cp /dev/video2 /dev/video3
+ 2303  27-11-23 19:40:34  ls -alh /dev/video3
+ 2304  27-11-23 19:40:54  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -x yuv420p
+ 2305  27-11-23 19:41:09  ls -alh /dev | grep video
+ 2306  27-11-23 19:41:14  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -x yuv420p
+ 2307  27-11-23 19:43:37  v4l2loopback-ctl set-caps "video/x-raw, format=YUY2, width=1366, height=768" /dev/video2
+ 2308  27-11-23 19:43:54  v4l2-ctl
+ 2309  27-11-23 19:43:57  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -x yuv420p
+ 2310  27-11-23 19:44:32  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi --pixel-format=yuv420p
+ 2311  27-11-23 19:44:52  equery u ffmpeg
+ 2312  27-11-23 19:45:07  sudo nvim /etc/portage/package.use/ffmpeg
+ 2313  27-11-23 19:45:19  ega ffmpeg
+ 2314  27-11-23 19:59:00  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi --pixel-format=yuv420p
+ 2315  27-11-23 19:59:20  equery u wf-recorder
+ 2316  27-11-23 19:59:42  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264 --pixel-format=yuv420p
+ 2317  27-11-23 20:00:12  ffmpeg -codecs
+ 2318  27-11-23 20:00:30  ffmpeg -codecs | grep 64
+ 2319  27-11-23 20:01:02  wf-recorder
+ 2320  27-11-23 20:01:49  wf-recorder --codec=h264
+ 2321  27-11-23 20:02:20  wf-recorder --codec=264
+ 2322  27-11-23 20:02:27  wf-recorder --help
+ 2323  27-11-23 20:04:56  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2
+ 2324  27-11-23 20:15:06  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -t
+ 2325  27-11-23 20:15:24  sudo touch /dev/video3
+ 2326  27-11-23 20:15:34  sudo chown root:video /dev/video3
+ 2327  27-11-23 20:15:37  ls -alh /dev | grep video
+ 2328  27-11-23 20:15:46  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -t
+ 2329  27-11-23 20:15:50  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video3 -t
+ 2330  27-11-23 20:16:03  cat /dev/video2
+ 2331  27-11-23 20:16:12  sudo rm /dev/video3
+ 2332  27-11-23 20:16:23  sudo ls /dev/video2
+ 2333  27-11-23 20:16:29  sudo ls /dev | grep video
+ 2334  27-11-23 20:16:36  sudo ls -alh /dev | grep video
+ 2335  27-11-23 20:16:50  pwctl
+ 2336  27-11-23 20:17:01  wpctl status
+ 2337  27-11-23 20:07:21  htop
+ 2338  27-11-23 20:07:34  ffplay /dev/video2
+ 2339  27-11-23 19:28:59  equery u media-video/pipewire
+ 2340  27-11-23 19:30:21  sudo nvim /etc/portage/package.accept_keywords/pipewire
+ 2341  27-11-23 19:31:19  ega pipewire
+ 2342  27-11-23 19:32:22  sudo nvim /etc/portage/package.use/pipewire
+ 2343  27-11-23 19:32:29  ega pipewire
+ 2344  27-11-23 19:37:32  sudo nvim /etc/portage/package.use/pipewire
+ 2345  27-11-23 19:37:39  ega pipewire
+ 2346  27-11-23 19:37:49  sudo nvim /etc/portage/package.use/pipewire
+ 2347  27-11-23 20:05:13  ega pipewire
+ 2348  27-11-23 19:08:27  nvim .config/hypr/hyprland.conf
+ 2349  27-11-23 19:08:31  ls
+ 2350  27-11-23 19:08:34  nvim .config/hypr/hyprland.conf
+ 2351  27-11-23 19:08:46  cat .config/hypr/hyprland.conf
+ 2352  27-11-23 19:09:02  cd .config/hypr
+ 2353  27-11-23 19:09:02  ls
+ 2354  27-11-23 19:09:05  git diff
+ 2355  27-11-23 19:09:14  git checkout HEAD -- hyprland.conf
+ 2356  27-11-23 19:09:15  ls
+ 2357  27-11-23 19:09:16  gtx
+ 2358  27-11-23 19:09:18  nvim hyprland.conf
+ 2359  27-11-23 20:08:22  htop
+ 2360  27-11-23 20:08:33  killall ffplay
+ 2361  27-11-23 20:08:52  htop
+ 2362  27-11-23 20:19:04  sudo nvim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+ 2363  27-11-23 20:24:18  sudo modprobe v4l2loopback
+ 2364  27-11-23 20:25:31  wpctl status
+ 2365  27-11-23 20:25:43  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -t
+ 2366  27-11-23 20:31:34  htop
+ 2367  27-11-23 20:28:02  nvim shell/capture.sh
+ 2368  27-11-23 20:28:27  crs
+ 2369  27-11-23 20:28:33  nvim shell/.bashrc
+ 2370  27-11-23 20:28:44  rsrc
+ 2371  27-11-23 20:28:49  crs
+ 2372  27-11-23 20:28:55  nvim shell/.bashrc
+ 2373  27-11-23 20:29:01  nvim shell/capture.sh
+ 2374  27-11-23 20:29:06  crs
+ 2375  27-11-23 20:29:08  rsrc
+ 2376  27-11-23 20:29:12  crs
+ 2377  27-11-23 20:29:21  wf-recorder --help
+ 2378  27-11-23 20:30:20  nvim shell/capture.sh
+ 2379  27-11-23 20:30:28  rsrc
+ 2380  27-11-23 20:31:00  crs
+ 2381  27-11-23 20:38:58  cd shell/
+ 2382  27-11-23 20:38:58  ls
+ 2383  27-11-23 20:39:00  gtau
+ 2384  27-11-23 20:39:03  gta capture.sh
+ 2385  27-11-23 20:39:04  gts
+ 2386  27-11-23 20:39:21  gtc 'feat(capture): added alias for capturing screen through wf-recorder'
+ 2387  27-11-23 20:39:26  gtu
+ 2388  27-11-23 20:39:47  cd ~
+ 2389  27-11-23 20:39:49  ./rrtx.zsh
+ 2390  27-11-23 20:40:26  cd shell/
+ 2391  27-11-23 20:40:29  cat capture.sh
+ 2392  27-11-23 20:40:43  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -t
+ 2393  27-11-23 20:41:36  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2
+ 2394  27-11-23 20:41:52  wf-recorder --muxer=v4l2 --file=/dev/video2
+ 2395  27-11-23 20:42:39  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2
+ 2396  27-11-23 20:42:44  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -t
+ 2397  27-11-23 20:43:00  wf-recorder --muxer=v4l2 --codec=h264 --file=/dev/video2 -t
+ 2398  27-11-23 20:43:06  wf-recorder --muxer=v4l2 --codec=h264 --file=/dev/video2 -t <<< y
+ 2399  27-11-23 20:43:12  wf-recorder --muxer=v4l2 --codec=h264_vaapi --file=/dev/video2 -t <<< y
+ 2400  27-11-23 20:43:18  wf-recorder --muxer=v4l2 --codec=h264 --file=/dev/video2 -t <<< y
+ 2401  27-11-23 20:43:22  wf-recorder -l
+ 2402  27-11-23 20:46:24  wf-recorder -c h264_vaapi -f out.mp4
+ 2403  27-11-23 20:46:29  wf-recorder -c h264 -f out.mp4
+ 2404  27-11-23 20:46:33  wf-recorder -c ff -f out.mp4
+ 2405  27-11-23 20:46:37  wf-recorder -f out.mp4
+ 2406  27-11-23 20:47:22  ffmpeg -encoders|grep vaapi
+ 2407  27-11-23 20:47:37  ffmpeg -encoders | grep vaapi
+ 2408  27-11-23 20:48:35  sudo nvim /etc/portage/package.use/make.conf
+ 2409  27-11-23 20:48:51  sudo nvim /etc/portage/make.conf
+ 2410  27-11-23 20:49:01  emerge --ask --changed-use --deep @world
+ 2411  27-11-23 20:49:04  sudo emerge --ask --changed-use --deep @world
+ 2412  27-11-23 21:33:10  wf-recorder -c h264_vaapi -f out.mp4
+ 2413  27-11-23 21:33:43  wf-recorder -c h264_vaapi -d /dev/dri/renderD128 -f out.mp4
+ 2414  27-11-23 21:34:17  wf-recorder -c h264_vaapi -d /dev/dri/renderD129
+ 2415  27-11-23 21:34:26  wf-recorder -c h264_vaapi -d /dev/dri/renderD128 -f out.mp4
+ 2416  27-11-23 21:34:58  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi --pixel-format=yuv420
+ 2417  27-11-23 21:36:27  ffmpeg -help encoder=h264_vaapi
+ 2418  27-11-23 21:36:54  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi --pixel-format=yuv420 -t
+ 2419  27-11-23 21:37:07  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi
+ 2420  27-11-23 21:37:19  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi -l
+ 2421  27-11-23 21:38:10  sudo emerge --ask media-video/libva-utils
+ 2422  27-11-23 21:39:14  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi -l
+ 2423  27-11-23 20:53:21  ffmpeg -encoders
+ 2424  27-11-23 21:33:01  ffmpeg -encoders | grep h264
+ 2425  27-11-23 21:39:56  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi
+ 2426  27-11-23 21:40:07  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_v4l2m2m
+ 2427  27-11-23 21:40:18  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=rawvideo
+ 2428  27-11-23 21:40:24  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=rawvideo -t
+ 2429  27-11-23 21:40:37  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi
+ 2430  27-11-23 21:41:48  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=h264_vaapi -l
+ 2431  27-11-23 21:43:03  wf-recorder -f /dev/video2 --muxer=v4l2 -d /dev/dri/renderD128 --codec=hevc_vaapi
+ 2432  27-11-23 21:43:52  wf-recorder -f video.mp4 -c h264_vaapi -d /dev/dri/renderD128 -a -t -F hwupload,scale_vaapi=format=yuv444p
+ 2433  27-11-23 21:44:03  wf-recorder -f video.mp4 -c h264_vaapi -d /dev/dri/renderD128 -a -t -F hwupload
+ 2434  27-11-23 21:44:10  wf-recorder -f video.mp4 -c h264_vaapi -d /dev/dri/renderD128
+ 2435  27-11-23 21:45:12  ffmpeg -vaapi_device /dev/dri/renderD128 -f x11grab -video_size 1366x768 -i :0 -vf 'format=nv12,hwupload' -c:v h264_vaapi o.mp4
+ 2436  27-11-23 21:45:53  vainfo
+ 2437  27-11-23 21:47:40  equery u media-video/libva-utils
+ 2438  27-11-23 21:47:48  equery u media-video/libva
+ 2439  27-11-23 21:48:46  export LIBVA_DRIVER_NAME=radeonsi
+ 2440  27-11-23 21:48:49  vainfo
+ 2441  27-11-23 21:59:26  sudo nvim /etc/portage/make.profile/
+ 2442  27-11-23 21:59:30  sudo nvim /etc/portage/make.conf
+ 2443  27-11-23 21:59:49  sudo emerge --ask --changed-use --deep @world
+ 2444  27-11-23 22:03:09  equery u mesa
+ 2445  27-11-23 22:04:00  equery u ffmpeg
+ 2446  27-11-23 22:07:04  C
+ 2447  27-11-23 22:07:08  ffmpeg -encoders
+ 2448  27-11-23 22:07:19  ffmpeg -encoders | grep h264
+ 2449  27-11-23 22:07:45  wf-recorder -f video.mp4 -c libopenh264
+ 2450  27-11-23 22:08:46  history | grep video2
+ 2451  27-11-23 22:09:00  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2
+ 2452  27-11-23 22:09:15  wf-recorder --muxer=v4l2 --codec=libopenh264 --file=/dev/video2
+ 2453  27-11-23 22:09:58  wf-recorder --muxer=v4l2 --codec=rawvideo --file=/dev/video2 -t
+ 2454  27-11-23 22:30:34  ls
+ 2455  27-11-23 22:30:38  sudo nvim /etc/portage/make.conf
