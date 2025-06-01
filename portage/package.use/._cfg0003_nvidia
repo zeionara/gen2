@@ -1,0 +1,14 @@
+>=media-libs/libglvnd-1.7.0 X
+>=x11-libs/cairo-1.18.2-r1 X
+# required by dev-qt/qtdeclarative-6.8.2::gentoo
+# required by kde-frameworks/kguiaddons-6.10.0::gentoo
+# required by kde-frameworks/kcolorscheme-6.10.0::gentoo
+# required by kde-frameworks/kiconthemes-6.10.0::gentoo
+# required by kde-frameworks/qqc2-desktop-style-6.10.0::gentoo
+# required by gui-libs/hyprland-qtutils-0.1.1::gentoo
+# required by gui-wm/hyprland-0.46.2-r1::gentoo[qtutils]
+# required by gui-wm/hyprland (argument)
+>=dev-qt/qtbase-6.8.2-r2 opengl wayland
+# required by dev-qt/qtbase-6.8.2-r2::gentoo[gui]
+# required by dev-qt/qttranslations-6.8.2::gentoo
+>=x11-libs/libxkbcommon-1.8.0 X

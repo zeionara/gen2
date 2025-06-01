@@ -1,0 +1,10 @@
+sys-kernel/installkernel grub dracut
+# required by media-libs/libepoxy-1.5.10-r3::gentoo
+# required by x11-libs/gtk+-3.24.42-r1::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-46.2::gentoo
+>=media-libs/libglvnd-1.7.0 X
+# required by x11-libs/gtk+-3.24.42-r1::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-46.2::gentoo
+>=x11-libs/cairo-1.18.2-r1 X

@@ -1,0 +1,6 @@
+>=kde-frameworks/sonnet-6.10.0 qml
+>=app-text/xmlto-0.0.28-r11 text
+>=dev-qt/qt5compat-6.8.2-r1 qml
+>=dev-qt/qtdeclarative-6.8.2 opengl
+>=x11-libs/libxkbcommon-1.8.0 X
+# >=dev-qt/qtbase-6.8.2-r2 wayland opengl

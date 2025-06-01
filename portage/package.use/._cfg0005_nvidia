@@ -1,0 +1,8 @@
+>=media-libs/libglvnd-1.7.0 X
+>=x11-libs/cairo-1.18.2-r1 X
+# required by dev-qt/qttools-6.8.2::gentoo[widgets]
+# required by dev-qt/qttranslations-6.8.2::gentoo
+>=dev-qt/qtbase-6.8.2-r2 opengl wayland
+# required by dev-qt/qtbase-6.8.2-r2::gentoo[gui]
+# required by dev-qt/qttranslations-6.8.2::gentoo
+>=x11-libs/libxkbcommon-1.8.0 X

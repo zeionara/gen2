@@ -1,0 +1,1387 @@
+    1  04-04-25 08:13:52  ls
+    2  04-04-25 08:16:18  fast-theme "$HOME/shell/snuffari.ini"
+    3  04-04-25 08:16:34  ls
+    4  04-04-25 08:17:18  pwd
+    5  04-04-25 08:17:23  ls
+    6  04-04-25 08:18:42  pwd
+    7  04-04-25 08:18:44  sleep 2
+    8  04-04-25 08:18:51  ls
+    9  04-04-25 08:20:55  cd /tmp
+   10  04-04-25 08:20:57  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   11  04-04-25 08:22:16  bash Miniconda3-latest-Linux-x86_64.sh
+   12  04-04-25 08:24:15  conda config --set changeps1 false
+   13  04-04-25 08:24:20  ls
+   14  04-04-25 08:24:21  pwd
+   15  04-04-25 08:24:27  neofetch
+   16  04-04-25 08:24:33  df -h .
+   17  04-04-25 08:24:37  htop
+   18  04-04-25 08:26:52  gpg2
+   19  04-04-25 08:27:04  gpg2 --version
+   20  04-04-25 08:28:11  gpgeng rave
+   21  04-04-25 08:29:28  ls
+   22  04-04-25 08:29:31  cd system-config/
+   23  04-04-25 08:29:53  sudo history > root.history
+   24  04-04-25 08:29:59  su root
+   25  04-04-25 08:30:09  sudo ls
+   26  04-04-25 08:30:13  cat root.history
+   27  04-04-25 08:30:20  rm root.history
+   28  04-04-25 08:30:26  history > zeio.history
+   29  04-04-25 08:30:28  cat zeio.history
+   30  04-04-25 08:30:52  mv zeio.history zeio.history.zsh
+   31  04-04-25 08:31:03  bash
+   32  04-04-25 08:41:58  sszr
+   33  04-04-25 08:42:11  nm
+   34  04-04-25 08:42:14  nvidia-smi
+   35  04-04-25 08:42:19  bash
+   36  04-04-25 08:43:04  nvidia-smi
+   37  04-04-25 08:43:20  lsmod
+   38  04-04-25 08:43:24  lsmod | grep nvidia
+   39  04-04-25 08:43:32  modprobe nvidia
+   40  04-04-25 08:43:36  nvidia-smi
+   41  04-04-25 08:43:46  nvidia-modprobe
+   42  04-04-25 08:43:49  sudo nvidia-modprobe
+   43  04-04-25 08:43:52  nvidia-smi
+   44  04-04-25 08:44:02  neofetch
+   45  04-04-25 08:44:14  nvidia-smi
+   46  04-04-25 08:44:26  bash
+   47  04-04-25 08:45:07  nvidia-smi
+   48  04-04-25 08:45:10  sudo nvidia-smi
+   49  04-04-25 08:45:43  lsmod | grep nvidia
+   50  04-04-25 08:45:49  nvidia-smi
+   51  04-04-25 08:47:06  ll /dev/nvidia
+   52  04-04-25 08:47:21  ls /dev/nvidia
+   53  04-04-25 08:47:27  ls -alh /dev | grep nvidia
+   54  04-04-25 08:48:17  chmod 666 /dev/nvidia0
+   55  04-04-25 08:48:20  sudo chmod 666 /dev/nvidia0
+   56  04-04-25 08:48:23  nvidia-smi
+   57  04-04-25 08:48:30  sudo nvidia-smi
+   58  04-04-25 08:49:55  sudo chmod 660 /dev/nvidia0
+   59  04-04-25 08:49:59  ls /dev | grep nvidia
+   60  04-04-25 08:50:04  ls -alh /dev | grep nvidia
+   61  04-04-25 08:50:29  sudo usermod -aG video zeio
+   62  04-04-25 08:50:34  nvidia-smi
+   63  04-04-25 08:50:39  sudo reboot -h now
+   64  04-04-25 08:50:44  sudo reboot
+   65  04-04-25 08:51:20  nvidia-smi
+   66  04-04-25 08:51:26  ls
+   67  04-04-25 08:51:29  nm
+   68  04-04-25 08:51:39  htop
+   69  04-04-25 08:53:37  sudo vim /etc/hosts
+   70  04-04-25 08:53:49  ssdk
+   71  04-04-25 08:54:06  ssh-copy-id -P 218 zeio@foam
+   72  04-04-25 08:54:10  ssh-copy-id -p 218 zeio@foam
+   73  04-04-25 08:54:34  ssdk
+   74  04-04-25 08:54:51  sudo vim /etc/hosts
+   75  04-04-25 08:55:10  ssh-copy-id -p 196 zeio@foam
+   76  04-04-25 08:55:16  ssh-copy-id -p 156 zeio@foam
+   77  04-04-25 08:55:41  ssh-copy-id -p 186 zeio@foam
+   78  04-04-25 08:56:27  ssh -p 186 void@foam
+   79  04-04-25 08:57:43  ssh-copy-id -p 186 zeio@foam
+   80  04-04-25 08:58:11  vim ~/bashrc/remote.sh
+   81  04-04-25 08:58:31  rsrc
+   82  04-04-25 08:58:33  ssbk
+   83  04-04-25 08:58:48  ssdk
+   84  04-04-25 09:01:24  ls
+   85  04-04-25 09:01:25  pwd
+   86  04-04-25 09:01:30  ls
+   87  04-04-25 09:01:33  nvidia-smi
+   88  04-04-25 09:01:36  nm
+   89  04-04-25 09:01:45  neofetch
+   90  04-04-25 09:01:50  nvidia-smi
+   91  04-04-25 09:19:28  ssdk
+   92  04-04-25 09:30:20  ssnx
+   93  04-04-25 12:31:03  sudo shutdown -h now
+   94  18-05-25 15:11:02  ls
+   95  18-05-25 15:15:27  emerge --ask gui-wm/hyprland
+   96  18-05-25 15:15:38  sudo emerge --ask gui-wm/hyprland
+   97  18-05-25 15:49:12  ls
+   98  18-05-25 15:49:20  sudo emerge --ask gui-wm/hyprland
+   99  18-05-25 15:50:01  cat /etc/portage/package.use/nvidia
+  100  18-05-25 15:50:12  vim /etc/portage/package.use/hyprland
+  101  18-05-25 15:50:21  sudo vim /etc/portage/package.use/hyprland
+  102  18-05-25 15:50:28  sudo emerge --ask gui-wm/hyprland
+  103  18-05-25 15:50:44  sudo vim /etc/portage/package.use/hyprland
+  104  18-05-25 15:51:07  sudo emerge --ask gui-wm/hyprland
+  105  18-05-25 15:52:12  sudo vim /etc/portage/package.use/hyprland
+  106  18-05-25 15:52:19  sudo emerge --ask gui-wm/hyprland
+  107  18-05-25 15:52:27  sudo vim /etc/portage/package.use/hyprland
+  108  18-05-25 15:52:33  sudo emerge --ask gui-wm/hyprland
+  109  18-05-25 15:53:33  sudo vim /etc/portage/package.use/hyprland
+  110  18-05-25 15:53:37  sudo emerge --ask gui-wm/hyprland
+  111  18-05-25 15:54:01  sudo vim /etc/portage/package.use/hyprland
+  112  18-05-25 15:54:04  sudo emerge --ask gui-wm/hyprland
+  113  18-05-25 15:54:19  sudo vim /etc/portage/package.use/hyprland
+  114  18-05-25 15:54:28  sudo emerge --ask gui-wm/hyprland
+  115  18-05-25 15:55:14  cat /etc/portage/package.use/hyprland
+  116  18-05-25 15:57:21  vim /etc/portage/package.use/hyprland
+  117  18-05-25 15:57:58  sudo vim /etc/portage/package.use/hyprland
+  118  18-05-25 15:58:12  ls
+  119  18-05-25 15:58:18  sudo emerge --ask gui-wm/hyprland
+  120  18-05-25 15:58:54  sudo emerge --update --newuse --deep @world
+  121  18-05-25 16:00:08  sudo emerge --ask gui-wm/hyprland
+  122  18-05-25 16:02:04  sudo emerge --sync
+  123  18-05-25 16:03:32  sudo emerge --update --newuse --deep @world
+  124  18-05-25 16:07:23  htop
+  125  18-05-25 16:07:52  sudo emerge --update --newuse --deep @world
+  126  18-05-25 16:15:14  htop
+  127  18-05-25 16:21:28  portageq envvar USE | xargs -n 1
+  128  18-05-25 16:22:14  vim /etc/portage/package.use/hyprland
+  129  18-05-25 16:22:20  sudo vim /etc/portage/make.conf
+  130  18-05-25 16:22:48  cat /etc/portage/make.conf
+  131  18-05-25 16:22:51  portageq envvar USE | xargs -n 1
+  132  18-05-25 16:31:00  sudo vim /etc/portage/make.conf
+  133  18-05-25 16:34:23  ip link
+  134  18-05-25 16:36:01  tail -f /var/log/emerge.log
+  135  18-05-25 16:36:04  sudo tail -f /var/log/emerge.log
+  136  18-05-25 16:41:50  df -h .
+  137  18-05-25 16:47:57  sudo tail -f /var/log/emerge.log
+  138  18-05-25 16:55:29  cat /etc/portage/make.conf
+  139  18-05-25 16:55:36  sudo emerge --sync
+  140  18-05-25 16:56:08  sudo emerge --update --newuse --deep @world
+  141  18-05-25 16:56:35  cat /etc/portage/package.use/hyprland
+  142  18-05-25 16:56:42  cat /etc/portage/make.conf
+  143  18-05-25 16:59:12  vim /etc/portage/make.conf
+  144  18-05-25 16:59:20  sudo vim /etc/portage/make.conf
+  145  18-05-25 17:14:32  tail -f /var/log/emerge.log
+  146  18-05-25 17:14:38  sudo tail -f /var/log/emerge.log
+  147  18-05-25 17:18:03  portageq envvar USE | xargs -n 1
+  148  18-05-25 17:18:08  portageq envvar USE
+  149  18-05-25 17:18:10  portageq envvar USE | xargs -n 1
+  150  18-05-25 17:19:38  tail -f /var/log/emerge.log
+  151  18-05-25 17:19:42  sudo tail -f /var/log/emerge.log
+  152  18-05-25 17:23:09  sudo emerge --update --newuse --deep @world
+  153  18-05-25 17:29:09  emerge --info '=llvm-core/clang-19.1.7::gentoo'
+  154  18-05-25 17:29:26  emerge -pqv '=llvm-core/clang-19.1.7::gentoo'
+  155  18-05-25 17:30:01  sudo emerge --update --newuse --deep @world -X 'llvm-core/clang'
+  156  18-05-25 17:30:39  vim /etc/portage/make.conf
+  157  18-05-25 17:30:47  sudo vim /etc/portage/make.conf
+  158  18-05-25 17:30:55  sudo emerge --update --newuse --deep @world
+  159  18-05-25 17:34:16  ls
+  160  18-05-25 17:34:22  ls /etc/portage/package.mask/
+  161  18-05-25 17:34:27  sudo vim /etc/portage/package.mask/clang
+  162  18-05-25 17:53:12  tail -f /var/log/emerge.log
+  163  18-05-25 17:53:19  sudo tail -f /var/log/emerge.log
+  164  18-05-25 18:01:40  sudo emerge --update --newuse --deep @world
+  165  18-05-25 18:02:08  sudo emerge --ask gui-wm/hyprland
+  166  18-05-25 18:10:16  vim /etc/portage/make.conf
+  167  18-05-25 18:10:26  sudo vim /etc/portage/make.conf
+  168  18-05-25 18:18:57  sudo tail -f /var/log/emerge.log
+  169  18-05-25 18:20:27  ls
+  170  18-05-25 18:20:30  mkdir wifi
+  171  18-05-25 18:20:32  cd wifi
+  172  18-05-25 18:20:51  vim .creds
+  173  18-05-25 18:22:38  sudo ip link set wlo1 up
+  174  18-05-25 18:22:47  sudo iw dev wlo1 scan
+  175  18-05-25 18:22:50  ip link
+  176  18-05-25 18:23:03  rfkill list
+  177  18-05-25 18:23:27  rfkill unblock all
+  178  18-05-25 18:23:31  sudo rfkill unblock all
+  179  18-05-25 18:23:36  sudo iw dev wlo1 scan
+  180  18-05-25 18:23:41  sudo ip link set wlo1 up
+  181  18-05-25 18:23:44  ip link
+  182  18-05-25 18:23:59  sudo ip link set wlp0s20f3 up
+  183  18-05-25 18:24:00  ip link
+  184  18-05-25 18:24:11  sudo ip link set wlo1 -v
+  185  18-05-25 18:25:29  sudo modprobe -r iwlwifi
+  186  18-05-25 18:25:44  sudo rfkill unblock wifi
+  187  18-05-25 18:25:50  sudo ip link set wlo1 up
+  188  18-05-25 18:25:53  ip link
+  189  18-05-25 18:26:29  sudo ip link set wlo1 up
+  190  18-05-25 18:26:30  ip link
+  191  18-05-25 18:26:36  ip link show wlo1
+  192  18-05-25 18:27:45  journalctl -b 0 --dmesg | grep -i firmware
+  193  18-05-25 18:27:52  dmesg | grep firmware
+  194  18-05-25 18:27:55  sudo dmesg | grep firmware
+  195  18-05-25 18:29:36  sudo tail -f /var/log/emerge.log
+  196  18-05-25 18:30:00  nvidia-smi
+  197  18-05-25 18:32:14  emerge --ask net-wireless/wpa_supplicant net-wireless/iw 
+  198  18-05-25 18:32:20  sudo emerge --ask net-wireless/wpa_supplicant net-wireless/iw 
+  199  18-05-25 18:32:46  sudo iw dev wlo1 scan
+  200  18-05-25 18:33:08  ip link
+  201  18-05-25 18:33:12  sudo iw dev wlo1 scan
+  202  18-05-25 18:33:17  sudo iw dev wlo1 scan | grep SSID
+  203  18-05-25 18:33:51  echo -e '\xf0\x9f\xa4\x8d\xf0\x9f\x92\x99\xf0\x9f\xa4\x8d'
+  204  18-05-25 18:35:25  dbus-run-session Hyprland
+  205  18-05-25 18:35:48  sudo reboot
+  206  18-05-25 18:36:26  dbus-run-session Hyprland
+  207  18-05-25 18:36:29  nvidia-smi
+  208  18-05-25 18:37:00  Hyprland
+  209  18-05-25 18:37:49  set -gx XDG_RUNTIME_DIR /tmp/hypr/
+  210  18-05-25 18:38:00  mkdir -p $XDG_RUNTIME_DIR
+  211  18-05-25 18:38:02  ls
+  212  18-05-25 18:38:22  set -gx XDG_RUNTIME_DIR /tmp/hypr/
+  213  18-05-25 18:38:23  ls
+  214  18-05-25 18:38:29  mkdir -p $XDG_RUNTIME_DIR
+  215  18-05-25 18:38:39  chmod 0700 $XDG_RUNTIME_DIR
+  216  18-05-25 18:38:45  dbus-run-session Hyprland
+  217  18-05-25 18:39:55  export XDG_RUNTIME_DIR=/run/user/zeio
+  218  18-05-25 18:40:05  ls $XDG_RUNTIME_DIR
+  219  18-05-25 18:40:20  sudo mkdir -p $XDG_RUNTIME_DIR
+  220  18-05-25 18:40:23  ls $XDG_RUNTIME_DIR
+  221  18-05-25 18:40:26  cd $XDG_RUNTIME_DIR
+  222  18-05-25 18:40:28  cd ~
+  223  18-05-25 18:40:31  dbus-run-session Hyprland
+  224  18-05-25 18:40:56  sudo chown zeio /run/user/zeio
+  225  18-05-25 18:40:58  dbus-run-session Hyprland
+  226  18-05-25 18:41:25  export XDG_RUNTIME_DIR=/run/user/zeio
+  227  18-05-25 18:41:26  dbus-run-session Hyprland
+  228  18-05-25 18:42:07  cat /home/zeio/.cache/hyprland/hyprlandCrashReport86.txt
+  229  18-05-25 18:43:56  vim /home/zeio/.config/hypr/hyprland.conf
+  230  18-05-25 18:44:10  dbus-run-session Hyprland
+  231  18-05-25 18:44:22  cat /home/zeio/.cache/hyprland/hyprlandCrashReport10501.txt
+  232  18-05-25 18:44:43  wayland-scanner
+  233  18-05-25 18:48:08  ls
+  234  18-05-25 18:48:12  vim ~/.zshrc
+  235  18-05-25 18:48:23  Hyprland
+  236  18-05-25 18:49:14  cat /home/zeio/.cache/hyprland/hyprlandCrashReport13613.txt
+  237  18-05-25 18:50:24  vim .config/hypr/hyprland.conf
+  238  18-05-25 18:50:36  Hyprland
+  239  18-05-25 18:50:46  cat /home/zeio/.cache/hyprland/hyprlandCrashReport16073.txt
+  240  18-05-25 18:51:14  export HYPRLAND_TRACE=1
+  241  18-05-25 18:51:16  Hyprland
+  242  18-05-25 18:51:25  cat /home/zeio/.cache/hyprland/hyprlandCrashReport16239.txt
+  243  18-05-25 18:54:05  vim /etc/portage/package.use/hyprland
+  244  18-05-25 18:54:11  sudo vim /etc/portage/package.use/hyprland
+  245  18-05-25 18:54:32  sudo emerge --ask gui-wm/hyprland
+  246  18-05-25 18:56:37  sudo emerge --ask gui-wm/hyprland-0.48.1-r1
+  247  18-05-25 18:57:16  sudo vim /etc/portage/package.use/hyprland
+  248  18-05-25 18:57:44  sudo emerge --ask gui-wm/hyprland
+  249  18-05-25 18:58:21  sudo vim /etc/portage/package.accept_keywords/hyprland
+  250  18-05-25 18:58:30  sudo emerge --ask gui-wm/hyprland
+  251  18-05-25 18:59:10  sudo vim /etc/portage/package.accept_keywords/hyprland
+  252  18-05-25 18:59:17  sudo emerge --ask gui-wm/hyprland
+  253  18-05-25 18:59:28  sudo vim /etc/portage/package.accept_keywords/hyprland
+  254  18-05-25 18:59:34  sudo emerge --ask gui-wm/hyprland
+  255  18-05-25 18:59:45  sudo vim /etc/portage/package.accept_keywords/hyprland
+  256  18-05-25 19:00:03  sudo emerge --ask gui-wm/hyprland
+  257  18-05-25 19:01:05  vim /home/zeio/.config/hypr/hyprland.conf
+  258  18-05-25 19:01:20  ls /dev/dri/card0
+  259  18-05-25 19:01:23  head /dev/dri/card0
+  260  18-05-25 19:02:49  Hyprland
+  261  18-05-25 19:03:30  vim .config/hypr/hyprland.conf
+  262  18-05-25 19:03:37  Hyprland
+  263  18-05-25 19:03:49  cat /home/zeio/.cache/hyprland/hyprlandCrashReport2181.txt
+  264  18-05-25 19:04:37  sudo emerge --ask nvidia-dkms
+  265  18-05-25 19:04:45  nvidia-smi
+  266  18-05-25 19:05:03  sudo reboot
+  267  18-05-25 19:05:31  Hyprland
+  268  18-05-25 19:05:52  ls /run/user/zeio/hyps
+  269  18-05-25 19:05:54  ls /run/user/zeio/hypr
+  270  18-05-25 19:05:56  ls /run/user/zeio
+  271  18-05-25 19:06:02  ls /run/user
+  272  18-05-25 19:06:06  sudo mkdir -p $XDG_RUNTIME_DIR
+  273  18-05-25 19:06:13  echo $XDG_RUNTIME_DIR
+  274  18-05-25 19:06:24  chown zeio $XDG_RUNTIME_DIR
+  275  18-05-25 19:06:28  sudo chown zeio $XDG_RUNTIME_DIRa
+  276  18-05-25 19:06:34  sudo chown zeio $XDG_RUNTIME_DIR
+  277  18-05-25 19:06:41  Hyprland
+  278  18-05-25 19:06:46  dbus-run-session Hyprland
+  279  18-05-25 19:06:49  sudo Hyprland
+  280  18-05-25 19:06:55  Hyprland
+  281  18-05-25 19:07:14  cat /home/zeio/.cache/hyprland/hyprlandCrashReport7415.txt
+  282  18-05-25 19:07:23  vim .config/hypr/hyprland.conf
+  283  18-05-25 19:07:37  Hyprland
+  284  18-05-25 19:07:40  dbus-run-session Hyprland
+  285  18-05-25 19:07:52  export HYPRLAND_TRACE=1
+  286  18-05-25 19:07:54  dbus-run-session Hyprland
+  287  18-05-25 19:08:01  cat /home/zeio/.cache/hyprland/hyprlandCrashReport8775.txt
+  288  18-05-25 19:09:35  rc-update add elogind boot
+  289  18-05-25 19:09:39  sudo rc-update add elogind boot
+  290  18-05-25 19:10:22  sudo emerge -av sys-auth/seatd
+  291  18-05-25 19:10:45  sudo usermod -aG seat,video $USER
+  292  18-05-25 19:10:56  sudo rc-update add seatd default
+  293  18-05-25 19:11:08  sudo emerge -av sys-auth/elogind
+  294  18-05-25 19:11:36  sudo usermod -aG video $USER
+  295  18-05-25 19:11:43  sudo rc-update add elogind default
+  296  18-05-25 19:11:50  sudo rc-service elogind start
+  297  18-05-25 19:11:53  Hyprland
+  298  18-05-25 19:12:04  cat /home/zeio/.cache/hyprland/hyprlandCrashReport16289.txt
+  299  18-05-25 19:12:19  zcat /proc/config.gz | grep -E "DRM_AMDGPU|DRM_NOUVEAU|DRM_I915|FB_EFI|FRAMEBUFFER_CONSOLE"
+  300  18-05-25 19:13:00  vim /etc/portage/make.conf
+  301  18-05-25 19:13:08  sudo vim /etc/portage/make.conf
+  302  18-05-25 19:13:17  sudo emerge --update --newuse --deep @world
+  303  18-05-25 19:13:53  dmesg | grep drm
+  304  18-05-25 19:13:56  sudo dmesg | grep drm
+  305  18-05-25 19:14:08  sudo reboot
+  306  18-05-25 19:14:45  export HYPRLAND_TRACE=1
+  307  18-05-25 19:14:48  Hyprland
+  308  18-05-25 19:15:05  mkdir -p $XDG_RUNTIME_DIR
+  309  18-05-25 19:15:11  sudo mkdir -p $XDG_RUNTIME_DIRa
+  310  18-05-25 19:15:14  sudo mkdir -p $XDG_RUNTIME_DIR
+  311  18-05-25 19:15:19  sudo chown zeio $XDG_RUNTIME_DIR
+  312  18-05-25 19:15:21  Hyprland
+  313  18-05-25 19:16:04  htop
+  314  18-05-25 19:16:10  dbus-run-session Hyprland
+  315  18-05-25 19:16:32  ls
+  316  18-05-25 19:16:38  vim .config/hypr/hyprland.conf
+  317  18-05-25 19:16:47  dbus-run-session Hyprland
+  318  18-05-25 19:18:32  sudo mkdir -p $XDG_RUNTIME_DIR
+  319  18-05-25 19:18:35  sudo chown zeio $XDG_RUNTIME_DIR
+  320  18-05-25 19:18:36  dbus-run-session Hyprland
+  321  18-05-25 19:19:18  ping google.com
+  322  18-05-25 19:19:37  cd wifi/
+  323  18-05-25 19:19:39  ip link
+  324  18-05-25 19:19:51  sudo iw dev wlo1 scan | grep SSID
+  325  18-05-25 19:21:02  sudo wpa_supplicant -i wlo1 -c .creds -B
+  326  18-05-25 19:21:07  ping google.com
+  327  18-05-25 19:21:12  cat .creds
+  328  18-05-25 19:21:40  sudo dhcpcd ip
+  329  18-05-25 19:21:52  sudo dhcpcd wlo1
+  330  18-05-25 19:21:55  ping google.com
+  331  18-05-25 19:22:47  sudo emerge x11-terms/alacritty
+  332  18-05-25 19:24:38  ls
+  333  18-05-25 19:24:42  vim .config/hypr/hyprland.conf
+  334  18-05-25 19:25:28  pactl
+  335  18-05-25 19:26:31  emerge --ask app-misc/brightnessctl
+  336  18-05-25 19:26:37  sudo emerge --ask app-misc/brightnessctl
+  337  18-05-25 19:28:24  sudo emerge --ask media-libs/libpulse
+  338  18-05-25 19:29:43  git clone git@github.com:Hummer12007/brightnessctl.git
+  339  18-05-25 19:29:48  cd brightnessctl/
+  340  18-05-25 19:29:50  ./configure
+  341  18-05-25 19:29:55  make install
+  342  18-05-25 19:29:59  sudo make install
+  343  18-05-25 19:30:13  brightnessctl
+  344  18-05-25 19:30:17  brightnessctl -10%
+  345  18-05-25 19:30:43  ls
+  346  18-05-25 19:30:44  cd ..
+  347  18-05-25 19:30:50  cat .config/hypr/hyprland.conf
+  348  18-05-25 19:31:00  brightnessctl s 10%+
+  349  18-05-25 19:31:06  sudo brightnessctl s 10%+
+  350  18-05-25 19:31:10  vim .config/hypr/hyprland.conf
+  351  18-05-25 19:33:12  Hyprland
+  352  18-05-25 19:33:44  ls
+  353  18-05-25 19:33:56  pwd
+  354  18-05-25 19:33:58  ls
+  355  18-05-25 19:34:06  neofetch
+  356  18-05-25 19:34:10  nvidia-smi
+  357  18-05-25 19:34:13  ping google.com
+  358  18-05-25 19:36:10  ls
+  359  18-05-25 19:36:13  vim .config/hypr/hyprland.conf
+  360  18-05-25 19:36:16  cd ..
+  361  18-05-25 19:36:18  vim .config/hypr/hyprland.conf
+  362  18-05-25 19:38:55  ls
+  363  18-05-25 19:39:11  find . -name '*alacritty*'
+  364  18-05-25 19:42:19  emerge --ask www-client/firefox
+  365  18-05-25 19:42:25  sudo emerge --ask www-client/firefox
+  366  18-05-25 19:42:38  emerge --ask www-client/firefox
+  367  18-05-25 19:43:08  sudo vim /etc/portage/package.use/firefox
+  368  18-05-25 19:43:14  sudo emerge --ask www-client/firefox
+  369  18-05-25 19:45:14  mkdir .config/alacritty
+  370  18-05-25 19:45:19  vim .config/alacritty/alacritty.toml
+  371  18-05-25 19:46:04  cd ..
+  372  18-05-25 19:46:04  vim .config/alacritty/alacritty.toml
+  373  18-05-25 19:50:36  vim ~/.config/hypr/hyprland.conf
+  374  18-05-25 19:52:50  ping google.com
+  375  18-05-25 19:53:07  pactl list
+  376  18-05-25 19:53:18  pactl list-sinks
+  377  18-05-25 19:53:22  pactl list sinks
+  378  18-05-25 19:53:48  pactl list sources
+  379  18-05-25 19:54:17  vim ~/.config/hypr/hyprland.conf
+  380  18-05-25 19:54:38  htop
+  381  18-05-25 19:54:54  nvidia-smmi
+  382  18-05-25 19:54:59  nvidia-smi
+  383  18-05-25 19:55:04  neofetch
+  384  18-05-25 19:59:16  sudo vim /etc/portage/make.conf
+  385  18-05-25 19:59:25  emerge --ask www-client/firefox
+  386  18-05-25 19:59:30  sudo emerge --ask www-client/firefox
+  387  18-05-25 20:00:49  nvidia-smi
+  388  18-05-25 20:02:58  vim ~/.config/alacritty/alacritty.toml
+  389  18-05-25 20:05:16  rc-service hwclock restart
+  390  18-05-25 20:05:19  ls
+  391  18-05-25 20:05:24  sudo rc-service hwclock restart
+  392  18-05-25 20:05:27  ls
+  393  18-05-25 20:06:17  hwclock --systohc
+  394  18-05-25 20:06:24  sudo hwclock --systohc
+  395  18-05-25 20:07:42  cat /etc/localtime
+  396  18-05-25 20:08:05  ls -l /usr/share/zoneinfo
+  397  18-05-25 20:08:13  ls -l /usr/share/zoneinfo/Europe/
+  398  18-05-25 20:08:25  ln -sf ../usr/share/zoneinfo/Europe/Moscow /etc/localtime
+  399  18-05-25 20:08:29  sudo ln -sf ../usr/share/zoneinfo/Europe/Moscow /etc/localtime
+  400  18-05-25 20:08:30  ls
+  401  18-05-25 20:09:06  hwclock --show
+  402  18-05-25 20:09:10  sudo hwclock --show
+  403  18-05-25 20:09:49  sudo date -s "$(wget --method=HEAD -qSO- --max-redirect=0 google.com 2>&1 | sed -n 's/^ *Date: *//p')"
+  404  19-05-25 03:10:00  sudo hwclock --systohc
+  405  19-05-25 03:10:50  vim ~/.config/hypr/hyprland.conf
+  406  19-05-25 03:12:08  echo 'Привет мир'
+  407  19-05-25 03:12:09  ls
+  408  19-05-25 03:12:19  vim ~/.config/hypr/hyprland.conf
+  409  19-05-25 03:13:00  brightnessctl 
+  410  19-05-25 03:13:11  brightnessctl
+  411  19-05-25 03:14:16  nvidia-smi
+  412  19-05-25 03:15:05  history | grep wpa
+  413  19-05-25 03:45:03  firefox
+  414  19-05-25 03:47:23  ls
+  415  19-05-25 03:48:02  vim ~/.config/hypr/hyprland.conf
+  416  19-05-25 03:49:40  ls
+  417  19-05-25 03:50:12  sudo emerge --ask net-im/telegram-desktop
+  418  19-05-25 03:50:40  vim /etc/portage/package.use/telegram
+  419  19-05-25 03:51:28  sudo vim /etc/portage/package.use/telegram
+  420  19-05-25 03:52:18  cat /etc/portage/package.use/telegram
+  421  19-05-25 03:52:23  sudo emerge --ask net-im/telegram-desktop
+  422  19-05-25 03:53:13  df -h .
+  423  19-05-25 03:56:49  echo $XDG_CURRENT_DESKTOP
+  424  19-05-25 03:57:08  echo $XDG_SESSION_TYPE
+  425  19-05-25 03:58:04  pactl set-default-sink 0
+  426  19-05-25 03:58:07  pactl set-default-sink 1
+  427  19-05-25 03:58:09  pactl set-default-sink 0
+  428  19-05-25 03:58:21  pactl set-sink-volume 100
+  429  19-05-25 03:58:26  pactl set-sink-volume 0 10
+  430  19-05-25 03:58:28  pactl set-sink-volume 0 20
+  431  19-05-25 03:58:36  pactl get-sink-mute 0
+  432  19-05-25 03:58:50  pactl set-sink-unmute 0
+  433  19-05-25 03:58:56  pactl set-sink-mute 0
+  434  19-05-25 03:58:59  pactl set-sink-mute 0 toggle
+  435  19-05-25 03:59:03  pactl get-sink-mute 0
+  436  19-05-25 03:59:07  pactl set-sink-volume 0 10
+  437  19-05-25 03:59:09  pactl set-sink-volume 0 50
+  438  19-05-25 03:59:21  pactl set-default-sink 0
+  439  19-05-25 03:59:23  pactl set-default-sink 2
+  440  19-05-25 03:59:24  pactl set-default-sink 1
+  441  19-05-25 03:59:27  pactl get-sink-mute 0
+  442  19-05-25 04:01:16  pactl get-sink-volume 0
+  443  19-05-25 04:03:49  cat /etc/portage/make.conf
+  444  19-05-25 04:04:14  sudo emerge --ask media-video/pipewire
+  445  19-05-25 04:07:04  pipewire --version
+  446  19-05-25 04:09:21  emerge --ask gui-libs/xdg-desktop-portal-wlr
+  447  19-05-25 04:09:25  sudo emerge --ask gui-libs/xdg-desktop-portal-wlr
+  448  19-05-25 04:10:49  echo $MOZ_ENABLE_WAYLAND
+  449  19-05-25 04:11:24  wpctl help
+  450  19-05-25 04:11:29  wpctl status
+  451  19-05-25 04:11:36  pipewire 
+  452  19-05-25 04:12:05  /usr/libexec/xdg-desktop-portal-wlr -r
+  453  19-05-25 04:12:12  sudo /usr/libexec/xdg-desktop-portal-wlr -r
+  454  19-05-25 04:12:17  /usr/libexec/xdg-desktop-portal
+  455  19-05-25 04:12:21  sudo /usr/libexec/xdg-desktop-portal-wlr
+  456  19-05-25 04:12:26  /usr/libexec/xdg-desktop-portal-wlr
+  457  19-05-25 04:12:53  sudo systemctl --user enable psd
+  458  19-05-25 04:13:30  ps -aux | grep xdg
+  459  19-05-25 04:13:52  dbus-launch Hyprland
+  460  19-05-25 04:14:24  /usr/libexec/xdg-desktop-portal-wlr
+  461  19-05-25 04:14:41  sudo reboot
+  462  19-05-25 04:15:11  Hyprland
+  463  19-05-25 04:15:17  sudo mkdir -p $XDG_RUNTIME_DIR
+  464  19-05-25 04:15:20  chown zeio $XDG_RUNTIME_DIR
+  465  19-05-25 04:15:24  sudo chown zeio $XDG_RUNTIME_DIR
+  466  19-05-25 04:15:26  Hyprland
+  467  19-05-25 04:15:38  wpctl status
+  468  19-05-25 04:15:44  /usr/libexec/xdg-desktop-portal-wlr
+  469  19-05-25 04:15:56  dbus-launch Hyprland
+  470  19-05-25 04:16:02  wpctl status
+  471  19-05-25 04:16:13  /usr/libexec/xdg-desktop-portal-wlr
+  472  19-05-25 04:16:27  wpctl status
+  473  19-05-25 04:16:39  ps
+  474  19-05-25 04:16:50  dbus-run-session Hyprland
+  475  19-05-25 04:16:56  wpctl status
+  476  19-05-25 04:17:00  /usr/libexec/xdg-desktop-portal
+  477  19-05-25 04:17:05  /usr/libexec/xdg-desktop-portal -r
+  478  19-05-25 04:17:10  /usr/libexec/xdg-desktop-portal-wlr
+  479  19-05-25 04:17:22  ps -aux | grep xdg
+  480  19-05-25 04:17:42  firefox
+  481  19-05-25 04:18:11  ping google.com
+  482  19-05-25 04:18:13  cd wifi
+  483  19-05-25 04:18:26  sudo wpa_supplicant -i wlo1 -c .creds -B
+  484  19-05-25 04:18:31  ping google.com
+  485  19-05-25 04:18:41  sudo dhcpcd wlo1
+  486  19-05-25 04:18:43  ping google.com
+  487  19-05-25 04:19:45  pipewire
+  488  19-05-25 04:19:52  wpctl status
+  489  19-05-25 04:21:10  history > history.txt
+  490  19-05-25 04:22:07  cd ..
+  491  19-05-25 04:22:10  git clone https://github.com/hyprwm/xdg-desktop-portal-hyprland.git
+  492  19-05-25 04:22:30  cd xdg-desktop-portal-hyprland/
+  493  19-05-25 04:22:32  cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -B build
+  494  19-05-25 04:22:54  ls subprojects/
+  495  19-05-25 04:22:59  ls subprojects/sdbus-cpp/
+  496  19-05-25 04:23:42  cd ..
+  497  19-05-25 04:23:44  rm -rf xdg-desktop-portal-hyprland/
+  498  19-05-25 04:23:53  git clone --recursive https://github.com/hyprwm/xdg-desktop-portal-hyprland.git
+  499  19-05-25 04:23:58  cd xdg-desktop-portal-hyprland/
+  500  19-05-25 04:24:01  cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -B build
+  501  19-05-25 04:24:14  cmake --build build
+  502  19-05-25 04:25:05  sudo cmake --install build
+  503  19-05-25 04:25:39  ls /usr/lib | grep xdg
+  504  19-05-25 04:25:50  /usr/libexec/xdg-desktop-portal
+  505  19-05-25 04:26:01  vim start.sh
+  506  19-05-25 04:26:20  /usr/lib/xdg-desktop-portal-hyprland
+  507  19-05-25 04:26:33  chmod +x start.sh
+  508  19-05-25 04:26:34  ls
+  509  19-05-25 04:26:39  ps -aux | grep xdg
+  510  19-05-25 04:26:50  ./start.sh
+  511  19-05-25 04:27:00  ps -aux | grep xdg
+  512  19-05-25 04:27:56  cd ..
+  513  19-05-25 04:28:01  vim .config/hypr/hyprland.conf
+  514  19-05-25 04:28:38  cat /home/zeio/xdg-desktop-portal-hyprland/start.sh
+  515  19-05-25 04:29:06  dbus-run-session Hyprland
+  516  19-05-25 04:29:21  ps -aux | grep xdg
+  517  19-05-25 04:29:47  wpctl status
+  518  19-05-25 04:29:52  pipewire --version
+  519  19-05-25 04:29:56  pipewire help
+  520  19-05-25 04:30:03  wpctl help
+  521  19-05-25 04:30:19  pactl list
+  522  19-05-25 04:30:32  cd xdg-desktop-portal-hyprland/
+  523  19-05-25 04:30:34  ./start.sh
+  524  19-05-25 04:32:58  emerge --ask media-video/wireplumber
+  525  19-05-25 04:33:04  sudo emerge --ask media-video/wireplumber
+  526  19-05-25 04:33:17  sudo usermod -aG pipewire $USER
+  527  19-05-25 04:34:36  dbus-run-session Hyprland
+  528  19-05-25 04:36:39  cd xdg-desktop-portal-hyprland/
+  529  19-05-25 04:36:42  ./start.sh
+  530  19-05-25 04:37:26  sudo emerge --ask media-video/obs-studio
+  531  19-05-25 04:37:47  vim /etc/portage/package.accept_keywords/obs-studio
+  532  19-05-25 04:37:51  sudo vim /etc/portage/package.accept_keywords/obs-studio
+  533  19-05-25 04:38:03  sudo emerge --ask media-video/obs-studio
+  534  19-05-25 04:38:28  sudo vim /etc/portage/package.use/obs-studio
+  535  19-05-25 04:38:33  sudo emerge --ask media-video/obs-studio
+  536  19-05-25 04:40:40  ps -aux | grep pipewire
+  537  19-05-25 04:40:42  pipewire
+  538  19-05-25 04:40:46  ps -aux | grep pipewire
+  539  19-05-25 04:40:49  wpctl
+  540  19-05-25 04:40:51  wpctl status
+  541  19-05-25 04:41:55  sudo usermod -aG pipewire $USER
+  542  19-05-25 04:42:11  wpctl status
+  543  19-05-25 04:42:37  vim ~/.config/hypr/hyprland.conf
+  544  19-05-25 04:43:02  wpctl status
+  545  19-05-25 04:43:31  dbus-run-session Hyprland
+  546  19-05-25 04:44:25  wpctl status
+  547  19-05-25 04:45:19  obs
+  548  19-05-25 04:47:01  vim /etc/portage/package.accept_keywords/pipewire
+  549  19-05-25 04:47:19  sudo vim /etc/portage/package.accept_keywords/pipewire
+  550  19-05-25 04:47:36  sudo emerge --ask media-video/pipewire
+  551  19-05-25 04:47:55  cat /etc/portage/package.accept_keywords/pipewire
+  552  19-05-25 04:48:19  wpctl status
+  553  19-05-25 04:48:41  obs --verbose
+  554  19-05-25 04:49:53  wpctl status
+  555  19-05-25 04:50:10  sudo shutdown -h now
+  556  19-05-25 11:47:31  sudo mkdir -p $XDG_RUNTIME_DIR
+  557  19-05-25 11:47:34  sudo chown zeio $XDG_RUNTIME_DIR
+  558  19-05-25 11:47:37  dbus-run-session Hyprland
+  559  19-05-25 11:48:06  nvidia-smi
+  560  19-05-25 11:48:11  neofetch
+  561  19-05-25 11:48:14  htop
+  562  19-05-25 11:48:19  ps -aux
+  563  19-05-25 11:48:27  ls
+  564  19-05-25 11:48:47  wpctl status
+  565  19-05-25 11:48:49  nvidia-smi
+  566  19-05-25 11:53:11  cd wifi
+  567  19-05-25 11:53:20  mv .creds .creds.home
+  568  19-05-25 11:53:26  cp .creds.home .creds
+  569  19-05-25 11:53:28  vim .creds
+  570  19-05-25 11:54:19  sudo wpa_supplicant -i wlo1 -c .creds -B
+  571  19-05-25 11:54:29  sudo dhcpcd wlo1
+  572  19-05-25 11:54:51  sudo wpa_supplicant -i wlo1 -c .creds -B
+  573  19-05-25 11:55:01  ping google.com
+  574  19-05-25 11:55:05  sudo dhcpcd wlo1
+  575  19-05-25 11:55:07  ping google.com
+  576  19-05-25 11:56:05  sudo iw dev wlo1 scan | grep SSID
+  577  19-05-25 11:56:24  vim .creds
+  578  19-05-25 11:56:52  cat .creds
+  579  19-05-25 11:56:55  sudo wpa_supplicant -i wlo1 -c .creds -B
+  580  19-05-25 11:57:43  sudo wpa_supplicant -i wlo1 reconfigure
+  581  19-05-25 11:57:54  sudo reboot
+  582  19-05-25 11:58:26  cd wifi
+  583  19-05-25 11:58:39  sudo wpa_supplicant -i wlo1 -c .creds -B
+  584  19-05-25 11:58:46  sudo dhcpcd wlo1
+  585  19-05-25 11:58:51  ping google.com
+  586  19-05-25 11:59:00  sudo mkdir -p $XDG_RUNTIME_DIR
+  587  19-05-25 11:59:07  chown zeio $XDG_RUNTIME_DIR
+  588  19-05-25 11:59:10  sudo chown zeio $XDG_RUNTIME_DIR
+  589  19-05-25 11:59:14  dbus-run-session Hyprland
+  590  19-05-25 12:08:11  htop
+  591  19-05-25 12:08:14  ps -aux
+  592  19-05-25 12:08:20  neofetch
+  593  19-05-25 12:31:58  ssdk
+  594  19-05-25 13:55:27  sudo reboot
+  595  19-05-25 14:46:20  sudo mkdir -p $XDG_RUNTIME_DIR
+  596  19-05-25 14:46:24  sudo chown zeio $XDG_RUNTIME_DIR
+  597  19-05-25 14:46:26  dbus-run-session Hyprland
+  598  19-05-25 14:46:38  cd wifi
+  599  19-05-25 14:46:43  sudo wpa_supplicant -i wlo1 -c .creds -B
+  600  19-05-25 14:46:50  sudo dhcpcd wlo1
+  601  19-05-25 14:46:54  ping google.com
+  602  19-05-25 14:48:30  ssdk
+  603  19-05-25 15:26:49  cd Downloads/
+  604  19-05-25 15:26:49  ls
+  605  19-05-25 15:26:55  mv merged.pdf Диплом.pdf
+  606  19-05-25 15:26:55  ls
+  607  19-05-25 15:35:26  ssdk
+  608  19-05-25 16:34:01  cd Downloads/
+  609  19-05-25 16:34:15  mv PFR_777000_0SZIE_20250519_9a7d9add-34ab-11f0-8dcc-365bb39a199d.pdf Выписка\ из\ трудовой.pdf
+  610  19-05-25 16:34:16  ls
+  611  19-05-25 16:35:35  mkdir Документы
+  612  19-05-25 16:35:43  mv Выписка\ из\ трудовой.pdf Документы
+  613  19-05-25 16:35:48  mv Диплом.pdf Документы/
+  614  19-05-25 16:35:54  mv ИНН.pdf Документы/
+  615  19-05-25 16:36:00  mv Страховое\ свидетельство\ государственного\ пенсионного\ страхования.pdf Документы/
+  616  19-05-25 16:36:05  mv Реквизиты.pdf Документы/
+  617  19-05-25 16:36:09  mv Паспорт.pdf Документы/
+  618  19-05-25 16:36:25  zip -r Плюхин\ Дмитрий\ Алексеевич.pdf Документы
+  619  19-05-25 16:38:23  mv Плюхин\ Дмитрий\ Алексеевич.pdf Плюхин\ Дмитрий\ Алексеевич.zip
+  620  19-05-25 16:38:33  unzip -l Плюхин\ Дмитрий\ Алексеевич.zip
+  621  19-05-25 16:38:46  unzip Плюхин\ Дмитрий\ Алексеевич.zip
+  622  19-05-25 16:39:02  cp Плюхин\ Дмитрий\ Алексеевич.zip /tmp
+  623  19-05-25 16:39:04  cd /tmp
+  624  19-05-25 16:39:07  unzip Плюхин\ Дмитрий\ Алексеевич.zip
+  625  19-05-25 16:39:08  ls
+  626  19-05-25 16:39:13  ls Документы
+  627  19-05-25 16:48:49  nvidia-smi
+  628  19-05-25 17:04:56  ssdk
+  629  19-05-25 18:10:55  ssh zeio@dark
+  630  19-05-25 18:11:03  ssh zeio@foam -p 218
+  631  19-05-25 18:12:59  ssh zeio@foam -p 218 7866:192.168.14.111:7866
+  632  19-05-25 18:13:07  ssh zeio@foam -p 218 -L 7866:192.168.14.111:7866
+  633  19-05-25 18:15:49  ssh zeio@foam -p 218 -L 7863:192.168.14.111:7863
+  634  19-05-25 18:42:00  ssdk
+  635  19-05-25 18:53:24  scp -P 218 zeio@foam:/home/zeio/ann-benchmarks/glove-100-angular.png ./
+  636  19-05-25 18:53:32  scp -P 218 zeio@foam:/home/zeio/ann-benchmarks/results/glove-100-angular.png ./
+  637  19-05-25 19:19:44  neofetch
+  638  19-05-25 19:25:00  htop
+  639  19-05-25 19:28:58  sudo reboot
+  640  25-05-25 10:33:24  echo sudo mkdir -p $XDG_RUNTIME_DIR >> .zshrc
+  641  25-05-25 10:33:30  cat .zshrc
+  642  25-05-25 10:33:50  echo sudo chown zeio $XDG_RUNTIME_DIR >> .zshrc
+  643  25-05-25 10:34:02  echo dbus-run-session Hyprland >> .zshrc
+  644  25-05-25 10:34:05  vim .zshrc
+  645  25-05-25 10:36:28  dbus-run-session Hyprland
+  646  25-05-25 10:36:36  ls
+  647  25-05-25 10:36:46  wpctl status
+  648  25-05-25 10:37:00  cd wifi/
+  649  25-05-25 10:37:01  ls
+  650  25-05-25 10:37:15  history | grep wpa_supp
+  651  25-05-25 10:37:34  vim .zshrc
+  652  25-05-25 10:37:45  wifi
+  653  25-05-25 10:39:42  rsrc
+  654  25-05-25 10:39:51  wifi .creds.home
+  655  25-05-25 10:39:55  ping google.com
+  656  25-05-25 10:40:15  sudo dhcpcd wlo1
+  657  25-05-25 10:40:16  ping google.com
+  658  25-05-25 10:40:50  hypr
+  659  25-05-25 10:40:57  history | grep dbus_run
+  660  25-05-25 10:40:59  history | grep dbus
+  661  25-05-25 10:42:25  sudo emerge --ask net-vpn/openvpn
+  662  25-05-25 10:43:36  openvpn
+  663  25-05-25 10:43:55  history | grep telegram
+  664  25-05-25 10:44:07  sudo emerge --ask net-im/telegram-desktop
+  665  25-05-25 10:45:08  sudo emerge --ask net-im/telegram-desktop --backtrack=30
+  666  25-05-25 10:45:37  sudo emerge --ask net-im/telegram-desktop --backtrack=100
+  667  25-05-25 10:46:12  sudo emerge --ask net-im/telegram-desktop --backtrack=200
+  668  25-05-25 10:50:20  sudo vim /etc/portage/make.conf
+  669  25-05-25 10:50:36  sudo emerge --update --newuse --deep @world
+  670  25-05-25 10:54:57  sudo vim /etc/portage/package.accept_keywords/pipewire
+  671  25-05-25 10:55:12  cat /etc/portage/package.accept_keywords/pipewire
+  672  25-05-25 10:55:21  sudo vim /etc/portage/package.mask/pipewire
+  673  25-05-25 10:58:00  emerge --search pipewire
+  674  25-05-25 10:59:20  sudo vim /etc/portage/package.accept_keywords/pipewire
+  675  25-05-25 10:59:28  sudo emerge --update --newuse --deep @world
+  676  25-05-25 10:59:41  sudo emerge --depclean
+  677  25-05-25 11:00:10  sudo emerge --ask net-im/telegram-desktop
+  678  25-05-25 11:27:07  telegram-desktop
+  679  25-05-25 11:31:00  vim ~/.config/hypr/hyprland.conf
+  680  25-05-25 11:31:45  dolphin
+  681  25-05-25 11:32:22  sudo emerge --ask kde-apps/dolphin
+  682  25-05-25 11:33:33  history | grep firefox
+  683  25-05-25 11:34:04  vim /etc/portage/package.mask/long-to-install
+  684  25-05-25 11:34:16  sudo vim /etc/portage/package.mask/long-to-install
+  685  25-05-25 11:34:20  cat /etc/portage/package.mask/long-to-install
+  686  25-05-25 11:34:29  sudo emerge --sync
+  687  25-05-25 11:35:16  emerge --ask --verbose --update --deep --newuse @world
+  688  25-05-25 11:35:25  sudo emerge --ask --verbose --update --deep --newuse @world
+  689  25-05-25 12:08:03  history | grep tail
+  690  25-05-25 12:08:07  sudo tail -f /var/log/emerge.log
+  691  25-05-25 12:10:10  sudo emerge --depclean
+  692  25-05-25 12:10:25  sudo emerge --ask --verbose --update --deep --newuse @world
+  693  25-05-25 12:10:58  sudo vim /etc/portage/package.accept_keywords/hyprland
+  694  25-05-25 12:11:08  sudo emerge --ask --verbose --update --deep --newuse @world
+  695  25-05-25 12:11:48  sudo vim /etc/portage/package.accept_keywords/hyprland
+  696  25-05-25 12:11:59  hyprland --version
+  697  25-05-25 12:12:06  sudo emerge --ask --verbose --update --deep --newuse @world
+  698  25-05-25 12:17:20  sudo emerge --depclean
+  699  25-05-25 12:17:29  sudo reboot
+  700  25-05-25 12:18:02  hypr
+  701  25-05-25 12:18:24  wpctl status
+  702  25-05-25 12:18:42  obs
+  703  25-05-25 12:18:59  wpctl status
+  704  25-05-25 12:19:20  obs --verbose
+  705  25-05-25 12:19:54  cd wifi/
+  706  25-05-25 12:19:57  wifi .creds.home
+  707  25-05-25 12:20:09  ping google.com
+  708  25-05-25 12:20:14  dhcpcd ip
+  709  25-05-25 12:20:19  sudo dhcpcd ip
+  710  25-05-25 12:20:27  vim ~/.zshrc
+  711  25-05-25 12:20:36  ping google.com
+  712  25-05-25 12:25:02  cd bashrc
+  713  25-05-25 12:25:02  ls
+  714  25-05-25 12:25:06  ls etc/
+  715  25-05-25 12:25:10  ls openvpn/
+  716  25-05-25 12:25:18  ls openvpn/normax
+  717  25-05-25 12:25:30  ping normax
+  718  25-05-25 12:26:09  sudo vim /etc/hosts
+  719  25-05-25 12:26:23  ping normax
+  720  25-05-25 12:26:31  ls
+  721  25-05-25 12:26:41  cat remote.sh
+  722  25-05-25 12:27:36  _start_openvpn_daemon /etc/openvpn/normax/config.ovpn /var/log/openvpn/normax.log.txt /etc/openvpn/normax/cert.pass
+  723  25-05-25 12:28:14  _start_openvpn_daemon /home/zeio/bashrc/openvpn/normax/config.ovpn /home/zeio/bashrc/openvpn/normax.log.txt /home/zeio/bashrc/openvpn/normax/cert.pass
+  724  25-05-25 12:28:17  ping normax
+  725  25-05-25 12:29:39  openvpn --config /home/zeio/bashrc/openvpn/normax/config.ovpn --log-append /home/zeio/bashrc/openvpn/normax.log.txt --askpass /home/zeio/bashrc/openvpn/normax/cert.pass
+  726  25-05-25 12:29:59  cd ..
+  727  25-05-25 12:30:02  cd bashrc
+  728  25-05-25 12:30:06  vim openvpn/normax/config.ovpn
+  729  25-05-25 12:30:36  openvpn --config /home/zeio/bashrc/openvpn/normax/config.ovpn --log-append /home/zeio/bashrc/openvpn/normax.log.txt --askpass /home/zeio/bashrc/openvpn/normax/cert.pass
+  730  25-05-25 12:30:47  sudo openvpn --config /home/zeio/bashrc/openvpn/normax/config.ovpn --log-append /home/zeio/bashrc/openvpn/normax.log.txt --askpass /home/zeio/bashrc/openvpn/normax/cert.pass
+  731  25-05-25 12:31:04  ping normax
+  732  25-05-25 12:31:08  ssnx
+  733  25-05-25 12:31:29  ping normax
+  734  25-05-25 12:31:39  vim remote.sh
+  735  25-05-25 12:32:24  vim ~/.zshrc
+  736  25-05-25 12:32:29  ls
+  737  25-05-25 12:33:02  if test -d $XDG_RUNTIME_DIR; then echo foo; fi
+  738  25-05-25 12:35:17  history | grep openvpn
+  739  25-05-25 12:35:51  vim ~/.zshrc
+  740  25-05-25 12:36:41  ping normax
+  741  25-05-25 12:36:44  rsrc
+  742  25-05-25 12:36:46  vpnad
+  743  25-05-25 12:36:49  ping normax
+  744  25-05-25 13:01:17  wpctl status
+  745  25-05-25 13:01:22  pipewire
+  746  25-05-25 13:01:37  wpctl status
+  747  25-05-25 13:30:43  nvidia-smi
+  748  25-05-25 13:30:49  htop
+  749  25-05-25 17:55:00  obs
+  750  25-05-25 17:56:02  wpctl status
+  751  25-05-25 17:58:31  equery u media-video/pipewire
+  752  25-05-25 17:59:18  history | grep xdg-des
+  753  25-05-25 17:59:28  /usr/libexec/xdg-desktop-portal
+  754  25-05-25 17:59:33  wpctl status
+  755  25-05-25 18:00:08  pw-record --target=screen-capture test.mp4
+  756  25-05-25 18:01:40  sudo vim /etc/portage/package.use/pipewire
+  757  25-05-25 18:02:08  sudo emerge --ask --verbose --update --deep --newuse @world
+  758  25-05-25 18:02:37  emerge -pv media-video/pipewire
+  759  25-05-25 18:03:47  vim .config/hypr/hyprland.conf
+  760  25-05-25 18:05:05  vim ~/xdg-desktop-portal-hyprland/start.sh
+  761  25-05-25 18:06:27  hypr
+  762  25-05-25 18:06:37  cat pipewire.log.txt
+  763  25-05-25 18:06:41  cat xdph.log.txt
+  764  25-05-25 18:06:59  wpctl status
+  765  25-05-25 18:07:04  cat pipewire.log.txt
+  766  25-05-25 18:07:10  obs
+  767  25-05-25 18:07:24  vim ~/xdph.log.txt
+  768  25-05-25 18:08:03  cat xdph.log.txt | grep -v 'got poll event'
+  769  25-05-25 18:08:27  rm xdph.log.txt
+  770  25-05-25 18:08:31  cat pipewire.log.txt
+  771  25-05-25 18:08:32  rm pipewire.log.txt
+  772  25-05-25 18:08:37  hypr
+  773  25-05-25 18:08:49  obs
+  774  25-05-25 18:09:14  cat xdph.log.txt | grep -v 'got poll event'
+  775  25-05-25 18:10:00  obs
+  776  25-05-25 18:10:08  cat xdph.log.txt | grep -v 'got poll event'
+  777  25-05-25 18:14:39  obs
+  778  25-05-25 18:14:45  wpctl status
+  779  25-05-25 18:16:06  cd xdg-desktop-portal-hyprland/
+  780  25-05-25 18:16:08  vim start.sh
+  781  25-05-25 18:16:14  history | grep wlr
+  782  25-05-25 18:16:20  vim start.sh
+  783  25-05-25 18:17:23  ./start.sh
+  784  25-05-25 18:17:30  wpctl status
+  785  25-05-25 18:17:38  obs
+  786  25-05-25 18:17:52  ps -aux | grep hyprland
+  787  25-05-25 18:18:00  kill -9 16420
+  788  25-05-25 18:18:02  wpctl status
+  789  25-05-25 18:18:35  cd ..
+  790  25-05-25 18:18:39  cat xdpw.log.txt
+  791  25-05-25 18:18:51  vim .config/hypr/hyprland.conf
+  792  25-05-25 18:19:15  hypr
+  793  25-05-25 18:19:31  wpctl status
+  794  25-05-25 18:19:39  vim .config/hypr/hyprland.conf
+  795  25-05-25 18:19:55  vim xdg-desktop-portal-hyprland/start.sh
+  796  25-05-25 18:20:03  vim .config/hypr/hyprland.conf
+  797  25-05-25 18:20:14  obs
+  798  25-05-25 18:20:27  cat xdpw.log.txt
+  799  25-05-25 18:20:31  ps -aux | grep hyprland
+  800  25-05-25 18:20:40  kill -9 19364
+  801  25-05-25 18:20:43  obs
+  802  25-05-25 18:23:12  cd xdg-desktop-portal-hyprland/
+  803  25-05-25 18:23:14  cat start.sh
+  804  25-05-25 18:23:37  vim .config/hypr/hyprland.conf
+  805  25-05-25 18:23:39  cd ..
+  806  25-05-25 18:23:41  vim .config/hypr/hyprland.conf
+  807  25-05-25 18:23:50  vim ~/.zshrc
+  808  25-05-25 18:24:04  hypr
+  809  25-05-25 18:24:11  wpctl status
+  810  25-05-25 18:24:18  vim sta
+  811  25-05-25 18:24:25  obs
+  812  25-05-25 18:24:31  wpctl status
+  813  25-05-25 18:26:45  vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  814  25-05-25 18:27:03  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  815  25-05-25 18:27:16  cat /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  816  25-05-25 18:27:27  hypr
+  817  25-05-25 18:27:38  wpctl status
+  818  25-05-25 18:27:40  obs
+  819  25-05-25 18:27:47  wpctl status
+  820  25-05-25 18:28:22  cat xdg-desktop-portal-hyprland/start.sh
+  821  25-05-25 18:28:32  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  822  25-05-25 18:28:47  hypr
+  823  25-05-25 18:28:55  wpctl
+  824  25-05-25 18:28:57  wpctl status
+  825  25-05-25 18:29:01  obs
+  826  25-05-25 18:29:11  wpctl status
+  827  25-05-25 18:29:23  ps -aux | grep hyprland
+  828  25-05-25 18:29:30  kill -9 30539
+  829  25-05-25 18:29:31  obs
+  830  25-05-25 18:29:35  wpctl status
+  831  25-05-25 18:31:40  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  832  25-05-25 18:31:53  wpctl status
+  833  25-05-25 18:31:57  hypr
+  834  25-05-25 18:32:02  obs
+  835  25-05-25 18:32:10  wpctl status
+  836  25-05-25 18:32:16  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  837  25-05-25 18:32:29  hypr
+  838  25-05-25 18:32:41  obs
+  839  25-05-25 18:33:14  cat pipewire.log.txt
+  840  25-05-25 18:33:23  cat xdpw.log.txt
+  841  25-05-25 18:33:28  wpctl status
+  842  25-05-25 18:33:44  cat xdg-desktop-portal-hyprland/start.sh
+  843  25-05-25 18:34:07  mv /usr/lib/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland_
+  844  25-05-25 18:34:10  sudo mv /usr/lib/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland_
+  845  25-05-25 18:34:17  hypr
+  846  25-05-25 18:34:23  obs
+  847  25-05-25 18:34:30  wpctl status
+  848  25-05-25 18:35:25  sudo mv /usr/lib/xdg-desktop-portal-hyprland_ /usr/lib/xdg-desktop-portal-hyprland
+  849  25-05-25 18:35:27  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  850  25-05-25 18:35:50  hypr
+  851  25-05-25 18:35:55  obs
+  852  25-05-25 18:36:03  wpctl status
+  853  25-05-25 18:37:47  sudo emerge --ask --verbose --update --deep --newuse @world
+  854  25-05-25 18:38:31  sudo emerge --ask =pipewire-1.2.3
+  855  25-05-25 18:38:37  sudo emerge --ask '=pipewire-1.2.3'
+  856  25-05-25 18:38:45  sudo emerge --ask '=pipewire-1.4.2'
+  857  25-05-25 18:39:17  vim .config/hypr/hyprland.conf
+  858  25-05-25 18:39:28  sudo pipewire
+  859  25-05-25 18:39:45  hypr
+  860  25-05-25 18:39:51  wpctl status
+  861  25-05-25 18:39:56  obs
+  862  25-05-25 18:40:08  wpctl status
+  863  25-05-25 18:40:20  vim .config/hypr/hyprland.conf
+  864  25-05-25 18:40:30  cat pipewire.log.txt
+  865  25-05-25 18:41:16  sudo emerge --ask '=pipewire-1.2.7-r2'
+  866  25-05-25 18:41:58  pipewire --version
+  867  25-05-25 18:42:02  pipewire
+  868  25-05-25 18:42:09  hypr
+  869  25-05-25 18:42:16  wpctl status
+  870  25-05-25 18:42:19  obs
+  871  25-05-25 18:42:32  ps -aux | grep pipewire
+  872  25-05-25 18:42:52  kill -0 2578
+  873  25-05-25 18:42:54  wpctl status
+  874  25-05-25 18:43:01  ps -aux | grep pipewire
+  875  25-05-25 18:43:07  kill -9 2578
+  876  25-05-25 18:43:09  wpctl status
+  877  25-05-25 18:43:14  pipewire -vvv
+  878  25-05-25 18:43:23  obs
+  879  25-05-25 18:43:40  wpctl status
+  880  25-05-25 18:44:32  sudo emerge --ask pipewire
+  881  25-05-25 18:44:50  wpctl status
+  882  25-05-25 18:45:20  pipewire -vvv
+  883  25-05-25 18:45:25  wpctl status
+  884  25-05-25 18:45:42  cd xdg-desktop-portal-hyprland/
+  885  25-05-25 18:45:43  ./start.sh
+  886  25-05-25 18:45:49  wpctl status
+  887  25-05-25 18:48:58  Hyprland --version
+  888  25-05-25 18:49:12  xdph --version
+  889  25-05-25 18:49:27  pipewire -v
+  890  25-05-25 18:49:33  pipewire --version
+  891  25-05-25 18:49:48  wpctl --version
+  892  25-05-25 18:49:52  wpctl version
+  893  25-05-25 18:49:56  wireplumber --version
+  894  25-05-25 18:50:54  vim pipewire.log.txt
+  895  25-05-25 18:52:11  hypr
+  896  25-05-25 18:52:15  obs
+  897  25-05-25 18:52:20  wpctl version
+  898  25-05-25 18:52:23  wpctl status
+  899  25-05-25 18:53:17  journalctl -xe | grep pipewire
+  900  25-05-25 18:53:46  wpctl status
+  901  25-05-25 18:53:49  obs
+  902  25-05-25 18:53:52  wpctl status
+  903  25-05-25 18:57:30  hyprctl plugins | grep -i "screencast"
+  904  25-05-25 18:57:39  hyprctl plugins
+  905  25-05-25 18:58:01  vim ~/.zshrc
+  906  25-05-25 18:58:35  cat pipewire.log.txt
+  907  25-05-25 18:59:00  cat /home/zeio/Downloads/pipewire.log.txt
+  908  25-05-25 18:59:42  wpctl status
+  909  25-05-25 19:01:25  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  910  25-05-25 19:01:59  vim ~/.zshrc
+  911  25-05-25 19:02:07  vim .conda/
+  912  25-05-25 19:02:12  vim .config/hypr/hyprland.conf
+  913  25-05-25 19:02:52  hypr
+  914  25-05-25 19:03:03  wpctl status
+  915  25-05-25 19:03:05  obs
+  916  25-05-25 19:03:13  wpctl status
+  917  25-05-25 19:03:37  nvidia-smi
+  918  25-05-25 19:03:47  vim .config/hypr/hyprland.conf
+  919  25-05-25 19:04:05  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  920  25-05-25 19:04:31  hypr
+  921  25-05-25 19:04:36  obs
+  922  25-05-25 19:04:43  wpctl status
+  923  25-05-25 19:04:53  mv /usr/lib/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland_
+  924  25-05-25 19:04:57  sudo mv /usr/lib/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland_
+  925  25-05-25 19:05:00  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  926  25-05-25 19:05:31  hypr
+  927  25-05-25 19:05:37  obs
+  928  25-05-25 19:05:43  wpctl status
+  929  25-05-25 19:05:58  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+  930  25-05-25 19:06:16  hypr
+  931  25-05-25 19:06:21  obs
+  932  25-05-25 19:06:32  sudo mv /usr/lib/xdg-desktop-portal-hyprland_ /usr/lib/xdg-desktop-portal-hyprland
+  933  25-05-25 19:06:38  hypr
+  934  25-05-25 19:06:45  pipewire --help
+  935  25-05-25 19:06:57  cd /
+  936  25-05-25 19:07:05  sudo find . -name 'pipewire.conf'
+  937  25-05-25 19:07:18  cat /usr/share/pipewire/pipewire.conf
+  938  25-05-25 19:07:43  cat /usr/share/pipewire/pipewire.conf | grep log
+  939  25-05-25 19:07:53  obs
+  940  25-05-25 19:10:07  wpctl status
+  941  25-05-25 19:10:17  pipewire --help
+  942  25-05-25 19:10:28  wpctl status
+  943  25-05-25 19:14:48  cd ~/xdg-desktop-portal-hyprland/
+  944  25-05-25 19:14:57  ls -alh /usr/libexec
+  945  25-05-25 19:15:05  ls -alh /usr/lib/
+  946  25-05-25 19:15:08  ls -alh /usr/lib/ | grep xdg
+  947  25-05-25 19:15:26  git checkout v1.3.6
+  948  25-05-25 19:15:49  cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -B build
+  949  25-05-25 19:15:58  cmake --build build
+  950  25-05-25 19:16:22  git checkout v1.3.7
+  951  25-05-25 19:16:24  cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -B build
+  952  25-05-25 19:16:27  cmake --build build
+  953  25-05-25 19:17:26  sudo mv /usr/lib/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland_v1.3.9
+  954  25-05-25 19:17:32  sudo cmake --install build
+  955  25-05-25 19:17:38  ls -alh /usr/lib/ | grep xdg
+  956  25-05-25 19:17:57  ps -aux | grep hyprland
+  957  25-05-25 19:18:00  hypr
+  958  25-05-25 19:18:05  obs
+  959  25-05-25 19:18:12  wpctl status
+  960  25-05-25 19:19:21  xdph --version
+  961  25-05-25 19:20:28  nvidia-smi
+  962  25-05-25 19:20:33  sudo shutdown -h now
+  963  26-05-25 04:34:44  hypr
+  964  26-05-25 04:35:07  obs
+  965  26-05-25 04:37:22  nvidia-smi
+  966  26-05-25 04:37:28  htop
+  967  26-05-25 04:37:44  echo $XDG_CURRENT_DESKTOP
+  968  26-05-25 04:37:47  vim .config/hypr/hyprland.conf
+  969  26-05-25 04:37:54  vim .zshrc
+  970  26-05-25 04:38:05  ssdk
+  971  26-05-25 04:38:12  cd wifi
+  972  26-05-25 04:38:16  wifi .creds
+  973  26-05-25 04:38:25  ping google.com
+  974  26-05-25 04:38:30  dhcpcd ip
+  975  26-05-25 04:38:33  sudo dhcpcd ip
+  976  26-05-25 04:38:36  ping google.com
+  977  26-05-25 04:38:39  ssdk
+  978  26-05-25 04:39:58  ssh zeio@foam -p 218 -L 8080:192.168.0.1:80
+  979  26-05-25 04:43:35  curl foam:18804
+  980  26-05-25 04:43:40  curl foam:18803
+  981  26-05-25 04:43:43  curl foam:18804
+  982  26-05-25 04:43:47  curl foam:18804/foo
+  983  26-05-25 04:43:51  curl -v foam:18804
+  984  26-05-25 04:44:17  ping foam
+  985  26-05-25 04:44:25  curl 195.239.232.222:18804
+  986  26-05-25 04:45:51  ssdk
+  987  26-05-25 04:47:00  obs
+  988  26-05-25 04:53:42  cat ~/.ssh/id_ed25519
+  989  26-05-25 04:53:44  cat /home/zeio/.ssh/id_ed25519.
+  990  26-05-25 04:53:46  cat /home/zeio/.ssh/id_ed25519.pub
+  991  26-05-25 04:55:00  ping normax
+  992  26-05-25 04:55:14  cat ~/.zshrc
+  993  26-05-25 04:55:19  vpnad
+  994  26-05-25 04:55:22  ping normax
+  995  26-05-25 04:55:24  ssnx
+  996  26-05-25 04:55:49  cat ~/.ssh/id_ed25519
+  997  26-05-25 04:56:02  ls ~/.ssh
+  998  26-05-25 04:56:23  ssnx
+  999  26-05-25 04:57:23  neofetch
+ 1000  26-05-25 04:57:49  ssnx
+ 1001  26-05-25 05:09:52  ssdk
+ 1002  26-05-25 05:12:08  ssbk
+ 1003  26-05-25 05:14:34  ssh zeio@foam -p 218 -L 8080:192.168.0.1:80
+ 1004  26-05-25 05:16:33  ssnx
+ 1005  26-05-25 05:17:09  ping norma
+ 1006  26-05-25 05:17:11  ping normax
+ 1007  26-05-25 05:17:45  ssdk
+ 1008  26-05-25 05:19:26  ssnx
+ 1009  26-05-25 05:19:55  curl normax:19530
+ 1010  26-05-25 05:20:00  ssdk
+ 1011  26-05-25 05:58:33  obs
+ 1012  26-05-25 06:00:47  ssdk
+ 1013  26-05-25 07:28:11  hypr
+ 1014  26-05-25 07:28:55  ssdk
+ 1015  26-05-25 07:38:10  pactl list sources
+ 1016  26-05-25 07:38:38  obs
+ 1017  26-05-25 07:40:03  pactl list sinks
+ 1018  26-05-25 07:40:08  pactl list sources
+ 1019  26-05-25 07:41:05  pactl set-source-volume 50% 50%
+ 1020  26-05-25 07:41:09  pactl set-source-volume 0 50%
+ 1021  26-05-25 07:41:15  pactl list sources
+ 1022  26-05-25 07:41:21  obs
+ 1023  26-05-25 07:53:16  nvidia-smi
+ 1024  26-05-25 08:34:04  ssdk
+ 1025  26-05-25 10:32:31  scp -P 218 zeio@foam:/home/zeio/ann-benchmarks/results.jsonl ./
+ 1026  26-05-25 10:32:46  ssdk
+ 1027  26-05-25 10:33:11  scp -P 218 zeio@foam:/home/zeio/ann-benchmarks/results.jsonl ./
+ 1028  26-05-25 10:33:37  ls
+ 1029  26-05-25 10:33:44  cat core
+ 1030  26-05-25 10:33:48  ls
+ 1031  26-05-25 10:33:50  ls -alh
+ 1032  26-05-25 10:33:58  head core
+ 1033  26-05-25 10:34:02  cat foo
+ 1034  26-05-25 11:13:47  sudo shutdown -h now
+ 1035  27-05-25 04:14:52  hypr
+ 1036  27-05-25 04:15:15  cd wifi
+ 1037  27-05-25 04:15:17  wifi .creds
+ 1038  27-05-25 04:15:25  ping normax
+ 1039  27-05-25 04:15:28  sudo dhcpcd ip
+ 1040  27-05-25 04:15:31  ping google.com
+ 1041  27-05-25 04:15:34  ping normax
+ 1042  27-05-25 04:15:38  vpnad
+ 1043  27-05-25 04:15:40  ping normax
+ 1044  27-05-25 04:15:46  obs
+ 1045  27-05-25 04:19:34  pactl set-source-mute 0 toggle
+ 1046  27-05-25 04:19:47  pactl list sources
+ 1047  27-05-25 04:21:13  pactl set-source-mute 0 toggle
+ 1048  27-05-25 04:21:15  pactl list sources
+ 1049  27-05-25 04:21:19  pactl set-source-mute 0 toggle
+ 1050  27-05-25 04:21:21  pactl list sources
+ 1051  27-05-25 04:23:24  pactl set-source-volume 0 50%
+ 1052  27-05-25 04:23:25  pactl list sources
+ 1053  27-05-25 04:23:32  pactl set-source-volume 0 50% 50%
+ 1054  27-05-25 04:23:33  pactl list sources
+ 1055  27-05-25 04:23:42  pactl set-source-volume 1 50% 50%
+ 1056  27-05-25 04:23:42  pactl list sources
+ 1057  27-05-25 04:24:05  obs
+ 1058  27-05-25 04:35:01  ssdk
+ 1059  27-05-25 05:54:19  sscm
+ 1060  27-05-25 05:54:39  sudo vim /etc/hosts
+ 1061  27-05-25 05:54:52  sscm
+ 1062  27-05-25 05:55:01  ping isst.ml
+ 1063  27-05-25 05:55:04  sscm
+ 1064  27-05-25 07:50:23  ssnx
+ 1065  27-05-25 07:50:31  hypr
+ 1066  27-05-25 07:51:27  ping foam
+ 1067  27-05-25 07:51:40  ssdk
+ 1068  27-05-25 08:10:48  curl foam:19530
+ 1069  27-05-25 08:10:58  ssdk
+ 1070  27-05-25 08:11:21  ssbk
+ 1071  27-05-25 08:13:09  ssdk
+ 1072  27-05-25 08:17:16  ssh zeio@foam -p 218 -L 8080:localhost:5000
+ 1073  27-05-25 08:27:18  ssdk
+ 1074  27-05-25 08:33:17  ssh zeio@foam -p 218 -L 8080:192.168.0.1:80
+ 1075  27-05-25 08:34:51  curl foam:5055
+ 1076  27-05-25 08:35:10  ping foam
+ 1077  27-05-25 08:41:27  pactl list sinks
+ 1078  27-05-25 08:41:57  pactl get-sink-mute 0 toggle
+ 1079  27-05-25 10:02:06  cat /home/zeio/bashrc/remote.sh
+ 1080  27-05-25 10:02:13  sscm
+ 1081  27-05-25 10:17:50  ssdk
+ 1082  27-05-25 12:05:07  htop
+ 1083  27-05-25 14:01:35  sscm
+ 1084  27-05-25 14:01:43  ssdk
+ 1085  27-05-25 14:55:45  vim foo.txt
+ 1086  27-05-25 15:03:58  sudo reboot
+ 1087  28-05-25 15:42:19  hypr
+ 1088  28-05-25 15:42:32  xdph --version
+ 1089  28-05-25 15:42:45  sudo mv /usr/lib/xdg-desktop-portal-hyprland /usr/lib/xdg-desktop-portal-hyprland_v1.3.7
+ 1090  28-05-25 15:42:57  sudo mv /usr/lib/xdg-desktop-portal-hyprland_v1.3.9 /usr/lib/xdg-desktop-portal-hyprland
+ 1091  28-05-25 15:43:02  cd xdg-desktop-portal-hyprland/
+ 1092  28-05-25 15:43:07  git checkout master
+ 1093  28-05-25 15:43:10  git pull
+ 1094  28-05-25 15:43:14  cd wifi
+ 1095  28-05-25 15:43:17  cd ~/wifi
+ 1096  28-05-25 15:43:22  wifi .creds.home
+ 1097  28-05-25 15:43:34  sudo dhcpcd ip
+ 1098  28-05-25 15:43:39  vim ~/.zshrc
+ 1099  28-05-25 15:43:58  cd ~/xdg-desktop-portal-hyprland/
+ 1100  28-05-25 15:44:00  git pull
+ 1101  28-05-25 15:44:13  obs
+ 1102  28-05-25 15:44:28  wpctl status
+ 1103  28-05-25 15:45:26  hypr
+ 1104  28-05-25 15:45:33  obs
+ 1105  28-05-25 15:46:24  history | grep vim
+ 1106  28-05-25 15:46:28  sudo vim /usr/share/xdg-desktop-portal/hyprland-portals.conf
+ 1107  28-05-25 15:46:40  cd ~/xdg-desktop-portal-hyprland/
+ 1108  28-05-25 15:47:24  cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -B build
+ 1109  28-05-25 15:47:31  cmake --build build
+ 1110  28-05-25 15:48:51  sudo cmake --install build
+ 1111  28-05-25 15:48:56  lspci
+ 1112  28-05-25 15:49:36  sudo ls -alh /usr/libexec | grep xdg
+ 1113  28-05-25 15:49:43  /usr/libexec/xdg-desktop-portal
+ 1114  28-05-25 15:50:00  lspci
+ 1115  28-05-25 15:50:14  lspci | grep Audio
+ 1116  28-05-25 15:51:19  arecord --channels=1 --duration=2 --format=dat --vumeter=stereo /tmp/test.wav
+ 1117  28-05-25 15:52:08  euse -E alsa
+ 1118  28-05-25 15:52:53  history | grep emerge
+ 1119  28-05-25 15:55:14  portageq envvar USE | xargs -n 1
+ 1120  28-05-25 15:55:18  portageq envvar USE | xargs -n 1 | grep alsa
+ 1121  28-05-25 15:55:40  sudo vim /etc/portage/make.conf
+ 1122  28-05-25 15:56:19  history | grep teleg
+ 1123  28-05-25 15:56:35  sudo vim /etc/portage/package.mask/long-to-install
+ 1124  28-05-25 15:56:41  emerge --sync
+ 1125  28-05-25 15:56:46  sudo emerge --sync
+ 1126  28-05-25 15:58:02  sudo emerge --ask --verbose --update --deep --newuse @world
+ 1127  28-05-25 16:00:45  dmesg | grep -i audio
+ 1128  28-05-25 16:00:50  sudo dmesg | grep -i audio
+ 1129  28-05-25 16:00:55  sudo dmesg | grep -i mic
+ 1130  28-05-25 16:05:13  vim /etc/portage/package.use/pipewire
+ 1131  28-05-25 16:05:17  sudo vim /etc/portage/package.use/pipewire
+ 1132  28-05-25 16:05:27  emerge --sync
+ 1133  28-05-25 16:05:32  sudo emerge --sync
+ 1134  28-05-25 16:06:00  sudo emerge --ask --verbose --update --deep --newuse @world
+ 1135  28-05-25 16:07:16  sudo reboot
+ 1136  28-05-25 16:07:49  hypr
+ 1137  28-05-25 16:07:56  vim ~/.zshrc
+ 1138  28-05-25 16:08:10  obs
+ 1139  28-05-25 16:08:49  ls
+ 1140  28-05-25 16:08:51  cd wifi
+ 1141  28-05-25 16:08:53  wifi .creds.home
+ 1142  28-05-25 16:08:58  sudo dhcpcd ip
+ 1143  28-05-25 16:09:48  wpctl status
+ 1144  28-05-25 16:10:07  history | grep xdg
+ 1145  28-05-25 16:10:16  /usr/libexec/xdg-desktop-portal
+ 1146  28-05-25 16:10:18  /usr/libexec/xdg-desktop-portal -r
+ 1147  28-05-25 16:10:26  wpctl status
+ 1148  28-05-25 16:10:31  obs
+ 1149  28-05-25 16:10:38  wpctl status
+ 1150  28-05-25 16:11:12  vim /home/zeio/.config/hypr/hyprland.conf
+ 1151  28-05-25 16:11:36  wpctl status
+ 1152  28-05-25 16:11:45  sudo reboot
+ 1153  28-05-25 16:12:14  hypr
+ 1154  28-05-25 16:12:20  wpctl status
+ 1155  28-05-25 16:12:26  pipewire -vvv
+ 1156  28-05-25 16:12:40  pipewire
+ 1157  28-05-25 16:12:44  pipewire -v
+ 1158  28-05-25 16:13:56  wpctl status
+ 1159  28-05-25 16:14:09  obs
+ 1160  28-05-25 16:14:37  obs --verbose
+ 1161  28-05-25 16:16:25  cd wifi
+ 1162  28-05-25 16:16:27  wifi .creds.home
+ 1163  28-05-25 16:16:31  sudo dhcpcd ip
+ 1164  28-05-25 16:20:24  history | grep emerge
+ 1165  28-05-25 16:21:07  pipewire -vvvv
+ 1166  28-05-25 16:21:12  pipewire -vv
+ 1167  28-05-25 16:21:19  pipewire -vvv
+ 1168  28-05-25 16:25:25  getent groups
+ 1169  28-05-25 16:25:32  getent group
+ 1170  28-05-25 16:25:48  getent group | grep pipe
+ 1171  28-05-25 16:26:00  sudo usermod -aG pipewire $USER
+ 1172  28-05-25 16:26:02  getent group | grep pipe
+ 1173  28-05-25 16:26:10  /usr/libexec/xdg-desktop-portal -r
+ 1174  28-05-25 16:26:55  ps -aux | grep xdg
+ 1175  28-05-25 16:27:03  wpctl status
+ 1176  28-05-25 16:27:14  xdph -v
+ 1177  28-05-25 16:27:31  sudo xdph -v
+ 1178  28-05-25 16:27:36  xdph
+ 1179  28-05-25 16:28:37  vim /usr/share/pipewire/pipewire.conf
+ 1180  28-05-25 16:31:33  gentoo-pipewire-launcher
+ 1181  28-05-25 16:31:40  wpctl status
+ 1182  28-05-25 16:31:50  obs
+ 1183  28-05-25 16:34:43  vim /home/zeio/.config/hypr/hyprland.conf
+ 1184  28-05-25 16:35:25  vim xdg-desktop-portal-hyprland/start.sh
+ 1185  28-05-25 16:36:04  sudo reboot
+ 1186  28-05-25 16:36:38  hypr
+ 1187  28-05-25 16:36:44  wpctl status
+ 1188  28-05-25 16:36:52  obs
+ 1189  28-05-25 16:38:08  cd wifi
+ 1190  28-05-25 16:38:10  wifi .creds.home
+ 1191  28-05-25 16:38:15  sudo dhcpcd ip
+ 1192  28-05-25 16:50:07  pactl get-sink-volume 0
+ 1193  28-05-25 16:50:13  pactl get-source-volume 0
+ 1194  28-05-25 16:50:25  pactl set-source-volume 0 50%
+ 1195  28-05-25 16:50:29  pactl get-source-volume 0
+ 1196  28-05-25 16:53:08  pactl list sinks
+ 1197  28-05-25 16:53:12  pactl list sources
+ 1198  28-05-25 16:53:41  sudo pactl set-default-source 60
+ 1199  28-05-25 16:53:46  sudo pactl set-default-source 59
+ 1200  28-05-25 16:53:49  pactl list sinks
+ 1201  28-05-25 16:53:52  sudo pactl set-default-source 60
+ 1202  28-05-25 16:53:54  sudo pactl set-default-source 1
+ 1203  28-05-25 16:53:57  sudo pactl set-default-source 60
+ 1204  28-05-25 16:56:47  neofetch
+ 1205  28-05-25 16:57:29  wpctl status
+ 1206  28-05-25 16:58:04  vim ~/.config/hypr/hyprland.conf
+ 1207  28-05-25 16:59:37  vim /etc/portage/package.use/pipewire
+ 1208  28-05-25 16:59:43  sudo vim /etc/portage/package.use/pipewire
+ 1209  28-05-25 16:59:57  sudo vim /etc/portage/make.conf
+ 1210  28-05-25 17:00:24  cat /etc/portage/make.conf
+ 1211  28-05-25 17:00:33  sudo emerge --sync
+ 1212  28-05-25 17:01:32  sudo emerge --ask --verbose --update --deep --newuse @world
+ 1213  28-05-25 17:06:53  vim ~/.config/hypr/hyprland.conf
+ 1214  28-05-25 17:07:25  neofetch
+ 1215  28-05-25 17:07:34  htop
+ 1216  28-05-25 17:11:52  sudo shutdown -h now
+ 1217  01-06-25 12:23:28  hypr
+ 1218  01-06-25 12:24:02  pactl list sources
+ 1219  01-06-25 12:27:19  wifi
+ 1220  01-06-25 12:27:22  cd wifi
+ 1221  01-06-25 12:27:24  wifi .creds.home
+ 1222  01-06-25 12:27:30  sudo dhcpcd ip
+ 1223  01-06-25 12:28:27  cd ~
+ 1224  01-06-25 12:28:28  ls
+ 1225  01-06-25 12:28:32  git clone git@github.com:zeionara/gen2.git
+ 1226  01-06-25 12:28:38  cd gen2
+ 1227  01-06-25 12:28:46  git checkout -b strix
+ 1228  01-06-25 12:28:48  ls
+ 1229  01-06-25 12:28:51  rm userChrome.css
+ 1230  01-06-25 12:28:53  ls themes
+ 1231  01-06-25 12:29:05  rm -rf themes
+ 1232  01-06-25 12:29:09  cat setup-tf.sh
+ 1233  01-06-25 12:29:17  nvidia-smi
+ 1234  01-06-25 12:29:34  rm setup-tf.sh
+ 1235  01-06-25 12:29:35  ls
+ 1236  01-06-25 12:29:39  cat packages.txt
+ 1237  01-06-25 12:29:47  rm packages.txt
+ 1238  01-06-25 12:29:51  tree portage
+ 1239  01-06-25 12:30:04  tree /etc/portage
+ 1240  01-06-25 12:32:42  ls
+ 1241  01-06-25 12:32:45  ls etc/
+ 1242  01-06-25 12:33:25  git clone git@github.com:zeionara/hypr.git
+ 1243  01-06-25 12:33:30  cd hypr
+ 1244  01-06-25 12:33:31  ls
+ 1245  01-06-25 12:33:34  rm hyprland.conf
+ 1246  01-06-25 12:33:37  cat setup.sh
+ 1247  01-06-25 12:33:51  vim setup.sh
+ 1248  01-06-25 12:35:26  cat setup.sh
+ 1249  01-06-25 12:35:38  ln /home/zeio/.config/hypr/hyprland.conf
+ 1250  01-06-25 12:35:39  ls
+ 1251  01-06-25 12:35:42  git add hyprland.conf
+ 1252  01-06-25 12:35:48  git checkout -b strix
+ 1253  01-06-25 12:35:49  git diff
+ 1254  01-06-25 12:35:59  git diff --staged
+ 1255  01-06-25 12:36:19  git commit -m 'feat(config): uploaded the config file'
+ 1256  01-06-25 12:36:22  git push
+ 1257  01-06-25 12:36:26  git push -u origin strix
+ 1258  01-06-25 12:36:55  git diff
+ 1259  01-06-25 12:36:58  git add setup.sh
+ 1260  01-06-25 12:37:10  git commit -m 'fix(setup): updated setup script'
+ 1261  01-06-25 12:37:11  git push
+ 1262  01-06-25 12:38:11  ln ~/xdg-desktop-portal-hyprland/ xdg-desktop-portal-hyprland-start.sh
+ 1263  01-06-25 12:38:19  ln ~/xdg-desktop-portal-hyprland/start.sh xdg-desktop-portal-hyprland-start.sh
+ 1264  01-06-25 12:38:20  git diff
+ 1265  01-06-25 12:38:30  rm xdg-desktop-portal-hyprland-start.sh ../hypr/
+ 1266  01-06-25 12:38:49  ln ~/xdg-desktop-portal-hyprland/start.sh xdg-desktop-portal-hyprland-start.sh
+ 1267  01-06-25 12:38:54  git add xdg-desktop-portal-hyprland-start.sh
+ 1268  01-06-25 12:38:57  git status
+ 1269  01-06-25 12:39:07  mv xdg-desktop-portal-hyprland-start.sh xdph-start.sh
+ 1270  01-06-25 12:39:12  git add xdg-desktop-portal-hyprland-start.sh
+ 1271  01-06-25 12:39:15  git add xdph-start.sh
+ 1272  01-06-25 12:39:19  git diff --staged
+ 1273  01-06-25 12:39:31  git commit -m 'feat(xdph): added xdph starting script'
+ 1274  01-06-25 12:39:32  git push
+ 1275  01-06-25 12:39:37  cd ..
+ 1276  01-06-25 12:40:02  git clone git@github.com:zeionara/alacritty-config.git
+ 1277  01-06-25 12:40:07  cd alacritty-config/
+ 1278  01-06-25 12:40:08  ls
+ 1279  01-06-25 12:40:12  rm alacritty.yml
+ 1280  01-06-25 12:40:17  vim setup.sh
+ 1281  01-06-25 12:42:56  ls
+ 1282  01-06-25 12:43:06  ln /home/zeio/.config/alacritty/alacritty.toml
+ 1283  01-06-25 12:43:08  git add alacritty.yml
+ 1284  01-06-25 12:43:12  git add alacritty.toml
+ 1285  01-06-25 12:43:14  git add setup.sh
+ 1286  01-06-25 12:43:16  git diff
+ 1287  01-06-25 12:43:19  git diff --staged
+ 1288  01-06-25 12:43:24  git checkout -b strix
+ 1289  01-06-25 12:43:38  git commit -m 'feat(config): uploaded the config file, updated setup script'
+ 1290  01-06-25 12:43:40  git push
+ 1291  01-06-25 12:43:45  git push -u origin strix
+ 1292  01-06-25 12:45:46  ls
+ 1293  01-06-25 12:45:48  cd //
+ 1294  01-06-25 12:45:50  cd ~
+ 1295  01-06-25 12:47:00  cd shell
+ 1296  01-06-25 12:47:00  ls
+ 1297  01-06-25 12:47:03  git pull
+ 1298  01-06-25 12:47:09  vim replicate.sh
+ 1299  01-06-25 12:50:34  vim ~/shell/.zshrc
+ 1300  01-06-25 12:50:53  vim ~/shell/.bashrc
+ 1301  01-06-25 12:51:17  rsrc
+ 1302  01-06-25 12:51:29  cd ~/gen2
+ 1303  01-06-25 12:51:55  cp -r /etc/portage ./portage.backup
+ 1304  01-06-25 12:51:59  tree portage.backup/
+ 1305  01-06-25 12:52:15  tree /etc/portage
+ 1306  01-06-25 12:52:55  ls -alh /etc/portage/package.mask/
+ 1307  01-06-25 12:53:15  tree portage
+ 1308  01-06-25 12:53:42  rm -rf portage
+ 1309  01-06-25 12:53:55  replicate /etc/portage portage
+ 1310  01-06-25 12:54:06  tree portage
+ 1311  01-06-25 12:54:20  cat portage/make.conf
+ 1312  01-06-25 12:54:34  cat portage/make.profile
+ 1313  01-06-25 12:58:22  replicate /etc/portage portage
+ 1314  01-06-25 12:58:29  tree portage
+ 1315  01-06-25 12:58:32  tree /etc/portage
+ 1316  01-06-25 13:01:06  rsrc
+ 1317  01-06-25 13:01:09  replicate /etc/portage portage
+ 1318  01-06-25 12:59:31  vim ~/shell/replicate.sh
+ 1319  01-06-25 13:01:29  vim ~/shell/replicate.sh
+ 1320  01-06-25 13:02:57  rsrc
+ 1321  01-06-25 13:03:00  vim ~/shell/replicate.sh
+ 1322  01-06-25 13:03:04  replicate /etc/portage portage
+ 1323  01-06-25 13:05:20  ls /var/db/repos/gentoo/profiles/default/linux/amd64/23.0
+ 1324  01-06-25 13:05:26  tree /var/db/repos/gentoo/profiles/default/linux/amd64/23.0
+ 1325  01-06-25 13:05:38  rsrc
+ 1326  01-06-25 13:05:43  replicate /etc/portage portage
+ 1327  01-06-25 13:06:03  tree portage
+ 1328  01-06-25 13:06:26  ls portage/make.profile/
+ 1329  01-06-25 13:06:33  rm -rf portage
+ 1330  01-06-25 13:06:38  sudo rm -rf portage
+ 1331  01-06-25 13:07:14  rsrc
+ 1332  01-06-25 13:07:20  replicate /etc/portage portage
+ 1333  01-06-25 13:07:26  tree portage/
+ 1334  01-06-25 13:09:29  \n
+ 1335  01-06-25 13:09:42  tree /var/db/repos/gentoo/profiles/default/linux/amd64/23.0
+ 1336* 01-06-25 13:09:52  fef
+ 1337* 01-06-25 13:09:55  tree /var/db/repos/gentoo/profiles/default/linux/amd64/23.0
+ 1338  01-06-25 13:10:07  tree /var/db/repos/gentoo/profiles/default/linux/amd64/23.0 | less
+ 1339  01-06-25 13:11:19  cd gen2
+ 1340  01-06-25 13:11:22  rm -rf portage
+ 1341  01-06-25 13:11:25  sudo rm -rf portage
+ 1342  01-06-25 13:11:30  rsrc
+ 1343  01-06-25 13:11:37  replicate /etc/portage portage
+ 1344  01-06-25 13:11:52  ls portage
+ 1345  01-06-25 13:11:56  tree portage
+ 1346  01-06-25 13:12:48  sudo rm -rf portage
+ 1347  01-06-25 13:12:49  rsrc
+ 1348  01-06-25 13:12:52  replicate /etc/portage portage
+ 1349  01-06-25 13:13:16  rsrc
+ 1350  01-06-25 13:13:18  ls
+ 1351  01-06-25 13:13:22  sudo rm -rf portage
+ 1352  01-06-25 13:13:25  replicate /etc/portage portage
+ 1353  01-06-25 13:13:29  tree portage
+ 1354  01-06-25 13:13:47  tree /etc/portage
+ 1355  01-06-25 13:14:07  sudo rm -rf portage
+ 1356  01-06-25 13:14:12  replicate /etc/portage portage
+ 1357  01-06-25 13:14:18  sudo rm -rf portage
+ 1358  01-06-25 13:14:21  rsrc
+ 1359  01-06-25 13:14:25  replicate /etc/portage portage
+ 1360  01-06-25 13:14:33  tree portage
+ 1361  01-06-25 13:14:49  replicate /etc/portage portage
+ 1362  01-06-25 13:16:05  rsrc
+ 1363  01-06-25 13:16:08  replicate /etc/portage portage
+ 1364  01-06-25 13:16:19  replicate /etc/portage portage | less
+ 1365  01-06-25 13:16:45  ls
+ 1366  01-06-25 13:16:47  ls assets/
+ 1367  01-06-25 13:16:54  cd assets
+ 1368  01-06-25 13:16:56  tree etc
+ 1369  01-06-25 13:17:10  cat etc/wpa_supplicant/wpa_supplicant.conf
+ 1370  01-06-25 13:17:20  cd ..
+ 1371  01-06-25 13:17:21  ls
+ 1372  01-06-25 13:17:25  ls kernel/
+ 1373  01-06-25 13:17:31  tree kernel
+ 1374  01-06-25 13:17:34  rmdir kernel
+ 1375  01-06-25 13:17:35  ls
+ 1376  01-06-25 13:17:41  ls -alh kernel
+ 1377  01-06-25 13:17:46  rm -rf kernel
+ 1378  01-06-25 13:17:55  ls
+ 1379  01-06-25 13:17:59  ls etc
+ 1380  01-06-25 13:18:03  tree etc
+ 1381  01-06-25 13:18:08  rm -rf etc
+ 1382  01-06-25 13:18:09  ls
+ 1383  01-06-25 13:18:13  rm -rf assets
+ 1384  01-06-25 13:18:23  mkdir etc
+ 1385  01-06-25 13:18:31  rmdir etc
+ 1386  01-06-25 13:18:33  mkdir history
+ 1387  01-06-25 13:18:34  cd history

@@ -1,0 +1,5 @@
+>=media-libs/libglvnd-1.7.0 X
+>=x11-libs/cairo-1.18.2-r1 X
+# required by www-client/firefox-128.10.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.14.1 postproc
