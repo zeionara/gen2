@@ -293,3 +293,39 @@ Then restart the `gpg-agent`:
 ```sh
 echo RELOADAGENT | gpg-connect-agent
 ```
+
+## Bluetooth
+
+To enable bluetooth, first start the bluetooth daemon (more details [here](https://wiki.gentoo.org/wiki/Bluetooth)):
+
+```sh
+sudo rc-service bluetooth start
+```
+
+To start the service automatically on boot run the following command:
+
+```sh
+rc-update add bluetooth default
+```
+
+Then ublock wireless devices (more details [here](https://unix.stackexchange.com/questions/508221/bluetooth-service-running-but-bluetoothctl-says-org-bluez-error-notready)):
+
+```sh
+rfkill unblock all
+```
+
+Then run `bluetoothctl` and perform commands for pairing and connecting to a desired device:
+
+```sh
+bluetoothctl
+> scan on
+> pair [device address]
+> connect [device address]
+```
+
+To disconnect a device:
+
+```sh
+bluetoothctl
+> disconnect [device address]
+```

@@ -1,1 +1,2 @@
-sudo bash -c 'echo 11680 > /sys/class/backlight/intel_backlight/brightness'
+sudo bash -c 'echo 11970 > /sys/class/backlight/intel_backlight/brightness'
+polychromatic-cli -e Wave
