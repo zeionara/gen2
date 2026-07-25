@@ -1,0 +1,63 @@
+# required by x11-terms/alacritty-0.16.1::gentoo
+# required by x11-terms/alacritty (argument)
+>=x11-libs/libxkbcommon-1.13.1 X
+# required by gnome-base/gnome-keyring-48.0-r1::gentoo
+# required by virtual/secret-service-0-r1::gentoo
+# required by app-crypt/libsecret-0.21.7::gentoo
+# required by app-editors/cursor-2.4.28::gentoo
+# required by app-editors/cursor (argument)
+>=app-crypt/gcr-3.41.2-r2:0 gtk
+# required by www-client/firefox-140.7.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.15.2 postproc
+# required by sys-boot/os-prober-1.82::gentoo
+# required by sys-boot/os-prober (argument)
+>=sys-boot/grub-2.12-r12 mount
+# required by media-libs/mesa-25.3.3::gentoo
+# required by x11-libs/gtk+-3.24.51::gentoo[wayland]
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-48.1::gentoo
+>=media-libs/libglvnd-1.7.0 X
+# required by x11-libs/pango-1.57.0::gentoo
+# required by gnome-base/librsvg-2.60.0::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-48.1::gentoo
+# required by x11-libs/gtk+-3.24.51::gentoo
+# required by x11-drivers/nvidia-drivers-580.126.09-r1::gentoo[tools]
+# required by x11-drivers/nvidia-drivers (argument)
+>=media-libs/freetype-2.14.1-r1 harfbuzz
+# required by x11-libs/gtk+-3.24.51::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-48.1::gentoo
+>=x11-libs/cairo-1.18.4-r1 X
+# required by media-video/obs-studio-32.0.4::gentoo
+# required by media-video/obs-studio (argument)
+>=media-video/ffmpeg-7.1.3 x264 opus
+# required by dev-qt/qtwayland-5.15.18::gentoo
+>=dev-qt/qtgui-5.15.18 egl
+# required by sys-power/suspend-1.0_p20200924::gentoo[crypt]
+# required by sys-power/suspend (argument)
+>=dev-libs/libgcrypt-1.11.2-r1 static-libs
+# required by sys-power/suspend-1.0_p20200924::gentoo[crypt]
+# required by sys-power/suspend (argument)
+>=dev-libs/libgpg-error-1.58 static-libs
+# required by sys-power/suspend-1.0_p20200924::gentoo[lzo]
+# required by sys-power/suspend (argument)
+>=dev-libs/lzo-2.10 static-libs
+# required by net-im/telegram-desktop-6.4.2::gentoo
+# required by net-im/telegram-desktop (argument)
+>=media-video/ffmpeg-7.1.3 vpx
+# required by kde-frameworks/kcoreaddons-6.22.0::gentoo
+# required by net-im/telegram-desktop-6.4.2::gentoo
+# required by net-im/telegram-desktop (argument)
+>=dev-qt/qtbase-6.10.1 icu
+# required by x11-misc/xdg-utils-1.2.1-r9::gentoo
+# required by kde-frameworks/kf-env-6::gentoo
+# required by kde-frameworks/kcoreaddons-6.22.0::gentoo
+# required by net-im/telegram-desktop-6.4.2::gentoo
+# required by net-im/telegram-desktop (argument)
+>=app-text/xmlto-0.0.28-r11 text
+# required by virtual/minizip-1.3.1::gentoo[-static-libs]
+# required by net-im/telegram-desktop-6.4.2::gentoo
+# required by net-im/telegram-desktop (argument)
+>=sys-libs/zlib-1.3.1-r1 minizip
