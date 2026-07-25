@@ -6,7 +6,7 @@ rm -rf .config
 
 mkdir -p .config/hypr
 
-cp /home/$USER/.config/hypr/* ./config/hypr/
+cp /home/$USER/.config/hypr/* ./.config/hypr/
 
 rm -rf portage
 
