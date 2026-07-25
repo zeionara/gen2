@@ -8,6 +8,9 @@ mkdir portage
 
 cd portage
 
+mkdir repos.conf
+cp /etc/portage/repos.conf/* ./repos.conf/
+
 mkdir package.license
 cp /etc/portage/package.license/* ./package.license/
 
