@@ -2,10 +2,15 @@
 
 set -euo pipefail
 
+rm -rf .config
+
+mkdir -p .config/hypr
+
+cp /home/$USER/.config/hypr/* ./config/hypr/
+
 rm -rf portage
 
 mkdir portage
-
 cd portage
 
 mkdir repos.conf
