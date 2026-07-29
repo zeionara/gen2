@@ -1,8 +1,0 @@
-dev-util/lxqt-build-tools-2.1.0
-lxqt-base/lxqt-menu-data-2.1.0
-kde-plasma/layer-shell-qt-6.3.5  USE="-debug"
-media-libs/libexif-0.6.25  USE="nls -doc" ABI_X86="(64) -32 (-x32)"
-x11-libs/libfm-extra-1.3.2
-lxde-base/menu-cache-1.1.0-r1
-x11-libs/libfm-qt-2.1.0
-x11-misc/pcmanfm-qt-2.1.0
