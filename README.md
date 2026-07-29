@@ -329,3 +329,13 @@ To disconnect a device:
 bluetoothctl
 > disconnect [device address]
 ```
+
+## Microphone on lenovo laptop
+
+To fix the micro availability issue:
+
+```sh
+cd /home/$USER
+sudo tar -cJvf usr--share--alsa--ucm2-backup.tar.xz -C /usr/share/alsa/ucm2 .
+sudo find /usr/share/alsa/ucm2 -type f -exec sed -i 's/"Mic Jack"/""/g' {} +
+```
