@@ -1,0 +1,18 @@
+# created by eselect-repo
+
+[gentoo-zh]
+location = /var/db/repos/gentoo-zh
+sync-type = git
+sync-uri = https://github.com/gentoo-zh/overlay.git
+auto-sync = yes
+
+[hyproverlay]
+location = /var/db/repos/hyproverlay
+sync-type = git
+sync-uri = https://codeberg.org/hyproverlay/hyproverlay.git
+auto-sync = yes
+
+[wayland-desktop]
+location = /var/db/repos/wayland-desktop
+sync-type = git
+sync-uri = https://github.com/bsd-ac/wayland-desktop.git
