@@ -22,11 +22,15 @@ cd portage
 mkdir repos.conf
 cp /etc/portage/repos.conf/* ./repos.conf/
 
-mkdir package.license
-cp /etc/portage/package.license/* ./package.license/
+if test -d /etc/portage/package.license; then
+  mkdir package.license
+  cp /etc/portage/package.license/* ./package.license/
+fi
 
-mkdir package.mask
-cp /etc/portage/package.mask/* ./package.mask/
+if test -d /etc/portage/package.mask; then
+  mkdir package.mask
+  cp /etc/portage/package.mask/* ./package.mask/
+fi
 
 mkdir package.accept_keywords
 cp /etc/portage/package.accept_keywords/* ./package.accept_keywords/
