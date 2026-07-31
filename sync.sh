@@ -2,15 +2,35 @@
 
 set -euo pipefail
 
+# services
+
+if test -d init.d; then
+  rm -rf init.d
+fi
+
+mkdir init.d
+cp /etc/init.d/* ./init.d/
+
+if test -d conf.d; then
+  rm -rf conf.d
+fi
+
+mkdir conf.d
+cp /etc/conf.d/* ./conf.d/
+
 # config
 
 rm -rf .config
 
-mkdir -p .config/hypr
-cp /home/$USER/.config/hypr/* ./.config/hypr/
+if test -d .config/hypr; then
+  mkdir -p .config/hypr
+  cp /home/$USER/.config/hypr/* ./.config/hypr/
+fi
 
-mkdir .config/alacritty
-cp /home/$USER/.config/alacritty/* ./.config/alacritty/
+if test -d .config/alacritty; then
+  mkdir .config/alacritty
+  cp /home/$USER/.config/alacritty/* ./.config/alacritty/
+fi
 
 # portage
 
