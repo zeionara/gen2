@@ -1,0 +1,18 @@
+x11-drivers/nvidia-drivers kernel-open
+# required by media-libs/mesa-25.2.7::gentoo
+# required by x11-libs/gtk+-3.24.51::gentoo[wayland]
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-48.1::gentoo
+>=media-libs/libglvnd-1.7.0 X
+# required by x11-libs/pango-1.57.0::gentoo
+# required by gnome-base/librsvg-2.60.0::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-48.1::gentoo
+# required by x11-libs/gtk+-3.24.51::gentoo
+# required by x11-drivers/nvidia-drivers-580.95.05::gentoo[tools]
+# required by x11-drivers/nvidia-drivers (argument)
+>=media-libs/freetype-2.14.1-r1 harfbuzz
+# required by x11-libs/gtk+-3.24.51::gentoo
+# required by x11-themes/adwaita-icon-theme-legacy-46.2::gentoo
+# required by x11-themes/adwaita-icon-theme-48.1::gentoo
+>=x11-libs/cairo-1.18.4-r1 X
