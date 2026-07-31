@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+description="keyd key remapping daemon"
+command="/usr/bin/keyd"
+pidfile="/run/keyd.pid"
+
+depend() {
+    need localmount
+}
+
+start() {
+    ebegin "Starting keyd"
+    start-stop-daemon --start --exec $command --background --make-pidfile --pidfile $pidfile
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping keyd"
+    start-stop-daemon --stop --pidfile $pidfile
+    eend $?
+}
