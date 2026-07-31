@@ -1,0 +1,4 @@
+# required by media-libs/mesa-25.3.3::gentoo
+# required by media-libs/mesa (argument)
+>=media-libs/libglvnd-1.7.0 X
+media-libs/mesa vulkan

@@ -1,0 +1,23 @@
+#!/sbin/openrc-run
+# Copyright 2026 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="vpn-ap daemon"
+description="Mihomo VPN service for AP routing"
+
+command="/usr/bin/mihomo"
+command_args="${vpn_ap_args}"
+command_background="yes"
+
+pidfile="/run/${RC_SVCNAME}.pid"
+logfile="/var/log/mihomo.log"
+
+start_stop_daemon_args="
+    --stdout $logfile
+    --stderr $logfile
+"
+
+depend() {
+	need net
+	after wpa_supplicant
+}

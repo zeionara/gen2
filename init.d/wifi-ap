@@ -1,0 +1,55 @@
+#!/sbin/openrc-run
+# Copyright 2026 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="wifi-ap daemon"
+description="WiFi Access Point on wlu1"
+command=/usr/bin/wifi-ap
+command_args="${wifi-ap_args}"
+
+iface="wlu1"
+root_ip="192.168.1.1/24"
+timeout=15
+
+depend() {
+    need net
+    after wpa_supplicant
+}
+
+start() {
+    ebegin "Starting WiFi Access Point"
+
+    # wait for interface
+    while ! iw dev "$iface" info >/dev/null 2>&1; do
+        sleep 1
+        timeout=$((timeout-1))
+        [ "$timeout" -le 0 ] && break
+    done
+
+    # Ensure interface is up
+    ip link set "$iface" up
+
+    # IMPORTANT: remove only AP-side config safely
+    ip addr flush dev "$iface"
+
+    # Start AP stack only
+    /etc/init.d/dnsmasq restart
+    /etc/init.d/hostapd restart
+
+    sleep 1
+
+    ip addr add "$root_ip" dev "$iface"
+
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping WiFi Access Point"
+
+    /etc/init.d/hostapd stop
+    /etc/init.d/dnsmasq stop
+
+    ip addr flush dev "$iface"
+
+    eend $?
+}

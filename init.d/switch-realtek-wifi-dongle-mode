@@ -1,0 +1,35 @@
+#!/sbin/openrc-run
+# Copyright 2026 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="switch-realtek-wifi-dongle-mode daemon"
+description="Switch Realtek RTL8188GU out of CD-ROM mode"
+command=/usr/bin/switch-realtek-wifi-dongle-mode
+command_args="${switch-realtek-wifi-dongle-mode_args}"
+
+timeout=15
+
+depend() {
+    need localmount
+    after modules bootmisc
+    before net
+}
+
+start() {
+    ebegin "Switching RTL8188GU mode"
+
+    /usr/sbin/usb_modeswitch -v 0x0bda -p 0x1a2b \
+        -M "5553424312345678000000000000061b000000020000000000000000000000"
+
+    ebegin "Waiting for wlan0 interface to be ready"
+
+    while ! iw dev wlan0 info >/dev/null 2>&1; do
+        sleep 1
+        timeout=$((timeout-1))
+        [ "$timeout" -le 0 ] && break
+    done
+
+    ebegin "wlan0 interface is ready"
+
+    eend $?
+}

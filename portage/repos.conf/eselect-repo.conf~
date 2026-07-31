@@ -10,3 +10,7 @@ location = /var/db/repos/hyproverlay
 sync-type = git
 sync-uri = https://codeberg.org/hyproverlay/hyproverlay.git
 
+[pypi]
+location = /var/db/repos/pypi
+sync-type = git
+sync-uri = https://github.com/houseofsuns/pypi.git

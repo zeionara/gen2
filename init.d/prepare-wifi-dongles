@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+# Copyright 2026 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="prepare-wifi-dongles daemon"
+description="Set up wifi dongles"
+command=/usr/bin/prepare-wifi-dongles
+command_args="${prepare-wifi-dongles_args}"
+
+depend() {
+	need switch-realtek-wifi-dongle-mode
+	before net
+}
