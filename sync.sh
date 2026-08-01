@@ -2,6 +2,17 @@
 
 set -euo pipefail
 
+# ssh keys
+
+if test -d .ssh; then
+  rm -rf .ssh
+fi
+
+if ls ~/.ssh/*.pub 1>/dev/null 2>&1; then
+  mkdir .ssh
+  cp ~/.ssh/*.pub .ssh
+fi
+
 # services
 
 if test -d init.d; then
