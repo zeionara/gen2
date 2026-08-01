@@ -26,6 +26,7 @@ gui-wm/sway
 media-libs/mesa
 media-libs/taglib
 media-video/ffmpeg
+net-analyzer/tcpdump
 net-dns/dnsmasq
 net-firewall/iptables
 net-libs/nodejs

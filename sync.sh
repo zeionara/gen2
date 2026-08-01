@@ -2,6 +2,17 @@
 
 set -euo pipefail
 
+# ssh keys
+
+if test -d .ssh; then
+  rm -rf .ssh
+fi
+
+if ls ~/.ssh/*.pub 1>/dev/null 2>&1; then
+  mkdir .ssh
+  cp ~/.ssh/*.pub .ssh
+fi
+
 # services
 
 if test -d init.d; then
@@ -22,12 +33,12 @@ cp /etc/conf.d/* ./conf.d/
 
 rm -rf .config
 
-if test -d .config/hypr; then
+if test -d /home/$USER/.config/hypr; then
   mkdir -p .config/hypr
   cp /home/$USER/.config/hypr/* ./.config/hypr/
 fi
 
-if test -d .config/alacritty; then
+if test -d /home/$USER/.config/alacritty; then
   mkdir .config/alacritty
   cp /home/$USER/.config/alacritty/* ./.config/alacritty/
 fi

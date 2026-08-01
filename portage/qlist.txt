@@ -19,6 +19,7 @@ acct-group/messagebus-0-r3
 acct-group/ntp-0-r3
 acct-group/nullmail-0-r2
 acct-group/openvpn-0-r3
+acct-group/pcap-0-r1
 acct-group/portage-0-r2
 acct-group/render-0-r3
 acct-group/root-0-r2
@@ -39,6 +40,7 @@ acct-user/messagebus-0-r3
 acct-user/ntp-0-r3
 acct-user/nullmail-0-r2
 acct-user/openvpn-0-r3
+acct-user/pcap-0-r1
 acct-user/portage-0-r4
 acct-user/postmaster-0-r3
 acct-user/sshd-0-r3
@@ -395,6 +397,7 @@ media-libs/taglib-2.1.1
 media-libs/vulkan-loader-1.4.328.0-r1
 media-sound/lame-3.100-r3
 media-video/ffmpeg-7.1.3
+net-analyzer/tcpdump-4.99.6
 net-dns/c-ares-1.34.6
 net-dns/dnsmasq-2.91
 net-dns/libidn2-2.3.8
@@ -403,6 +406,7 @@ net-libs/gnutls-3.8.11
 net-libs/libmicrohttpd-1.0.1-r1
 net-libs/libmnl-1.0.5
 net-libs/libnsl-2.0.1
+net-libs/libpcap-1.10.6
 net-libs/libpsl-0.21.5
 net-libs/libtirpc-1.3.7-r2
 net-libs/libtorrent-0.15.7
