@@ -2,6 +2,23 @@
 
 set -euo pipefail
 
+# boot config
+
+if test -d boot; then
+  rm -rf boot
+else
+  if test -d boot/grub; then
+    rm -rf boot/grub
+  fi
+fi
+
+mkdir -p boot/grub
+
+if test -f /boot/grub/grub.cfg; then
+  sudo cp /boot/grub/grub.cfg boot/grub
+  sudo chown $USER:$USER boot/grub/grub.cfg
+fi
+
 # ssh keys
 
 if test -d .ssh; then
